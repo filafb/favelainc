@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux' // to combine different reducers
+import { combineReducers } from "redux" // to combine different reducers
 
 //const reducer = combineReducers({
 //   name: reducer1, --> import it

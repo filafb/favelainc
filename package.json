@@ -9,6 +9,7 @@
     "start-virtual": "webpack-dev-server",
     "postinstall": "touch secrets.js",
     "lint": "eslint --ignore-path .gitignore .",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "format": "npm run prettier -- --write",
     "test": "NODE_ENV='test' mocha \"./tests/**/*.spec.js\" --require @babel/polyfill --require babel-core/register --require tests/client-tests/setup.js",
     "deploy": "script/deploy"
