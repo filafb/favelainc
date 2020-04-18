@@ -22,7 +22,7 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
-    new Promise(resolve => {
+    return new Promise(resolve => {
       resolve()
     })
   }

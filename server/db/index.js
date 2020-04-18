@@ -1,5 +1,5 @@
 const db = require("./database")
-const Model1 = require("./models/model1")
+const User = require("./models/user")
 const Model2 = require("./models/model2")
 
 //associtiations
@@ -8,6 +8,6 @@ const Model2 = require("./models/model2")
 
 module.exports = {
   db,
-  Model1,
+  User,
   Model2
 }
