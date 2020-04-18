@@ -12,15 +12,6 @@ const PORT = process.env.PORT || 4321
 const SequelizeStore = require("connect-session-sequelize")(session.Store)
 const dbStore = new SequelizeStore({ db: db })
 
-// This is a global Mocha hook, used for resource cleanup.
-// Otherwise, Mocha v4+ never quits after tests.
-if (process.env.NODE_ENV === "test") {
-  // eslint-disable-next-line no-undef
-  after("close the session store", () => dbStore.stopExpiringSessions())
-}
-
-if (process.env.NODE_ENV !== "production") require("../secrets")
-
 passport.serializeUser((user, done) => done(null, user.id))
 
 passport.deserializeUser(async (id, done) => {
@@ -87,10 +78,4 @@ async function bootApp() {
   await startListening()
 }
 
-if (require.main === module) {
-  bootApp()
-} else {
-  createApp()
-}
-
-module.exports = app
+bootApp()
