@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node ./server/index.js",
     "start:dev": "NODE_ENV='development' webpack -w & NODE_ENV='development' nodemon ./server/index.js",
+    "db:sync": "sequelize-cli db:migrate",
     "lint": "eslint --ignore-path .gitignore .",
+    "postinstall": "npm run db:sync",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "format": "npm run prettier -- --write",
     "deploy": "script/deploy"
