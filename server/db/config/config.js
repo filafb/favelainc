@@ -7,6 +7,10 @@ module.exports = {
     url: `postgres://localhost:5432/${databaseName}`,
     dialect: "postgres"
   },
+  test: {
+    url: `postgres://localhost:5432/${databaseName}`,
+    dialect: "postgres"
+  },
   production: {
     url: process.env.DATABASE_URL,
     dialect: "postgres"

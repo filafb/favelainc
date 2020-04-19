@@ -11,3 +11,10 @@ module.exports = {
   User,
   Model2
 }
+
+if (process.env.NODE_ENV === "test") {
+  afterAll(async done => {
+    db.close()
+    done()
+  })
+}

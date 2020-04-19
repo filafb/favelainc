@@ -5,7 +5,12 @@
     "node": true,
     "mocha": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
   "parser": "babel-eslint",
   "globals": {
     "Atomics": "readonly",
@@ -18,7 +23,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react-hooks", "react"],
+  "plugins": ["react-hooks", "react", "jest"],
   "rules": {
     "no-unused-vars": "warn"
   }
