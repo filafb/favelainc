@@ -44,4 +44,22 @@ describe("/api/auth handles authentication", () => {
       expect(body.error).toBe("Senha incorreta")
     })
   })
+
+  describe("a post to /create", () => {
+    const newUser = {
+      firstName: "test",
+      lastName: "test",
+      email: "email@test.com",
+      password: "nope",
+      admin: false
+    }
+
+    test("returns an error if request is made by a non logged user", async () => {
+      const { status, body } = await request(app)
+        .post("/api/auth/create")
+        .send(newUser)
+      expect(status).toBe(401)
+      expect(body.error).toBe("Usuário não autorizado")
+    })
+  })
 })
