@@ -8,7 +8,7 @@ function verifyAdmin(req, res, next) {
   if (req.user && req.user.admin) {
     next()
   } else {
-    res.status(401).json({ error: "Usuário não autorizado" })
+    res.status(401).json({ error: "Não autorizado" })
   }
 }
 
@@ -38,12 +38,13 @@ router.post("/create", verifyAdmin, async (req, res, next) => {
       password,
       admin
     })
-    res.json(user)
+    res.status(201).json(user)
   } catch (e) {
     if (e.name === "SequelizeUniqueConstraintError") {
       res.status(401).json({ error: "Email já utilizado" })
+    } else {
+      next(e)
     }
-    next(e)
   }
 })
 

@@ -77,7 +77,7 @@ async function bootApp() {
 if (require.main === module) {
   bootApp()
 } else {
-  dbStore.sync()
+  dbStore.sync({ force: true })
   createApp()
 }
 
