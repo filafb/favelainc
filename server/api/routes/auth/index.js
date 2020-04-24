@@ -12,7 +12,7 @@ function verifyAdmin(req, res, next) {
   }
 }
 
-router.post("/login", async (req, res, next) => {
+router.put("/login", async (req, res, next) => {
   const { email = "", password = "" } = req.body
   try {
     const user = await User.findOne({ where: { email } })
@@ -48,8 +48,12 @@ router.post("/create", verifyAdmin, async (req, res, next) => {
   }
 })
 
-router.post("/logout", (req, res) => {
+router.delete("/logout", (req, res) => {
   req.logout()
   req.session.destroy()
   res.redirect("/")
+})
+
+router.get("/me", (req, res) => {
+  res.send(req.user)
 })

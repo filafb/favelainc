@@ -74,11 +74,15 @@ async function bootApp() {
   await startListening()
 }
 
+async function bootForTest() {
+  await dbStore.sync({ force: true })
+  createApp()
+}
+
 if (require.main === module) {
   bootApp()
 } else {
-  dbStore.sync({ force: true })
-  createApp()
+  bootForTest()
 }
 
 module.exports = app
