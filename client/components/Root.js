@@ -1,16 +1,12 @@
-import React from "react"
-import { Route, Switch, Redirect } from "react-router-dom"
-import Main from "./Main"
+import * as React from "react"
+import useAuth from "./useAuth"
+import AuthenticatedApp from "./AuthApps/AuthenticatedApp"
+import UnauthenticatedApp from "./AuthApps/UnauthenticatedApp"
 
-export default class Root extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Switch>
-          <Route path="/" component={Main} />
-          <Redirect to="/" />
-        </Switch>
-      </React.Fragment>
-    )
-  }
+const Root = () => {
+  const [user] = useAuth()
+
+  return user.id ? <AuthenticatedApp /> : <UnauthenticatedApp />
 }
+
+export default Root

@@ -1,12 +1,8 @@
-import { combineReducers } from "redux" // to combine different reducers
+import { combineReducers } from "redux"
+import userReducer from "./user"
 
-//const reducer = combineReducers({
-//   name: reducer1, --> import it
-//   name2: reducer2 --> import it
-// })
+const reducer = combineReducers({
+  user: userReducer
+})
 
-function dummyReducer(state = {}, action) {
-  return state
-}
-
-export default dummyReducer
+export default reducer
