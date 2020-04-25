@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const GET_USER = "GET_USER"
-const LOGIN = "LOGIN"
+const LOGOUT = "LOGOUT"
 
 const defaultUser = {}
 
@@ -13,6 +13,8 @@ const getUser = user => {
   }
 }
 
+const cleanUser = () => ({ type: LOGOUT })
+
 //thunk
 export const fetchUser = () => async dispatch => {
   try {
@@ -20,6 +22,15 @@ export const fetchUser = () => async dispatch => {
     dispatch(getUser(data || defaultUser))
   } catch (e) {
     console.error(e)
+  }
+}
+
+export const logout = () => async dispatch => {
+  try {
+    await axios.delete("/api/auth/logout")
+    dispatch(cleanUser())
+  } catch (e) {
+    console.log(e)
   }
 }
 
@@ -36,6 +47,8 @@ const userReducer = (state = defaultUser, { type, ...payload }) => {
   switch (type) {
     case GET_USER:
       return payload.user
+    case LOGOUT:
+      return defaultUser
     default:
       return state
   }

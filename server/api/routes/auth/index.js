@@ -51,7 +51,7 @@ router.post("/create", verifyAdmin, async (req, res, next) => {
 router.delete("/logout", (req, res) => {
   req.logout()
   req.session.destroy()
-  res.redirect("/")
+  res.end()
 })
 
 router.get("/me", (req, res) => {

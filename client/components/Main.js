@@ -1,8 +1,26 @@
 import * as React from "react"
-import Axios from "axios"
+import { useDispatch, useSelector } from "react-redux"
+import { logout } from "../reducers/user"
 
-export default class Test extends React.Component {
-  render() {
-    return <div>It works</div>
+const Test = () => {
+  const dispatch = useDispatch()
+  const user = useSelector(({ user }) => user)
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    dispatch(logout())
   }
+
+  return (
+    <React.Fragment>
+      <div>
+        <p>{`Hello ${user.firstName}`}</p>
+      </div>
+      <button type="submit" onClick={handleSubmit}>
+        Logout
+      </button>
+    </React.Fragment>
+  )
 }
+
+export default Test

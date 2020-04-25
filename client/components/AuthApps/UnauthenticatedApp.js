@@ -5,7 +5,7 @@ import { login } from "../../reducers/user"
 
 const EMAIL = "EMAIL"
 const PASSWORD = "PASSWORD"
-
+const RESET = "REST"
 const loginState = {
   email: "",
   password: ""
@@ -17,6 +17,10 @@ const loginReducer = (state = loginState, { type, payload }) => {
       return { ...state, ...{ email: payload } }
     case PASSWORD:
       return { ...state, ...{ password: payload } }
+    case RESET:
+      return loginState
+    default:
+      return state
   }
 }
 
@@ -34,6 +38,7 @@ const UnauthenticatedApp = () => {
   const handleSubmit = e => {
     e.preventDefault()
     dispatch(login({ email, password }))
+    dispatchForm({ type: RESET })
   }
 
   return (
