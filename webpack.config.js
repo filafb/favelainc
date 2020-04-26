@@ -11,7 +11,7 @@ module.exports = (env, args) => {
       filename: "./js/bundle.js"
     },
     resolve: {
-      extensions: [".js", ".jsx", ".scss"]
+      extensions: [".js", ".jsx", ".scss", ".css"]
     },
     devtool: "source-map",
     module: {

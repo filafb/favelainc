@@ -6,6 +6,7 @@ const app = express()
 const session = require("express-session")
 const { db } = require("./db")
 const passport = require("passport")
+const compression = require("compression")
 const PORT = process.env.PORT || 4321
 
 //config to store session
@@ -26,6 +27,8 @@ passport.deserializeUser(async (id, done) => {
 //loggin middleware
 const createApp = () => {
   app.use(morgan("dev"))
+
+  app.use(compression())
 
   //body parsing middleware
   app.use(bodyParser.json())
