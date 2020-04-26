@@ -1,41 +1,51 @@
-const isDev = process.env.NODE_ENV !== "production"
+const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-module.exports = {
-  mode: isDev ? "development" : "production",
-  entry: ["@babel/polyfill", "./client/app"],
-  output: {
-    path: __dirname,
-    filename: "./public/bundle.js"
-  },
-  resolve: {
-    extensions: [".js", ".jsx", ".scss"]
-  },
-  devtool: "source-map",
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
+module.exports = (env, args) => {
+  console.log(path.resolve(__dirname, "./public/style"))
+  return {
+    mode: args.mode || "development",
+    entry: ["@babel/polyfill", "./client/app"],
+    output: {
+      path: path.resolve(__dirname, "./public/"),
+      filename: "./js/bundle.js"
+    },
+    resolve: {
+      extensions: [".js", ".jsx", ".scss"]
+    },
+    devtool: "source-map",
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader"
+          }
+        },
+        {
+          test: /\.(sa|sc|c)ss$/i,
+          exclude: /node_modules/,
+          use: [
+            args.mode !== "production"
+              ? "style-loader"
+              : {
+                  loader: MiniCssExtractPlugin.loader,
+                  options: {
+                    esModule: true
+                  }
+                },
+            "css-loader", // translates CSS into CommonJS
+            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+          ]
         }
-      },
-      {
-        test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
-        use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader, // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS, using Node Sass by default
-        ]
-      }
+      ]
+    },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: "/style/[name].css",
+        chunkFilename: "/style/[id].css"
+      })
     ]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: isDev ? "[name].css" : "[name].[hash].css",
-      chunkFilename: isDev ? "[id].css" : "[id].[hash].css"
-    })
-  ]
+  }
 }

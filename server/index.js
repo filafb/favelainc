@@ -57,6 +57,7 @@ const createApp = () => {
   })
 
   // Handle 500 Errors
+  // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
     console.error(err)
     console.error(err.stack)

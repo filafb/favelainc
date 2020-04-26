@@ -9,7 +9,7 @@ const Root = () => {
   const [loaded, setLoad] = useState(false)
 
   useEffect(() => {
-    if (user.id) {
+    if (user) {
       setLoad(true)
     }
   })
