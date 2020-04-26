@@ -13,7 +13,7 @@ module.exports = (env, args) => {
     entry: ["@babel/polyfill", "./client/app"],
     output: {
       path: path.resolve(__dirname, "./public/"),
-      filename: "./js/bundle.js"
+      filename: "./dist/js/bundle.js"
     },
     optimization: {
       minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
@@ -56,7 +56,7 @@ module.exports = (env, args) => {
                 sourceMap: args.mode === "production",
                 ident: "postcss",
                 plugins: [
-                  require("tailwindcss"),
+                  require("tailwindcss")("./tailwind.config.js"),
                   require("autoprefixer"),
                   ...(args.mode === "production" ? [purgecss] : [])
                 ]
@@ -72,8 +72,8 @@ module.exports = (env, args) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "/style/[name].css",
-        chunkFilename: "/style/[id].css"
+        filename: "/dist/style/[name].css",
+        chunkFilename: "/dist/style/[id].css"
       })
     ]
   }
