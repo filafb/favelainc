@@ -5,7 +5,7 @@ const UnauthenticatedApp = () => {
   return (
     <div
       id="unauthenticated-app"
-      className="container font-sans flex h-screen flex-col items-center"
+      className="font-sans flex h-screen flex-col items-center pt-24"
     >
       <img src="/images/logo-favelainc.png" alt="Favela Inc logo" />
       <LoginForm />

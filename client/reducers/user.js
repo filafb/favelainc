@@ -38,8 +38,10 @@ export const login = ({ email, password }) => async dispatch => {
   try {
     const { data } = await axios.put("/api/auth/login", { email, password })
     dispatch(getUser(data))
+    return { success: true }
   } catch (e) {
     console.error(e)
+    return { error: true }
   }
 }
 
