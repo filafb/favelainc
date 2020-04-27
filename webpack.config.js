@@ -2,12 +2,16 @@ const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const TerserJSPlugin = require("terser-webpack-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 const purgecss = require("@fullhuman/postcss-purgecss")({
   content: ["./client/**/*.js", "./client/**/*.jsx"],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 })
 
 module.exports = (env, args) => {
+  const isProd =
+    args.mode === "production" || process.env.NODE_ENV === "production"
+
   return {
     mode: args.mode || "development",
     entry: ["@babel/polyfill", "./client/app"],
@@ -21,7 +25,7 @@ module.exports = (env, args) => {
     resolve: {
       extensions: [".js", ".jsx", ".scss", ".css"]
     },
-    devtool: "source-map",
+    devtool: isProd ? false : "source-map",
     module: {
       rules: [
         {
@@ -47,24 +51,24 @@ module.exports = (env, args) => {
               loader: "css-loader",
               options: {
                 importLoaders: 1,
-                sourceMap: args.mode === "production"
+                sourceMap: !isProd
               }
             }, // translates CSS into CommonJS
             {
               loader: "postcss-loader",
               options: {
-                sourceMap: args.mode === "production",
+                sourceMap: !isProd,
                 ident: "postcss",
                 plugins: [
                   require("tailwindcss")("./tailwind.config.js"),
                   require("autoprefixer"),
-                  ...(args.mode === "production" ? [purgecss] : [])
+                  ...(isProd ? [purgecss] : [])
                 ]
               }
             },
             {
               loader: "sass-loader",
-              options: { sourceMap: args.mode === "production" }
+              options: { sourceMap: !isProd }
             } // compiles Sass to CSS, using Node Sass by default
           ]
         }
@@ -74,6 +78,12 @@ module.exports = (env, args) => {
       new MiniCssExtractPlugin({
         filename: "/dist/style/[name].css",
         chunkFilename: "/dist/style/[id].css"
+      }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, "public/template/index.html"),
+        title: "Favela Inc App",
+        scriptLoading: "defer",
+        filename: "dist/index.html"
       })
     ]
   }

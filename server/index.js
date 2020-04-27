@@ -56,7 +56,7 @@ const createApp = () => {
   //if someone enters an invalid URI, will be redirect to index.html
   //make sure it's bellow any other routes
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/index.html"))
+    res.sendFile(path.join(__dirname, "../public/dist/index.html"))
   })
 
   // Handle 500 Errors
