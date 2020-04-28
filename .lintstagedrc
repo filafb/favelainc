@@ -2,7 +2,7 @@
     "*.+(js|jsx)": [
         "eslint"
     ],
-    "**/*.+(js|jsx|json)": [
+    "**/*.+(js|jsx|json|scss|css)": [
         "prettier --write",
         "git add"
     ]

@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-prettier"],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null
+  }
+}

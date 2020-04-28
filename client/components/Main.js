@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../reducers/user"
 import { Link } from "react-router-dom"
 
-const Test = () => {
+const Main = () => {
   const dispatch = useDispatch()
   const [closed, toggleMenu] = useState(true)
   const { firstName, lastName, id } = useSelector(({ user }) => user)
@@ -56,4 +56,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default Main
