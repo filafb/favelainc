@@ -11,7 +11,6 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 module.exports = (env, args) => {
   const isProd =
     args.mode === "production" || process.env.NODE_ENV === "production"
-
   return {
     mode: args.mode || "development",
     entry: ["@babel/polyfill", "./client/app"],

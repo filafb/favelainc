@@ -7,6 +7,6 @@ module.exports = {
   variants: {
     opacity: ["disabled"],
     cursor: ["disabled"],
-    backgroundColor: ["disabled"]
+    backgroundColor: ["disabled", "hover"]
   }
 }

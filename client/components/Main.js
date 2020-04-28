@@ -1,24 +1,57 @@
 import * as React from "react"
+import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../reducers/user"
+import { Link } from "react-router-dom"
 
 const Test = () => {
   const dispatch = useDispatch()
-  const user = useSelector(({ user }) => user)
+  const [closed, toggleMenu] = useState(true)
+  const { firstName, lastName, id } = useSelector(({ user }) => user)
 
   const handleSubmit = e => {
     e.preventDefault()
     dispatch(logout())
   }
 
+  const handleToggle = () => {
+    toggleMenu(!closed)
+  }
+
   return (
     <React.Fragment>
-      <div>
-        <p>{`Hello ${user.firstName}`}</p>
+      <div className="fixed w-full font-sans">
+        <nav className="flex justify-end border-b border-blue-800">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold text-xl m-4 w-12 h-12 rounded-full text-center"
+            onClick={handleToggle}
+            type="button"
+          >
+            {`${firstName[0].toUpperCase()}${lastName[0].toUpperCase()}`}
+          </button>
+        </nav>
+        {closed ? null : (
+          <ul className="flex flex-col items-end bg-white shadow-md rounded px-8 py-6 m-4 fixed right-0 -mt-3">
+            <li>
+              <Link
+                className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                to={`/user/${id}`}
+              >
+                Info Usuário
+              </Link>
+            </li>
+            <li>
+              <button
+                className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                type="submit"
+                onClick={handleSubmit}
+              >
+                Logout
+              </button>
+            </li>
+          </ul>
+        )}
       </div>
-      <button type="submit" onClick={handleSubmit}>
-        Logout
-      </button>
     </React.Fragment>
   )
 }
