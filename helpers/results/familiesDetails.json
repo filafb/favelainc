@@ -12,11 +12,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Diabetes, pressão alta... mas consegue buscar a cesta "
+    "disability": "Diabetes, pressão alta... mas consegue buscar a cesta"
   },
   {
     "id": 504,
@@ -31,18 +31,18 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": " Auxílio Emergêncial",
+    "governmentBenefitComment": "Auxílio Emergêncial",
     "partnerNgo": "Vidigal vive",
     "closestNgo": "Vidigal Beer",
     "consent": "Sim",
-    "disability": "Nao "
+    "disability": "Nao"
   },
   {
     "id": 367,
-    "address": "Doze de Outubro ",
+    "address": "Doze de Outubro",
     "number": "37",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "3",
     "eldery": "0",
@@ -54,14 +54,14 @@
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Nao "
+    "disability": "Nao"
   },
   {
     "id": 533,
-    "address": "Avenida presidente João Goulart ",
+    "address": "Avenida presidente João Goulart",
     "number": "856",
-    "city": "Rio de Janeiro ",
-    "state": "Rj ",
+    "city": "Rio de Janeiro",
+    "state": "Rj",
     "familySize": "4",
     "children": "6",
     "eldery": "0",
@@ -69,15 +69,15 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Não ",
+    "governmentBenefitComment": "Não",
     "partnerNgo": "ONG MMAH",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 847,
-    "address": "Rua primeiro de maio ",
+    "address": "Rua primeiro de maio",
     "number": "4a fd",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -99,7 +99,7 @@
     "address": "Rua padre artola",
     "number": "Número 04 sobrado A",
     "city": "Rio de janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -107,15 +107,15 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "No momento não recebemos nenhum auxílio ",
+    "governmentBenefitComment": "No momento não recebemos nenhum auxílio",
     "partnerNgo": "ONG MMAH",
     "closestNgo": "ONG MMAH",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 848,
-    "address": "Av presidente João goulart ",
+    "address": "Av presidente João goulart",
     "number": "994..beco do gringo",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -130,11 +130,11 @@
     "partnerNgo": "Gasco",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "não "
+    "disability": "não"
   },
   {
     "id": 849,
-    "address": "Rua São Pedro ",
+    "address": "Rua São Pedro",
     "number": "7casa",
     "city": "Rj",
     "state": "Rio",
@@ -153,7 +153,7 @@
   },
   {
     "id": 850,
-    "address": "Rua doutor sobral pinto ",
+    "address": "Rua doutor sobral pinto",
     "number": "577",
     "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
@@ -168,7 +168,7 @@
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 171,
@@ -202,17 +202,17 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 852,
-    "address": "Rua Pres. João Goulart ",
+    "address": "Rua Pres. João Goulart",
     "number": "835 B, fundos",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "3",
     "children": "1",
@@ -225,7 +225,7 @@
     "partnerNgo": "Não recebi de nenhuma ainda",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 853,
@@ -240,15 +240,15 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "Uma pessoa, aposentadoria. ",
+    "governmentBenefitComment": "Uma pessoa, aposentadoria.",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 854,
-    "address": "Frei henrique ",
+    "address": "Frei henrique",
     "number": "15",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -286,7 +286,7 @@
   },
   {
     "id": 517,
-    "address": "Rua silvio de morais ",
+    "address": "Rua silvio de morais",
     "number": "Casa 7",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -316,15 +316,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1, bolsa família ",
-    "partnerNgo": "Amigo ",
+    "governmentBenefitComment": "1, bolsa família",
+    "partnerNgo": "Amigo",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
     "disability": "Não"
   },
   {
     "id": 857,
-    "address": "Av Presidente Joao Goulart ",
+    "address": "Av Presidente Joao Goulart",
     "number": "948, Casa Fundos",
     "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
@@ -343,10 +343,10 @@
   },
   {
     "id": 338,
-    "address": "R CRISTINA BORGES\n",
+    "address": "R CRISTINA BORGES",
     "number": "1A",
     "city": "RIO DE JANEIRO",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -358,14 +358,14 @@
     "partnerNgo": "Favela Inc",
     "closestNgo": "Favela Inc",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 357,
-    "address": "Avenida presidente João goulart ",
+    "address": "Avenida presidente João goulart",
     "number": "873 fundos",
     "city": "Rio de janeiro",
-    "state": "Rio de janeiro ",
+    "state": "Rio de janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -377,14 +377,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não tenho deficiência "
+    "disability": "Não tenho deficiência"
   },
   {
     "id": 858,
-    "address": "Rua Hebert de Souza ",
-    "number": "Casa 3 , subindo a escada do campista ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Rua Hebert de Souza",
+    "number": "Casa 3 , subindo a escada do campista",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "0",
     "eldery": "0",
@@ -392,18 +392,18 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "So uma , bolsa família ",
+    "governmentBenefitComment": "So uma , bolsa família",
     "partnerNgo": "Escola Vidigal (no alto)",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 574,
-    "address": "Rua Bernardo Neves ",
+    "address": "Rua Bernardo Neves",
     "number": "5 casa B",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de janeiro",
     "familySize": "6",
     "children": "2",
     "eldery": "0",
@@ -415,14 +415,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 859,
     "address": "Rua 31 de julho",
     "number": "17",
-    "city": "Rio de janeiro ",
-    "state": "Rio de janeiro ",
+    "city": "Rio de janeiro",
+    "state": "Rio de janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -434,13 +434,13 @@
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 860,
     "address": "Av Presidente João Goulart",
     "number": "910",
-    "city": "Rio ",
+    "city": "Rio",
     "state": "RJ",
     "familySize": "6",
     "children": "2",
@@ -506,7 +506,7 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Niguem ",
+    "governmentBenefitComment": "Niguem",
     "partnerNgo": "Favela ing",
     "closestNgo": "Favela ing biroscâo",
     "consent": "Sim",
@@ -516,7 +516,7 @@
     "id": 864,
     "address": "Rua Presidente João Goulart",
     "number": "974",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rio",
     "familySize": "1",
     "children": "0",
@@ -553,7 +553,7 @@
   {
     "id": 865,
     "address": "Av. Presidente João Goulart 948 fundos",
-    "number": "Fundos, casa ",
+    "number": "Fundos, casa",
     "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
     "familySize": "1",
@@ -571,9 +571,9 @@
   },
   {
     "id": 866,
-    "address": "Rua João paulo l ",
+    "address": "Rua João paulo l",
     "number": "Casa 1",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "2",
@@ -582,7 +582,7 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1  pessoa bolsa família ",
+    "governmentBenefitComment": "1  pessoa bolsa família",
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
@@ -590,37 +590,37 @@
   },
   {
     "id": 505,
-    "address": "Rua vinde cinco de dezembro ",
-    "number": "casa 28f ",
-    "city": "Rio de Janeiro ",
+    "address": "Rua vinde cinco de dezembro",
+    "number": "casa 28f",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "1",
-    "children": "Não tem ",
-    "eldery": "Só eu ",
+    "children": "Não tem",
+    "eldery": "Só eu",
     "occupation": "Desempregado",
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nem uma ",
+    "governmentBenefitComment": "Nem uma",
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 867,
-    "address": "Beco Dom João ",
+    "address": "Beco Dom João",
     "number": "7 B",
     "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "3",
     "children": "9",
     "eldery": "0",
-    "occupation": "Artesã ",
+    "occupation": "Artesã",
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1. Bolsa família ",
+    "governmentBenefitComment": "1. Bolsa família",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Sitiê",
     "consent": "Sim",
@@ -666,10 +666,10 @@
   },
   {
     "id": 870,
-    "address": "Rua Josué ",
+    "address": "Rua Josué",
     "number": "Casa 7, 14",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -685,10 +685,10 @@
   },
   {
     "id": 871,
-    "address": "Rua 25 de dezembro ",
-    "number": "26 fundos ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Rua 25 de dezembro",
+    "number": "26 fundos",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -696,7 +696,7 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma \n",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
@@ -719,11 +719,11 @@
     "partnerNgo": "Todos da Luta",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 873,
-    "address": "Rua Carlos Duque ",
+    "address": "Rua Carlos Duque",
     "number": "8 fds",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -761,10 +761,10 @@
   },
   {
     "id": 371,
-    "address": "Rua Cristina Borges ",
+    "address": "Rua Cristina Borges",
     "number": "13",
-    "city": "Rio de janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "2",
     "eldery": "0",
@@ -776,14 +776,14 @@
     "partnerNgo": "Meu compadre eder",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 518,
     "address": "Rua Doutor Olinto Magalhães Vidigal",
     "number": "149 casa 4",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "3",
     "eldery": "1",
@@ -791,15 +791,15 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ainda ",
-    "partnerNgo": "Nós do morro ",
+    "governmentBenefitComment": "Nenhum ainda",
+    "partnerNgo": "Nós do morro",
     "closestNgo": "Nós do morro",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 358,
-    "address": "Av.Presidente João  goulart ",
+    "address": "Av.Presidente João  goulart",
     "number": "833",
     "city": "Rio de Janeiro",
     "state": "Rj",
@@ -814,14 +814,14 @@
     "partnerNgo": "Grupo Nós  do morro",
     "closestNgo": "Grupo nos do morro",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 874,
     "address": "Rua major toja Martinez filho",
     "number": "122",
-    "city": "Rio de janeiro ",
-    "state": "Riode janeiro ",
+    "city": "Rio de janeiro",
+    "state": "Riode janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -830,7 +830,7 @@
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "Nenhum",
-    "partnerNgo": "Grupo do whats daqui do condomínio ",
+    "partnerNgo": "Grupo do whats daqui do condomínio",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
     "disability": "Nao"
@@ -849,10 +849,10 @@
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "Nenhuma",
-    "partnerNgo": "Minha tia Que me passou ",
+    "partnerNgo": "Minha tia Que me passou",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não tenho nenhuma doença "
+    "disability": "Não tenho nenhuma doença"
   },
   {
     "id": 876,
@@ -886,7 +886,7 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Nos do morro",
     "closestNgo": "Nos do morro",
     "consent": "Sim",
@@ -924,7 +924,7 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
@@ -932,10 +932,10 @@
   },
   {
     "id": 434,
-    "address": "25de Dezembro ",
+    "address": "25de Dezembro",
     "number": "9 A",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "1",
@@ -947,7 +947,7 @@
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 877,
@@ -992,7 +992,7 @@
     "address": "R DR OLINTO DE MAGALHAES",
     "number": "75",
     "city": ":RIO DE JANEIRO",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "6",
     "children": "4",
     "eldery": "0",
@@ -1000,11 +1000,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1 pessoal , bolsa família ",
-    "partnerNgo": "Grupo no zap ",
+    "governmentBenefitComment": "1 pessoal , bolsa família",
+    "partnerNgo": "Grupo no zap",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 879,
@@ -1046,8 +1046,8 @@
   },
   {
     "id": 880,
-    "address": "Rua Carlos duque ",
-    "number": "07, sobrado ",
+    "address": "Rua Carlos duque",
+    "number": "07, sobrado",
     "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
@@ -1057,11 +1057,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 881,
@@ -1084,9 +1084,9 @@
   },
   {
     "id": 163,
-    "address": "Carlos Duque ",
+    "address": "Carlos Duque",
     "number": "14",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "5",
     "children": "3",
@@ -1095,8 +1095,8 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ainda não caiu ",
-    "partnerNgo": "Amigo ",
+    "governmentBenefitComment": "Ainda não caiu",
+    "partnerNgo": "Amigo",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
     "disability": "Nao"
@@ -1105,8 +1105,8 @@
     "id": 882,
     "address": "Rua Carlos Duque",
     "number": "07 Casa 3",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -1114,11 +1114,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 370,
@@ -1141,10 +1141,10 @@
   },
   {
     "id": 883,
-    "address": "Rua Carlos duque ",
+    "address": "Rua Carlos duque",
     "number": "07, casa 1",
-    "city": "Rio de Janeiro ",
-    "state": "Rj ",
+    "city": "Rio de Janeiro",
+    "state": "Rj",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -1152,11 +1152,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 884,
@@ -1179,7 +1179,7 @@
   },
   {
     "id": 609,
-    "address": "Avenida presidente João goulart ",
+    "address": "Avenida presidente João goulart",
     "number": "839",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -1190,17 +1190,17 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "Eu,bolsa família ",
+    "governmentBenefitComment": "Eu,bolsa família",
     "partnerNgo": "Vidigal Beer",
     "closestNgo": "Vidigal vive",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 885,
-    "address": "Rua felicia ",
+    "address": "Rua felicia",
     "number": "8_a",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "1",
     "children": "2",
@@ -1213,14 +1213,14 @@
     "partnerNgo": "ONG MMAH",
     "closestNgo": "ONG MMAH",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 886,
-    "address": "Rua Carlos duque ",
-    "number": "02 Casa fundos ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Rua Carlos duque",
+    "number": "02 Casa fundos",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "7",
     "children": "5",
     "eldery": "0",
@@ -1228,15 +1228,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "05 filhos bolsa família ",
+    "governmentBenefitComment": "05 filhos bolsa família",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 887,
-    "address": "Avenida Presidente João Goulart, 845\n",
+    "address": "Avenida Presidente João Goulart, 845",
     "number": "Casa 9 fundos",
     "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
@@ -1274,9 +1274,9 @@
   },
   {
     "id": 508,
-    "address": "Major Toja ",
+    "address": "Major Toja",
     "number": "156 ,sobe escada no terceiro portão verde",
-    "city": "RIO DE JANEIRO ",
+    "city": "RIO DE JANEIRO",
     "state": "Rj",
     "familySize": "2",
     "children": "Minha filha tem 13 anos .Mora eu e ela e um cachorro Cocker spaniel com  12 anos.",
@@ -1285,11 +1285,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Zero de gente....Eu trabalho informal na praia vendendo saídas de praia Saias Pareô. ",
-    "partnerNgo": "Eu vi no Instagram do Babu do bbb a postagem da campanha @favelainc e vim  me cadastrar porque eu moro sozinha com minha filha e trabalho na praia e a praia está fechada e não posso trabalhar.  ",
+    "governmentBenefitComment": "Zero de gente....Eu trabalho informal na praia vendendo saídas de praia Saias Pareô.",
+    "partnerNgo": "Eu vi no Instagram do Babu do bbb a postagem da campanha @favelainc e vim  me cadastrar porque eu moro sozinha com minha filha e trabalho na praia e a praia está fechada e não posso trabalhar.",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não. "
+    "disability": "Não."
   },
   {
     "id": 888,
@@ -1331,7 +1331,7 @@
   },
   {
     "id": 890,
-    "address": "Av Presidente João Goulart número 948 ",
+    "address": "Av Presidente João Goulart número 948",
     "number": "Casa 4-a",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -1346,7 +1346,7 @@
     "partnerNgo": "Amiga mandou pelo zap porque fui demitida agora tô tentando o seguro desemprego mas fui demitida por força maior e até agora nada rescisão zerada nem os dias trabalhados recebi",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 198,
@@ -1426,10 +1426,10 @@
   },
   {
     "id": 892,
-    "address": "Herbert de Souza ",
+    "address": "Herbert de Souza",
     "number": "Casa 6B",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -1438,14 +1438,14 @@
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Nenhuma. ",
+    "partnerNgo": "Nenhuma.",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
     "disability": "Não."
   },
   {
     "id": 893,
-    "address": "Rua Benedito Calixto\n",
+    "address": "Rua Benedito Calixto",
     "number": "76 casa 5",
     "city": "Rio de Janeiro",
     "state": "Rj",
@@ -1460,14 +1460,14 @@
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 456,
-    "address": "Avenida Presidente João Goulart ",
+    "address": "Avenida Presidente João Goulart",
     "number": "992",
     "city": "Rio de Janeiro",
-    "state": "RJ ",
+    "state": "RJ",
     "familySize": "3",
     "children": "0",
     "eldery": "1",
@@ -1479,13 +1479,13 @@
     "partnerNgo": "Escola Vidigal (no alto)",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 342,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "541 casa",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "5",
     "children": "2",
@@ -1494,7 +1494,7 @@
     "familyIncome": "R$2001 - R$2500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Só o meu marido ",
+    "governmentBenefitComment": "Só o meu marido",
     "partnerNgo": "Favela vive",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
@@ -1502,7 +1502,7 @@
   },
   {
     "id": 894,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "992",
     "city": "Rio de janeiro",
     "state": "RJ",
@@ -1517,7 +1517,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 895,
@@ -1532,7 +1532,7 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "So ela ",
+    "governmentBenefitComment": "So ela",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
@@ -1561,7 +1561,7 @@
     "id": 341,
     "address": "Rua.Dom Eugênio salles",
     "number": "30 B",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
     "familySize": "3",
     "children": "13 anos",
@@ -1571,17 +1571,17 @@
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Grupo de Whatsapp ",
-    "closestNgo": "Grupo de Whatsapp ",
+    "partnerNgo": "Grupo de Whatsapp",
+    "closestNgo": "Grupo de Whatsapp",
     "consent": "Sim",
     "disability": "Nao"
   },
   {
     "id": 897,
-    "address": "Rua Major Toja Martinez Filho ",
+    "address": "Rua Major Toja Martinez Filho",
     "number": "125",
     "city": "Rio Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -1616,13 +1616,13 @@
   },
   {
     "id": 368,
-    "address": "AV PRES JOAO GOULART ",
-    "number": "CASA 841b ",
+    "address": "AV PRES JOAO GOULART",
+    "number": "CASA 841b",
     "city": "Rj",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "2",
-    "eldery": "Não tenho ",
+    "eldery": "Não tenho",
     "occupation": "Autônomo",
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
@@ -1631,7 +1631,7 @@
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 443,
@@ -1646,18 +1646,18 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Uma. O auxílio emergencial ",
+    "governmentBenefitComment": "Uma. O auxílio emergencial",
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 511,
-    "address": "Rua André Feijó Barroso ",
-    "number": "1D Casa ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Rua André Feijó Barroso",
+    "number": "1D Casa",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -1666,17 +1666,17 @@
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Grupo Nós do Morro ",
-    "closestNgo": "Grupo Nós do Morro ",
+    "partnerNgo": "Grupo Nós do Morro",
+    "closestNgo": "Grupo Nós do Morro",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 115,
-    "address": "Rua madre ana coimbra ",
+    "address": "Rua madre ana coimbra",
     "number": "C17",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -1688,14 +1688,14 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 899,
-    "address": "Rua Flores da Cunha ",
-    "number": "9A casa ",
-    "city": "RIO DE JANEIRO ",
-    "state": "Rj ",
+    "address": "Rua Flores da Cunha",
+    "number": "9A casa",
+    "city": "RIO DE JANEIRO",
+    "state": "Rj",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -1704,17 +1704,17 @@
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Grupo Nós do Morro ",
-    "closestNgo": "Grupo Nós do Morro ",
+    "partnerNgo": "Grupo Nós do Morro",
+    "closestNgo": "Grupo Nós do Morro",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 56,
-    "address": "Rua Renato Dantas ",
+    "address": "Rua Renato Dantas",
     "number": "14",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "6",
     "children": "1",
     "eldery": "0",
@@ -1722,11 +1722,11 @@
     "familyIncome": "R$2001 - R$2500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum \n",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Todos da Luta",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 514,
@@ -1749,10 +1749,10 @@
   },
   {
     "id": 900,
-    "address": "Rua Dom Helder Câmara ",
+    "address": "Rua Dom Helder Câmara",
     "number": "1",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -1764,11 +1764,11 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 432,
-    "address": "Padre Anchieta ",
+    "address": "Padre Anchieta",
     "number": "6c",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -1783,14 +1783,14 @@
     "partnerNgo": "Batucavidi",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 366,
-    "address": "Rua dom eugenio Sales ",
+    "address": "Rua dom eugenio Sales",
     "number": "63",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -1802,14 +1802,14 @@
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 901,
-    "address": "Rua frei benjamim ",
-    "number": "Casa 10 fundos ",
-    "city": "Rio De Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Rua frei benjamim",
+    "number": "Casa 10 fundos",
+    "city": "Rio De Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "0",
     "eldery": "0",
@@ -1817,17 +1817,17 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1 auxílio emergêncial ",
+    "governmentBenefitComment": "1 auxílio emergêncial",
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 356,
-    "address": "Presidente João Goulart ",
+    "address": "Presidente João Goulart",
     "number": "545",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "15 anos",
@@ -1840,13 +1840,13 @@
     "partnerNgo": "ONG Horizonte",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 902,
-    "address": "Av. presidente João Goulart ",
+    "address": "Av. presidente João Goulart",
     "number": "545",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "4",
     "children": "0",
@@ -1855,11 +1855,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Duas ",
+    "governmentBenefitComment": "Duas",
     "partnerNgo": "ONG Horizonte",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 903,
@@ -1878,14 +1878,14 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Nao "
+    "disability": "Nao"
   },
   {
     "id": 904,
-    "address": "Av.presidente João Goulart ",
+    "address": "Av.presidente João Goulart",
     "number": "992",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "1",
     "eldery": "0",
@@ -1897,11 +1897,11 @@
     "partnerNgo": "Vidigal inc",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 420,
-    "address": "Doutor Bento Rubião ",
+    "address": "Doutor Bento Rubião",
     "number": "Ab",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -1939,7 +1939,7 @@
   },
   {
     "id": 906,
-    "address": "Rua Madre Ana Coimbra ",
+    "address": "Rua Madre Ana Coimbra",
     "number": "casa 6 fundo 6",
     "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
@@ -1996,10 +1996,10 @@
   },
   {
     "id": 909,
-    "address": "Av. Presidente João Goulart ",
+    "address": "Av. Presidente João Goulart",
     "number": "948",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -2007,18 +2007,18 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "2 mas estamos em análise ",
+    "governmentBenefitComment": "2 mas estamos em análise",
     "partnerNgo": "Vidigal vive",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 435,
-    "address": "Rua Doutor Bento Rubião ",
+    "address": "Rua Doutor Bento Rubião",
     "number": "Casa :11",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "1",
     "eldery": "1",
@@ -2026,18 +2026,18 @@
     "familyIncome": "R$2001 - R$2500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "Só Aposentadoria ",
+    "governmentBenefitComment": "Só Aposentadoria",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 282,
-    "address": "Av presidente João golart ",
-    "number": "948 casa a ",
-    "city": "Rio de janeiro ",
-    "state": "Rio de janeiro ",
+    "address": "Av presidente João golart",
+    "number": "948 casa a",
+    "city": "Rio de janeiro",
+    "state": "Rio de janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -2045,7 +2045,7 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 auxílio emergencial ",
+    "governmentBenefitComment": "1 auxílio emergencial",
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
@@ -2053,7 +2053,7 @@
   },
   {
     "id": 445,
-    "address": "Ah Presidente João Goulart ",
+    "address": "Ah Presidente João Goulart",
     "number": "1012",
     "city": "Rio de Janeiro",
     "state": "RJ",
@@ -2074,8 +2074,8 @@
     "id": 910,
     "address": "Rua 25 de Dezembro",
     "number": "26 casa",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -2083,11 +2083,11 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 pessoa. Auxílio emergencial. ",
+    "governmentBenefitComment": "1 pessoa. Auxílio emergencial.",
     "partnerNgo": "Nós do morro",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 911,
@@ -2102,7 +2102,7 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nei uma ",
+    "governmentBenefitComment": "Nei uma",
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
@@ -2110,14 +2110,14 @@
   },
   {
     "id": 912,
-    "address": "Avenida presidente João Goulart ",
+    "address": "Avenida presidente João Goulart",
     "number": "922",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "16 e 17",
     "eldery": "0",
-    "occupation": "Sem auxílio doença no momento ",
+    "occupation": "Sem auxílio doença no momento",
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
@@ -2125,14 +2125,14 @@
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Estou acidentada ,operada do femo "
+    "disability": "Estou acidentada ,operada do femo"
   },
   {
     "id": 913,
-    "address": "Av presidente joao goulart ",
+    "address": "Av presidente joao goulart",
     "number": "845 casa 03",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -2141,16 +2141,16 @@
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Auxílio Emergencial",
     "governmentBenefitComment": "1",
-    "partnerNgo": "Nenhuma ",
+    "partnerNgo": "Nenhuma",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 914,
-    "address": "Rua moema noronha \n\n",
-    "number": "N°12b ",
-    "city": "Rio de Janeiro ",
+    "address": "Rua moema noronha",
+    "number": "N°12b",
+    "city": "Rio de Janeiro",
     "state": "Brasil",
     "familySize": "2",
     "children": "1",
@@ -2167,10 +2167,10 @@
   },
   {
     "id": 915,
-    "address": "Rua Dr sobral pinto ",
+    "address": "Rua Dr sobral pinto",
     "number": "Portão 26",
-    "city": "Rio de janeiro ",
-    "state": "RJ ",
+    "city": "Rio de janeiro",
+    "state": "RJ",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -2178,7 +2178,7 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Apenas eu emergencial ",
+    "governmentBenefitComment": "Apenas eu emergencial",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
@@ -2186,9 +2186,9 @@
   },
   {
     "id": 360,
-    "address": "Rua 25 de dezembro ",
-    "number": "26 fundos ",
-    "city": "Rio de Janeiro ",
+    "address": "Rua 25 de dezembro",
+    "number": "26 fundos",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "5",
     "children": "2",
@@ -2197,11 +2197,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Favela Experience",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 916,
@@ -2224,9 +2224,9 @@
   },
   {
     "id": 125,
-    "address": "Rua padre artola ",
+    "address": "Rua padre artola",
     "number": "6 casa",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "2",
@@ -2235,15 +2235,15 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
-    "partnerNgo": "Favela vive ",
-    "closestNgo": "Favela vive ",
+    "governmentBenefitComment": "Nenhuma",
+    "partnerNgo": "Favela vive",
+    "closestNgo": "Favela vive",
     "consent": "Sim",
     "disability": "Nao"
   },
   {
     "id": 917,
-    "address": "Frey Enrique ",
+    "address": "Frey Enrique",
     "number": "8",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -2258,7 +2258,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Dificiencia não porém estou com muita falta de ar isolamento em casa "
+    "disability": "Dificiencia não porém estou com muita falta de ar isolamento em casa"
   },
   {
     "id": 918,
@@ -2296,7 +2296,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 919,
@@ -2311,11 +2311,11 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Uma pessoa está recebendo o auxílio emergencial ",
-    "partnerNgo": "Recebi de um familiar via WhatsApp ",
+    "governmentBenefitComment": "Uma pessoa está recebendo o auxílio emergencial",
+    "partnerNgo": "Recebi de um familiar via WhatsApp",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 441,
@@ -2358,7 +2358,7 @@
   {
     "id": 344,
     "address": "Rua frei Henrique 6",
-    "number": "Casa ",
+    "number": "Casa",
     "city": "Rio de janeiro",
     "state": "RJ",
     "familySize": "3",
@@ -2376,10 +2376,10 @@
   },
   {
     "id": 647,
-    "address": "Rua Frei Henrique ",
+    "address": "Rua Frei Henrique",
     "number": "6",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -2391,11 +2391,11 @@
     "partnerNgo": "Vidigal Capoeira",
     "closestNgo": "Vidigal Capoeira",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 921,
-    "address": "Avenida presidente joao gulart ",
+    "address": "Avenida presidente joao gulart",
     "number": "926",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -2414,9 +2414,9 @@
   },
   {
     "id": 922,
-    "address": "Av herbet  de Souza ",
+    "address": "Av herbet  de Souza",
     "number": "Casa 05",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "RJ",
     "familySize": "3",
     "children": "1",
@@ -2425,7 +2425,7 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
@@ -2434,28 +2434,28 @@
   {
     "id": 923,
     "address": "Av presidente joao goulart 987-Vidigal alto vidigal",
-    "number": "987 em frente ao seu Zezinho ",
+    "number": "987 em frente ao seu Zezinho",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "1",
     "occupation": "Autônomo",
     "familyIncome": "R$1 - R$1000",
-    "familyIncomeCovid": "600 reais ",
+    "familyIncomeCovid": "600 reais",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Vizinho",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 924,
-    "address": "Avenida presidente joao goulart ",
-    "number": "956 alto Vidigal ",
+    "address": "Avenida presidente joao goulart",
+    "number": "956 alto Vidigal",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -2467,7 +2467,7 @@
     "partnerNgo": "Amigos",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 925,
@@ -2547,9 +2547,9 @@
   },
   {
     "id": 928,
-    "address": "Rua Dom Hélder câmera ",
+    "address": "Rua Dom Hélder câmera",
     "number": "2 a",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rio de janeiro",
     "familySize": "4",
     "children": "1",
@@ -2566,10 +2566,10 @@
   },
   {
     "id": 363,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "688 casa 1",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "2",
     "eldery": "0",
@@ -2577,11 +2577,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "O meu bolsa família está bloqueado ",
+    "governmentBenefitComment": "O meu bolsa família está bloqueado",
     "partnerNgo": "Fiquei sabendo pelo Instagram Favela Inc",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 929,
@@ -2604,9 +2604,9 @@
   },
   {
     "id": 930,
-    "address": "Rua Benedito Calisto ",
+    "address": "Rua Benedito Calisto",
     "number": "Rua nova 44 a",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "1",
@@ -2619,14 +2619,14 @@
     "partnerNgo": "Teatro nós do morro",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 931,
-    "address": "Rua madre Ana Coimbra ",
+    "address": "Rua madre Ana Coimbra",
     "number": "Casa 5",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -2634,7 +2634,7 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1501 - R$2000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 auxílio emergencial ",
+    "governmentBenefitComment": "1 auxílio emergencial",
     "partnerNgo": "Todos da Luta",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
@@ -2654,17 +2654,17 @@
     "familyIncomeCovid": "R$2001 - R$2500",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "Ninguém",
-    "partnerNgo": "Vir o cadastro no fece ",
+    "partnerNgo": "Vir o cadastro no fece",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
     "disability": "Não"
   },
   {
     "id": 932,
-    "address": "Rua frei Henrique ",
+    "address": "Rua frei Henrique",
     "number": "3 casa",
     "city": "Rio de janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -2672,18 +2672,18 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Somente eu- auxílio emergencial ",
+    "governmentBenefitComment": "Somente eu- auxílio emergencial",
     "partnerNgo": "No birroscao",
     "closestNgo": "No birroscao",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 933,
-    "address": "Rua dom Helder câmera ",
+    "address": "Rua dom Helder câmera",
     "number": "2",
     "city": "Rio de janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -2695,14 +2695,14 @@
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 934,
-    "address": "Avenida presidente João Goulart ",
+    "address": "Avenida presidente João Goulart",
     "number": "990",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -2710,11 +2710,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
-    "partnerNgo": "Através da página ",
+    "governmentBenefitComment": "Nenhuma",
+    "partnerNgo": "Através da página",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 328,
@@ -2737,10 +2737,10 @@
   },
   {
     "id": 385,
-    "address": "Rua Samuel Rodrigues Muniz ",
+    "address": "Rua Samuel Rodrigues Muniz",
     "number": "25",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -2752,14 +2752,14 @@
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 935,
     "address": "Samuel Rodrigues Muniz",
-    "number": "25 casa 9 ",
+    "number": "25 casa 9",
     "city": "Rio de janeiro",
-    "state": "Rj ",
+    "state": "Rj",
     "familySize": "1",
     "children": "1",
     "eldery": "0",
@@ -2777,8 +2777,8 @@
     "id": 393,
     "address": "Heneida Veloso Brasil",
     "number": "1",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "7",
     "children": "3",
     "eldery": "0",
@@ -2786,18 +2786,18 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "2, bolsa família ",
-    "partnerNgo": "PÁGINA DO FACEBOOK VIVA VIDIGAL ",
+    "governmentBenefitComment": "2, bolsa família",
+    "partnerNgo": "PÁGINA DO FACEBOOK VIVA VIDIGAL",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não. "
+    "disability": "Não."
   },
   {
     "id": 936,
-    "address": "Avenida presidente João Goulart ",
+    "address": "Avenida presidente João Goulart",
     "number": "837",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -2805,15 +2805,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 937,
-    "address": "Rua 25 de dezembro ",
+    "address": "Rua 25 de dezembro",
     "number": "25 c",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -2904,7 +2904,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "\nNão"
+    "disability": "Não"
   },
   {
     "id": 940,
@@ -2927,10 +2927,10 @@
   },
   {
     "id": 941,
-    "address": "Av. Presidente João Goulart ",
-    "number": "972 casa ",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "address": "Av. Presidente João Goulart",
+    "number": "972 casa",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "3",
     "children": "0",
     "eldery": "0",
@@ -2942,14 +2942,14 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 942,
-    "address": "Rua Dr Sobral Pinto ",
+    "address": "Rua Dr Sobral Pinto",
     "number": "61 casa",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -2957,15 +2957,15 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1, auxílio emergencial ",
-    "partnerNgo": "Recebi de um parente ",
+    "governmentBenefitComment": "1, auxílio emergencial",
+    "partnerNgo": "Recebi de um parente",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 529,
-    "address": "Avenida Presidente João Goulart ",
+    "address": "Avenida Presidente João Goulart",
     "number": "960/casa 202",
     "city": "Rio de Janeiro",
     "state": "Solteira",
@@ -2984,9 +2984,9 @@
   },
   {
     "id": 943,
-    "address": "Vinte e cinco de dezembro ",
+    "address": "Vinte e cinco de dezembro",
     "number": "Casa 17",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "1",
     "children": "0",
@@ -2995,11 +2995,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "800",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma . Pois mora sozinha   e tenho q sustentar eu e minha filha ",
+    "governmentBenefitComment": "Nenhuma . Pois mora sozinha   e tenho q sustentar eu e minha filha",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 944,
@@ -3022,10 +3022,10 @@
   },
   {
     "id": 299,
-    "address": "Avenida presidente joao goulart ",
-    "number": "556 ao lado da maguinha ",
+    "address": "Avenida presidente joao goulart",
+    "number": "556 ao lado da maguinha",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -3033,18 +3033,18 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "600",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 pessoa auxílio emergencial ",
+    "governmentBenefitComment": "1 pessoa auxílio emergencial",
     "partnerNgo": "Amigos",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 113,
-    "address": "Rua madre ana coimbra ",
+    "address": "Rua madre ana coimbra",
     "number": "Casa12",
-    "city": "Rio de janeiro ",
-    "state": "Brasil ",
+    "city": "Rio de janeiro",
+    "state": "Brasil",
     "familySize": "3",
     "children": "0",
     "eldery": "0",
@@ -3052,11 +3052,11 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nem um ",
+    "governmentBenefitComment": "Nem um",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 945,
@@ -3079,10 +3079,10 @@
   },
   {
     "id": 118,
-    "address": "Rua madre ana coimbra ",
+    "address": "Rua madre ana coimbra",
     "number": "10",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -3094,7 +3094,7 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 946,
@@ -3136,10 +3136,10 @@
   },
   {
     "id": 947,
-    "address": "Avenida. Presidente João goulart ",
+    "address": "Avenida. Presidente João goulart",
     "number": "851G",
     "city": "Rio de janeiro",
-    "state": "RJ ",
+    "state": "RJ",
     "familySize": "3",
     "children": "1",
     "eldery": "1",
@@ -3151,7 +3151,7 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não. "
+    "disability": "Não."
   },
   {
     "id": 948,
@@ -3170,7 +3170,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 949,
@@ -3186,14 +3186,14 @@
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Vidigal vive ",
+    "partnerNgo": "Vidigal vive",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 55,
-    "address": "Rua Frei Henrique ",
+    "address": "Rua Frei Henrique",
     "number": "Número 06",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -3214,7 +3214,7 @@
     "id": 340,
     "address": "Avenida Presidente João Goulart",
     "number": "845",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "2",
@@ -3227,14 +3227,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 345,
-    "address": "Avenida presidente João Goulart ",
+    "address": "Avenida presidente João Goulart",
     "number": "831 sb",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "2",
     "eldery": "0",
@@ -3242,18 +3242,18 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 950,
-    "address": "Av. Presidente João Goulart ",
+    "address": "Av. Presidente João Goulart",
     "number": "851",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -3265,13 +3265,13 @@
     "partnerNgo": "Vidigal vive",
     "closestNgo": "Vidigal vive",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 951,
-    "address": "Regina pereira ",
+    "address": "Regina pereira",
     "number": "12",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "1",
@@ -3307,10 +3307,10 @@
   },
   {
     "id": 952,
-    "address": "Rua frei Benjamim ",
-    "number": "08 vidigal ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio  de Janeiro ",
+    "address": "Rua frei Benjamim",
+    "number": "08 vidigal",
+    "city": "Rio de Janeiro",
+    "state": "Rio  de Janeiro",
     "familySize": "5",
     "children": "1",
     "eldery": "0",
@@ -3322,11 +3322,11 @@
     "partnerNgo": "Indicação  de amigos",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 953,
-    "address": "Av presidente joao Goulart ",
+    "address": "Av presidente joao Goulart",
     "number": "992-p",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -3345,7 +3345,7 @@
   },
   {
     "id": 954,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "821",
     "city": "Rio de Janeiro",
     "state": "Rj",
@@ -3364,7 +3364,7 @@
   },
   {
     "id": 191,
-    "address": "Rua madre Ana coimbra ",
+    "address": "Rua madre Ana coimbra",
     "number": "N. 6 c/4",
     "city": "R.j",
     "state": "R.j",
@@ -3404,8 +3404,8 @@
     "id": 127,
     "address": "Rua Padre Artola",
     "number": "22",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -3417,14 +3417,14 @@
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 144,
-    "address": "Rua padre artola ",
+    "address": "Rua padre artola",
     "number": "22",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -3432,11 +3432,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 240,
@@ -3459,7 +3459,7 @@
   },
   {
     "id": 34,
-    "address": "Rua Frei Benjamim ",
+    "address": "Rua Frei Benjamim",
     "number": "casa 6 fundos A",
     "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
@@ -3478,10 +3478,10 @@
   },
   {
     "id": 239,
-    "address": "Doutor Olinto de Magalhães ",
+    "address": "Doutor Olinto de Magalhães",
     "number": "61",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "2",
     "eldery": "0",
@@ -3493,7 +3493,7 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 418,
@@ -3512,13 +3512,13 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 49,
-    "address": "25 de dezembro ",
+    "address": "25 de dezembro",
     "number": "28",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "1",
@@ -3531,13 +3531,13 @@
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 123,
-    "address": "Rua Madre Ana Coimbra ",
+    "address": "Rua Madre Ana Coimbra",
     "number": "10D",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "3",
     "children": "1",
@@ -3550,13 +3550,13 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 546,
-    "address": "Rua doutor olinto de Magalhães ",
+    "address": "Rua doutor olinto de Magalhães",
     "number": "52 casa 08",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "2",
@@ -3565,15 +3565,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Não ",
-    "partnerNgo": "Minha amiga me passou ",
+    "governmentBenefitComment": "Não",
+    "partnerNgo": "Minha amiga me passou",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
     "disability": "Nao"
   },
   {
     "id": 421,
-    "address": "Maria Helena Noronha ",
+    "address": "Maria Helena Noronha",
     "number": "17",
     "city": "RIO DE JANEIRO",
     "state": "RJ",
@@ -3611,7 +3611,7 @@
   },
   {
     "id": 956,
-    "address": "Av.Presidente  João goulart ",
+    "address": "Av.Presidente  João goulart",
     "number": "119",
     "city": "RIO DE JANEIRO",
     "state": "RJ",
@@ -3626,14 +3626,14 @@
     "partnerNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "closestNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 957,
     "address": "Rua André Feijó Barroso",
     "number": "11",
     "city": "Rio de janeiro",
-    "state": "Rio de janeiro ",
+    "state": "Rio de janeiro",
     "familySize": "5",
     "children": "1",
     "eldery": "0",
@@ -3706,10 +3706,10 @@
   },
   {
     "id": 960,
-    "address": "Avenida Presidente João Goulart ",
+    "address": "Avenida Presidente João Goulart",
     "number": "972 A casa",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "3",
     "children": "0",
     "eldery": "2",
@@ -3717,11 +3717,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "1- aposentadoria ",
+    "governmentBenefitComment": "1- aposentadoria",
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 377,
@@ -3763,10 +3763,10 @@
   },
   {
     "id": 398,
-    "address": "25 de dezembro ",
-    "number": "17 D ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "25 de dezembro",
+    "number": "17 D",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "5",
     "children": "3",
     "eldery": "0",
@@ -3774,11 +3774,11 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Neuma ",
+    "governmentBenefitComment": "Neuma",
     "partnerNgo": "Amigos do Tom",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 468,
@@ -3801,7 +3801,7 @@
   },
   {
     "id": 961,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "808",
     "city": "RIO DE JANEIRO",
     "state": "Rj",
@@ -3839,7 +3839,7 @@
   },
   {
     "id": 963,
-    "address": "Regina de Carvalho ",
+    "address": "Regina de Carvalho",
     "number": "11",
     "city": "RIO DE JANEIRO",
     "state": "Rj",
@@ -3877,10 +3877,10 @@
   },
   {
     "id": 487,
-    "address": "Noronha filho ",
+    "address": "Noronha filho",
     "number": "18",
     "city": "RIO DE JANEIRO",
-    "state": "RJ ",
+    "state": "RJ",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -3896,7 +3896,7 @@
   },
   {
     "id": 438,
-    "address": "Avenida Presidente João Goulart\n",
+    "address": "Avenida Presidente João Goulart",
     "number": "948",
     "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
@@ -3917,8 +3917,8 @@
     "id": 33,
     "address": "Rua frei henrique",
     "number": "13",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "3",
     "eldery": "0",
@@ -3930,14 +3930,14 @@
     "partnerNgo": "Vidigal Vive",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 964,
-    "address": "Rua São Pedro ",
+    "address": "Rua São Pedro",
     "number": "3",
-    "city": "Rio de Janeiro ",
-    "state": "Rj ",
+    "city": "Rio de Janeiro",
+    "state": "Rj",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -3945,15 +3945,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "closestNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 965,
-    "address": "Av. Presidente joao goulart ",
+    "address": "Av. Presidente joao goulart",
     "number": "948",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -3965,7 +3965,7 @@
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
     "governmentBenefitComment": "0",
-    "partnerNgo": "Vidigal vive ",
+    "partnerNgo": "Vidigal vive",
     "closestNgo": "Sitiê",
     "consent": "Sim",
     "disability": "Nao"
@@ -3991,10 +3991,10 @@
   },
   {
     "id": 444,
-    "address": "Dr Sobral Pinto ",
+    "address": "Dr Sobral Pinto",
     "number": "59",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -4006,13 +4006,13 @@
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 967,
-    "address": "25 de dezembro ",
+    "address": "25 de dezembro",
     "number": "28A",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "0",
@@ -4025,7 +4025,7 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 491,
@@ -4051,7 +4051,7 @@
     "address": "Eneida Veloso brasil",
     "number": "3",
     "city": "RIO DE JANEIRO",
-    "state": "RJ ",
+    "state": "RJ",
     "familySize": "4",
     "children": "0",
     "eldery": "0",
@@ -4067,10 +4067,10 @@
   },
   {
     "id": 271,
-    "address": "Rua Renato Dantas\n",
+    "address": "Rua Renato Dantas",
     "number": "3",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -4078,17 +4078,17 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Gasco",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 373,
     "address": "Rua felicia",
     "number": "7",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
     "familySize": "3",
     "children": "2",
@@ -4101,11 +4101,11 @@
     "partnerNgo": "ONG Horizonte",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 968,
-    "address": "Av, Presidente João Goulart ",
+    "address": "Av, Presidente João Goulart",
     "number": "948 fundos 2",
     "city": "Rj",
     "state": "Rj",
@@ -4124,10 +4124,10 @@
   },
   {
     "id": 969,
-    "address": "Rua benedito calixto calixto ",
+    "address": "Rua benedito calixto calixto",
     "number": "76",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -4135,11 +4135,11 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "Ate o momento 150,00",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Vidigal Capoeira",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 970,
@@ -4162,9 +4162,9 @@
   },
   {
     "id": 347,
-    "address": "André Feijó ",
+    "address": "André Feijó",
     "number": "13 c",
-    "city": "Rio De Janeiro ",
+    "city": "Rio De Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "2",
@@ -4177,13 +4177,13 @@
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 13,
-    "address": "Rua 25 de dezembro ",
+    "address": "Rua 25 de dezembro",
     "number": "Casa 15 B",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "1",
@@ -4200,10 +4200,10 @@
   },
   {
     "id": 352,
-    "address": "Av presidente joao goulart ",
+    "address": "Av presidente joao goulart",
     "number": "839",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "1",
@@ -4215,7 +4215,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 971,
@@ -4250,7 +4250,7 @@
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Bolsa Família",
     "governmentBenefitComment": "Bolsa família",
-    "partnerNgo": "Não recebi ",
+    "partnerNgo": "Não recebi",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
     "disability": "Não"
@@ -4306,18 +4306,18 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 75,
     "address": "Rua Doutor Sobral Pinto",
     "number": "8",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "6",
     "children": "4",
     "eldery": "1",
@@ -4329,7 +4329,7 @@
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 364,
@@ -4354,16 +4354,16 @@
     "id": 974,
     "address": "Rua Armando  de Almeida Lima 4 casa 3",
     "number": "N 4 casa 3",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
-    "familySize": "Moru sozinho ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "familySize": "Moru sozinho",
     "children": "0",
     "eldery": "0",
     "occupation": "Desempregado",
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "Neium ",
+    "governmentBenefitComment": "Neium",
     "partnerNgo": "Neium deseis",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
@@ -4428,9 +4428,9 @@
   },
   {
     "id": 976,
-    "address": "Rua padre ítalo Coelho ",
-    "number": "N 29B ",
-    "city": "Rio de Janeiro ",
+    "address": "Rua padre ítalo Coelho",
+    "number": "N 29B",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "1",
@@ -4439,17 +4439,17 @@
     "familyIncome": "600",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Vidigal vive",
     "closestNgo": "Box",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 977,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "992",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "1",
@@ -4462,7 +4462,7 @@
     "partnerNgo": "Vidigal vive",
     "closestNgo": "Vidigal vive",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 978,
@@ -4485,9 +4485,9 @@
   },
   {
     "id": 979,
-    "address": "Rua Doutor Olinto de Magalhães ",
+    "address": "Rua Doutor Olinto de Magalhães",
     "number": "52",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "1",
@@ -4500,14 +4500,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 348,
-    "address": "Av. Presidente João Goulart ",
+    "address": "Av. Presidente João Goulart",
     "number": "948 - casa E",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -4515,15 +4515,15 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
-    "partnerNgo": "Nós do Morro ",
+    "governmentBenefitComment": "Nenhuma",
+    "partnerNgo": "Nós do Morro",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 980,
-    "address": "Rua Dom Helder Câmara ",
+    "address": "Rua Dom Helder Câmara",
     "number": "4a casa 2 vidigal",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -4542,7 +4542,7 @@
   },
   {
     "id": 981,
-    "address": "Rua  dom Helder Camara ",
+    "address": "Rua  dom Helder Camara",
     "number": "4 B",
     "city": "Rio de Janeiro",
     "state": "Rj",
@@ -4553,17 +4553,17 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Todos da Luta",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 982,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "992 casa j",
-    "city": "Ruo de Janeiro ",
+    "city": "Ruo de Janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "1",
@@ -4576,12 +4576,12 @@
     "partnerNgo": "Amigos",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 983,
     "address": "RUA DOM HELDER CAMARA",
-    "number": "4G ",
+    "number": "4G",
     "city": "RIO DE JANEIRO",
     "state": "Rio de janeiro",
     "familySize": "3",
@@ -4599,7 +4599,7 @@
   },
   {
     "id": 573,
-    "address": "Rua padre artola ",
+    "address": "Rua padre artola",
     "number": "N°18",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -4629,18 +4629,18 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nem uma ",
+    "governmentBenefitComment": "Nem uma",
     "partnerNgo": "Favela inc",
     "closestNgo": "Favela inc",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 448,
-    "address": "Rua 25de dezembro ",
+    "address": "Rua 25de dezembro",
     "number": "Casa",
-    "city": "RIO DE JANEIRO ",
-    "state": "Rio de Janeiro ",
+    "city": "RIO DE JANEIRO",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -4652,14 +4652,14 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 985,
-    "address": "Rua Doutor Sobral Pinto ",
+    "address": "Rua Doutor Sobral Pinto",
     "number": "40",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "1",
@@ -4671,7 +4671,7 @@
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 986,
@@ -4686,7 +4686,7 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Sitiê",
     "consent": "Sim",
@@ -4694,9 +4694,9 @@
   },
   {
     "id": 987,
-    "address": "Av. Presidente João Goulart ",
-    "number": "845 ao lado do biroscão ",
-    "city": "Rio de Janeiro ",
+    "address": "Av. Presidente João Goulart",
+    "number": "845 ao lado do biroscão",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "1",
@@ -4709,14 +4709,14 @@
     "partnerNgo": "Ong favela inc",
     "closestNgo": "Ong favela inc",
     "consent": "Sim",
-    "disability": "Não. "
+    "disability": "Não."
   },
   {
     "id": 412,
     "address": "Major toja Martinez filho",
     "number": "156",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "Mulher gravida",
     "eldery": "0",
@@ -4734,8 +4734,8 @@
     "id": 988,
     "address": "Rua deputado delio dos Santos portão casa a portão 12",
     "number": "Casa a portão 12",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -4743,18 +4743,18 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "650",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Favela inc",
     "closestNgo": "Todos da Luta",
     "consent": "Sim",
-    "disability": "Nao, não tenho "
+    "disability": "Nao, não tenho"
   },
   {
     "id": 989,
     "address": "Av.presidente João Goulart 992.",
     "number": "Casa P",
     "city": "Rio de Janeiro.",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "0",
     "eldery": "0",
@@ -4766,7 +4766,7 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 365,
@@ -4785,13 +4785,13 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 990,
-    "address": "João Goulart ",
+    "address": "João Goulart",
     "number": "910",
-    "city": "Vidigal ",
+    "city": "Vidigal",
     "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
@@ -4800,18 +4800,18 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 minha esposa e já foi ",
+    "governmentBenefitComment": "1 minha esposa e já foi",
     "partnerNgo": "Adam",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 379,
-    "address": "Rua 12 de outubro casa ",
+    "address": "Rua 12 de outubro casa",
     "number": "13",
-    "city": "Rio de janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "8",
     "children": "5",
     "eldery": "0",
@@ -4842,14 +4842,14 @@
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 422,
     "address": "Madre Teresa de Calcutá",
     "number": "2",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "2",
     "eldery": "0",
@@ -4857,30 +4857,30 @@
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Bar do ramo",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 991,
     "address": "Rua três casa 08",
-    "number": "Rocinha ",
-    "city": "Rio de Janeiro ",
+    "number": "Rocinha",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "1",
-    "eldery": "N tem ",
+    "eldery": "N tem",
     "occupation": "Autônomo",
     "familyIncome": "R$1 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma não ",
+    "governmentBenefitComment": "Nenhuma não",
     "partnerNgo": "Vidigal na Social",
-    "closestNgo": "Não moro no Vidigal ",
+    "closestNgo": "Não moro no Vidigal",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 272,
@@ -4922,7 +4922,7 @@
   },
   {
     "id": 119,
-    "address": "Rua madre ana Coimbra ",
+    "address": "Rua madre ana Coimbra",
     "number": "Casa 9a",
     "city": "Rj",
     "state": "Rj",
@@ -4933,15 +4933,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "600",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "5 eu e meus 4 filhos ",
+    "governmentBenefitComment": "5 eu e meus 4 filhos",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Sou gestante "
+    "disability": "Sou gestante"
   },
   {
     "id": 992,
-    "address": "Rua Armando lima ",
+    "address": "Rua Armando lima",
     "number": "6",
     "city": "Rio de janeiro",
     "state": "Rio de Janeiro",
@@ -4979,26 +4979,26 @@
   },
   {
     "id": 993,
-    "address": "Rua Doutor Sobral Pinto ",
+    "address": "Rua Doutor Sobral Pinto",
     "number": "42",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
-    "occupation": "Contrato suspenso ",
+    "occupation": "Contrato suspenso",
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "ONG Horizente",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 994,
-    "address": "Rua dom Eugénio sales ",
+    "address": "Rua dom Eugénio sales",
     "number": "27",
     "city": "RIO DE JANEIRO",
     "state": "Rj",
@@ -5013,14 +5013,14 @@
     "partnerNgo": "Auto ajuda vidigal",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 995,
-    "address": "Rua Maria Cristina de Noronha ",
+    "address": "Rua Maria Cristina de Noronha",
     "number": "Casa 9",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -5028,15 +5028,15 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
-    "partnerNgo": "Amiga ",
+    "governmentBenefitComment": "Nenhuma",
+    "partnerNgo": "Amiga",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
     "disability": "Nao"
   },
   {
     "id": 996,
-    "address": "Avenida Presidente João Goulart ",
+    "address": "Avenida Presidente João Goulart",
     "number": "893",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -5057,7 +5057,7 @@
     "id": 997,
     "address": "Presidente joão goulart 791",
     "number": "N°3d",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rj",
     "familySize": "2",
     "children": "0",
@@ -5093,7 +5093,7 @@
   },
   {
     "id": 999,
-    "address": "Rua da figueira ",
+    "address": "Rua da figueira",
     "number": "36 c",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5131,10 +5131,10 @@
   },
   {
     "id": 583,
-    "address": "Rua Heneida Veloso Brasil ",
+    "address": "Rua Heneida Veloso Brasil",
     "number": "14",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5146,14 +5146,14 @@
     "partnerNgo": "ONG MMAH",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1001,
-    "address": "Rua da figueira ",
+    "address": "Rua da figueira",
     "number": "36 b",
     "city": "Rio de janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "2",
@@ -5169,10 +5169,10 @@
   },
   {
     "id": 1002,
-    "address": "Rua padre artola ",
+    "address": "Rua padre artola",
     "number": "17",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5184,14 +5184,14 @@
     "partnerNgo": "Outro",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
-    "disability": "Tenho não "
+    "disability": "Tenho não"
   },
   {
     "id": 1003,
     "address": "Rua da felicidade",
-    "number": "1A casa ",
+    "number": "1A casa",
     "city": "Rio de Janeiro",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -5199,15 +5199,15 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Bolsa família, to apertando mas não está indo.",
-    "governmentBenefitComment": "1 pessoa ",
+    "governmentBenefitComment": "1 pessoa",
     "partnerNgo": "Outro",
     "closestNgo": "Centro Municipal de Saúde Dr Rodolpho Perisse",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 409,
-    "address": "Rua da figueira ",
+    "address": "Rua da figueira",
     "number": "37 b",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5245,10 +5245,10 @@
   },
   {
     "id": 1005,
-    "address": "Rua Padre Artola ",
+    "address": "Rua Padre Artola",
     "number": "N⁰ 11",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "0",
@@ -5260,13 +5260,13 @@
     "partnerNgo": "Outro",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1006,
-    "address": "Deputado delio dos santos ",
+    "address": "Deputado delio dos santos",
     "number": "10",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "4",
     "children": "2",
@@ -5275,15 +5275,15 @@
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Facebook",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1007,
-    "address": "Rua 25 de dezembro ",
+    "address": "Rua 25 de dezembro",
     "number": "16 G",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -5298,7 +5298,7 @@
     "partnerNgo": "Sitiê",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1008,
@@ -5321,7 +5321,7 @@
   },
   {
     "id": 350,
-    "address": "Rua frei bejamim ",
+    "address": "Rua frei bejamim",
     "number": "16",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5347,7 +5347,7 @@
     "familySize": "3",
     "children": "1",
     "eldery": "0",
-    "occupation": "Açougueiro ",
+    "occupation": "Açougueiro",
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
@@ -5355,13 +5355,13 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Amigos do Tom",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1010,
     "address": "Avenida presidente João Goulart 879",
     "number": "879",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "4",
     "children": "1",
@@ -5374,11 +5374,11 @@
     "partnerNgo": "Outro",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1011,
-    "address": "Rua Ney mato grosso ",
+    "address": "Rua Ney mato grosso",
     "number": "2 casa",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5397,7 +5397,7 @@
   },
   {
     "id": 1012,
-    "address": "DR BENTO RUBAIO  ",
+    "address": "DR BENTO RUBAIO",
     "number": "7",
     "city": "RJ",
     "state": "RIO",
@@ -5416,10 +5416,10 @@
   },
   {
     "id": 1013,
-    "address": "Frei Baudelio ",
+    "address": "Frei Baudelio",
     "number": "Casa 08",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5427,18 +5427,18 @@
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Não ",
+    "governmentBenefitComment": "Não",
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Vidigal na Social",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1014,
-    "address": "Avenida João Goulart ",
+    "address": "Avenida João Goulart",
     "number": "829, casa 1",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "7",
     "children": "1",
     "eldery": "0",
@@ -5450,13 +5450,13 @@
     "partnerNgo": "Favela Experience",
     "closestNgo": "Favela Experience",
     "consent": "Sim",
-    "disability": "Sim. Problema de Coluna. "
+    "disability": "Sim. Problema de Coluna."
   },
   {
     "id": 1015,
-    "address": "Rua Doutor Olinto de Magalhães ",
+    "address": "Rua Doutor Olinto de Magalhães",
     "number": "39a",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "3",
     "children": "2",
@@ -5465,15 +5465,15 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "1 bolsa família ",
+    "governmentBenefitComment": "1 bolsa família",
     "partnerNgo": "Gasco",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1016,
-    "address": "Rua André feijo ",
+    "address": "Rua André feijo",
     "number": "2",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5484,17 +5484,17 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Ninguém ",
+    "governmentBenefitComment": "Ninguém",
     "partnerNgo": "Outro",
-    "closestNgo": "Amigo ",
+    "closestNgo": "Amigo",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1017,
-    "address": "Rua João Goulart ",
+    "address": "Rua João Goulart",
     "number": "823B",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
     "familySize": "1",
     "children": "0",
@@ -5503,18 +5503,18 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Sitiê",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1018,
-    "address": "Moema Noronha\n",
+    "address": "Moema Noronha",
     "number": "06 fudos",
-    "city": "Rio  de Janeiro ",
-    "state": "Rio de \n\n",
+    "city": "Rio  de Janeiro",
+    "state": "Rio de",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -5526,7 +5526,7 @@
     "partnerNgo": "Outro",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1019,
@@ -5545,14 +5545,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1020,
-    "address": "Noronha filho ",
+    "address": "Noronha filho",
     "number": "N 12",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -5560,11 +5560,11 @@
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Bolsa Família",
-    "governmentBenefitComment": "Uma pessoa bolsa família ",
+    "governmentBenefitComment": "Uma pessoa bolsa família",
     "partnerNgo": "Outro",
     "closestNgo": "Associação dos Moradores",
     "consent": "Não",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 446,
@@ -5587,9 +5587,9 @@
   },
   {
     "id": 375,
-    "address": "Av.presidente João Goulart ",
+    "address": "Av.presidente João Goulart",
     "number": "905 B",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "RJ",
     "familySize": "5",
     "children": "2",
@@ -5598,18 +5598,18 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 21,
-    "address": "Rua 12 de outubro ",
+    "address": "Rua 12 de outubro",
     "number": "14 d",
     "city": "Rio de janeiro",
-    "state": "Rj ",
+    "state": "Rj",
     "familySize": "3",
     "children": "1",
     "eldery": "Nenhum",
@@ -5621,7 +5621,7 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Nao "
+    "disability": "Nao"
   },
   {
     "id": 1021,
@@ -5644,10 +5644,10 @@
   },
   {
     "id": 130,
-    "address": "Rua padre artola ",
+    "address": "Rua padre artola",
     "number": "22A",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -5655,18 +5655,18 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Batucavidi",
     "closestNgo": "Batucavidi",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1022,
     "address": "Av. Presidente João Goulart N°823 casa 4",
     "number": "Casa 4",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5678,14 +5678,14 @@
     "partnerNgo": "Outro",
     "closestNgo": "Moro no lado do Biroscão",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 616,
-    "address": "Frei Henrique ",
+    "address": "Frei Henrique",
     "number": "6 fundos",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "0",
     "eldery": "0",
@@ -5693,7 +5693,7 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Outro",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
@@ -5701,10 +5701,10 @@
   },
   {
     "id": 1023,
-    "address": "Frei Benjamin ",
+    "address": "Frei Benjamin",
     "number": "8 ca a fd",
     "city": "rio",
-    "state": "Rio de Janeiro ",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5712,22 +5712,22 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "emergência ",
+    "governmentBenefitComment": "emergência",
     "partnerNgo": "Outro",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "ñ "
+    "disability": "ñ"
   },
   {
     "id": 346,
     "address": "Regina Pereira",
     "number": "Casa 15",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "Rj",
     "familySize": "6",
     "children": "2",
     "eldery": "0",
-    "occupation": "Doméstica ",
+    "occupation": "Doméstica",
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Auxílio Emergencial",
@@ -5735,7 +5735,7 @@
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 423,
@@ -5750,18 +5750,18 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1 - R$1000",
     "governmentBenefit": "Sim - Auxílio Emergencial",
-    "governmentBenefitComment": "1 emergencial ",
+    "governmentBenefitComment": "1 emergencial",
     "partnerNgo": "Outro",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 466,
     "address": "Benedito Calixto 146",
-    "number": "Casa 3 ",
+    "number": "Casa 3",
     "city": "Rio de janeiro",
-    "state": "Rio de janeiro ",
+    "state": "Rio de janeiro",
     "familySize": "1",
     "children": "0",
     "eldery": "1",
@@ -5798,7 +5798,7 @@
     "id": 464,
     "address": "Benedito Calixto 146",
     "number": "Casa5",
-    "city": "Rio de janeiro ",
+    "city": "Rio de janeiro",
     "state": "Rio de janeiro",
     "familySize": "1",
     "children": "0",
@@ -5807,7 +5807,7 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "1 aposentadoria ",
+    "governmentBenefitComment": "1 aposentadoria",
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Ser - Alzira de Aleluia",
     "consent": "Sim",
@@ -5815,7 +5815,7 @@
   },
   {
     "id": 89,
-    "address": "Rua tania lucia ",
+    "address": "Rua tania lucia",
     "number": "Nomero 07",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -5834,10 +5834,10 @@
   },
   {
     "id": 1024,
-    "address": "Rua da matriz ",
-    "number": "1 a ",
-    "city": "Rio de janeiro ",
-    "state": "Rj ",
+    "address": "Rua da matriz",
+    "number": "1 a",
+    "city": "Rio de janeiro",
+    "state": "Rj",
     "familySize": "8",
     "children": "1",
     "eldery": "0",
@@ -5853,10 +5853,10 @@
   },
   {
     "id": 1025,
-    "address": "Frei  Henrique ",
-    "number": "6 fundos ",
-    "city": "Rio De janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Frei  Henrique",
+    "number": "6 fundos",
+    "city": "Rio De janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "4",
     "children": "1",
     "eldery": "0",
@@ -5868,14 +5868,14 @@
     "partnerNgo": "Outro",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1026,
-    "address": "Rua 3 Major torja Martinez filho ",
+    "address": "Rua 3 Major torja Martinez filho",
     "number": "143 fundos terreno de baixo casa 1",
-    "city": "Rio de Janeiro ",
-    "state": "RJ ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -5891,7 +5891,7 @@
   },
   {
     "id": 550,
-    "address": "Rua Tania lucia da Silva ",
+    "address": "Rua Tania lucia da Silva",
     "number": "7",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -5911,8 +5911,8 @@
   {
     "id": 1027,
     "address": "Av. Presidente João Goulart Nº 766",
-    "number": "Casa ",
-    "city": "Rio de Janeiro ",
+    "number": "Casa",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "2",
     "children": "0",
@@ -5921,18 +5921,18 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$1 - R$500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma ",
+    "governmentBenefitComment": "Nenhuma",
     "partnerNgo": "Escola Vidigal (no alto)",
     "closestNgo": "Escola Vidigal (no alto)",
     "consent": "Sim",
-    "disability": "não posso pegar peso "
+    "disability": "não posso pegar peso"
   },
   {
     "id": 1028,
-    "address": "Beco dom João ",
+    "address": "Beco dom João",
     "number": "3E",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -5940,18 +5940,18 @@
     "familyIncome": "R$0",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "Aposentadoria ",
+    "governmentBenefitComment": "Aposentadoria",
     "partnerNgo": "Vidigal na Social",
     "closestNgo": "Sitiê",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1029,
-    "address": "Rua tania lucia da Silva ",
+    "address": "Rua tania lucia da Silva",
     "number": "7ca A",
-    "city": "Rio de Janeiro ",
-    "state": "Gaves ",
+    "city": "Rio de Janeiro",
+    "state": "Gaves",
     "familySize": "5",
     "children": "2",
     "eldery": "3",
@@ -5959,15 +5959,15 @@
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$501 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nao ",
+    "governmentBenefitComment": "Nao",
     "partnerNgo": "Outro",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Nao "
+    "disability": "Nao"
   },
   {
     "id": 554,
-    "address": "Av. Presidente João Goulart ",
+    "address": "Av. Presidente João Goulart",
     "number": "839",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -6016,7 +6016,7 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$1 - R$500",
     "governmentBenefit": "Sim - Aposentadoria",
-    "governmentBenefitComment": "Auxilio emergencial ",
+    "governmentBenefitComment": "Auxilio emergencial",
     "partnerNgo": "Outro",
     "closestNgo": "Sitiê",
     "consent": "Sim",
@@ -6024,7 +6024,7 @@
   },
   {
     "id": 557,
-    "address": "Rua Doutora vera Lucía ",
+    "address": "Rua Doutora vera Lucía",
     "number": "13",
     "city": "Rio de Janeiro",
     "state": "Rio de janeiro",
@@ -6043,7 +6043,7 @@
   },
   {
     "id": 1030,
-    "address": "DOUTOR JOSE NORONHA ",
+    "address": "DOUTOR JOSE NORONHA",
     "number": "5",
     "city": "Rio de janeiro",
     "state": "Rio de janeiro",
@@ -6062,10 +6062,10 @@
   },
   {
     "id": 1031,
-    "address": "Av Niemeyer ",
-    "number": "112 Chácara do céu ",
-    "city": "Rio de janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Av Niemeyer",
+    "number": "112 Chácara do céu",
+    "city": "Rio de janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -6077,14 +6077,14 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1032,
-    "address": "6 de Janeiro  ",
+    "address": "6 de Janeiro",
     "number": "1",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "0",
     "eldery": "0",
@@ -6092,11 +6092,11 @@
     "familyIncome": "R$501 - R$1000",
     "familyIncomeCovid": "R$1 - R$500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum auxilio ",
+    "governmentBenefitComment": "Nenhum auxilio",
     "partnerNgo": "Gasco",
     "closestNgo": "Gasco",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1033,
@@ -6119,10 +6119,10 @@
   },
   {
     "id": 1034,
-    "address": "Av presidente João Goulart ",
+    "address": "Av presidente João Goulart",
     "number": "871 fundos",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "2",
     "eldery": "0",
@@ -6138,9 +6138,9 @@
   },
   {
     "id": 1035,
-    "address": "Av presidente João Goulart ",
-    "number": "731 casa 13 fundos ",
-    "city": "Rio de janeiro ",
+    "address": "Av presidente João Goulart",
+    "number": "731 casa 13 fundos",
+    "city": "Rio de janeiro",
     "state": "Rj",
     "familySize": "3",
     "children": "1",
@@ -6149,11 +6149,11 @@
     "familyIncome": "R$1501 - R$2000",
     "familyIncomeCovid": "R$501 - R$1000",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhum ",
+    "governmentBenefitComment": "Nenhum",
     "partnerNgo": "Vidigal Beer",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1036,
@@ -6195,10 +6195,10 @@
   },
   {
     "id": 1037,
-    "address": "Av presidente João Goulart ",
-    "number": "871 fundos ",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "address": "Av presidente João Goulart",
+    "number": "871 fundos",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "2",
     "eldery": "0",
@@ -6210,11 +6210,11 @@
     "partnerNgo": "Vidigal Beer",
     "closestNgo": "Vidigal Beer",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 1038,
-    "address": "Vera Lucia ",
+    "address": "Vera Lucia",
     "number": "14",
     "city": "Rio de janeiro",
     "state": "Rj",
@@ -6248,14 +6248,14 @@
     "partnerNgo": "Ser - Alzira de Aleluia",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 95,
-    "address": "Joaquim  rufino ",
+    "address": "Joaquim  rufino",
     "number": "8",
-    "city": "Rio de janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "2",
     "children": "1",
     "eldery": "0",
@@ -6267,7 +6267,7 @@
     "partnerNgo": "Vidigal Beer",
     "closestNgo": "Vidigal Beer",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 406,
@@ -6301,7 +6301,7 @@
     "familyIncome": "R$ 1 - R$500",
     "familyIncomeCovid": "R$0",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "NenhumNenhum) ",
+    "governmentBenefitComment": "NenhumNenhum)",
     "partnerNgo": "Outro",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
@@ -6309,10 +6309,10 @@
   },
   {
     "id": 1040,
-    "address": "Avenida Niemeyer ",
+    "address": "Avenida Niemeyer",
     "number": "112 casa 25",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -6320,7 +6320,7 @@
     "familyIncome": "R$1001 - R$1500",
     "familyIncomeCovid": "R$1001 - R$1500",
     "governmentBenefit": "Não",
-    "governmentBenefitComment": "Nenhuma pessoa ",
+    "governmentBenefitComment": "Nenhuma pessoa",
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
@@ -6347,10 +6347,10 @@
   },
   {
     "id": 1042,
-    "address": "João Paulo 1 ",
+    "address": "João Paulo 1",
     "number": "14",
-    "city": "Rio de Janeiro ",
-    "state": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
     "familySize": "3",
     "children": "1",
     "eldery": "0",
@@ -6362,13 +6362,13 @@
     "partnerNgo": "Associação dos Moradores",
     "closestNgo": "Associação dos Moradores",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   },
   {
     "id": 190,
     "address": "Herbert de sousa",
     "number": "Casa 2",
-    "city": "Rio de Janeiro ",
+    "city": "Rio de Janeiro",
     "state": "RJ",
     "familySize": "5",
     "children": "2",
@@ -6381,6 +6381,6 @@
     "partnerNgo": "Vidigal Tours (Russo)",
     "closestNgo": "Vidigal Tours",
     "consent": "Sim",
-    "disability": "Não "
+    "disability": "Não"
   }
 ]

@@ -103,7 +103,10 @@ const readFamiliesDetails = () =>
   new Promise((resolve, reject) => {
     fs.readFile(peopleFamilyDetailsPath, "utf8", (err, data) => {
       if (err) reject(err)
-      const familiesDetails = Papa.parse(data, { header: true })
+      const familiesDetails = Papa.parse(data, {
+        header: true,
+        transform: value => value.trim()
+      })
       resolve(familiesDetails.data)
     })
   })
