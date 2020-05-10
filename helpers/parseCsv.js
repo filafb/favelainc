@@ -140,6 +140,7 @@ const exec = async () => {
       const familyId = matchCpfAndFamilyId[person.cpf] || id++
       matchCpfAndFamilyId[person.cpf] = familyId
       if (!familiesAlreadyDone[familyId]) {
+        console.log(person.neighborhood)
         const newFamily = new Family(familyId, person)
         finalFamilyDetais.push(newFamily)
         familiesAlreadyDone[familyId] = true
@@ -150,14 +151,30 @@ const exec = async () => {
   const familyWithouDetails = Object.keys(familiesId).filter(
     id => !familiesAlreadyDone[id]
   )
-  console.log(familyWithouDetails)
-  console.log(familiesId[2])
+  familyWithouDetails.forEach(familyId => {
+    const newFamily = new Family(familyId, {})
+    finalFamilyDetais.push(newFamily)
+  })
+
+  const partners = []
+  const income = []
+
+  finalFamilyDetais.forEach(family => {
+    if (income.indexOf(family.familyIncome) === -1) {
+      income.push(family.familyIncome)
+    }
+    if (partners.indexOf(family.partnerNgo) === -1) {
+      partners.push(family.partnerNgo)
+    }
+  })
+
+  console.log(partners)
+  console.log(income)
 
   fs.writeFile(familiesFinal, JSON.stringify(finalFamilyDetais), err => {
     if (err) return console.log("error saving")
     console.log("Done - familydetails")
   })
-  familiesFinal
 }
 exec()
 

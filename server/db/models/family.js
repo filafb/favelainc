@@ -5,6 +5,7 @@ const db = require("../database")
 const Family = db.define(
   "family",
   {
+    tempId: Sequelize.INTEGER,
     address: Sequelize.STRING,
     number: Sequelize.STRING,
     city: Sequelize.STRING,

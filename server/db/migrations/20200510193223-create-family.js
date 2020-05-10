@@ -8,6 +8,9 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      tempId: {
+        type: Sequelize.INTEGER
+      },
       address: {
         type: Sequelize.STRING
       },
@@ -28,13 +31,13 @@ module.exports = {
       },
       children: {
         type: Sequelize.INTEGER,
-        allowNull: false
-        //defaultValue: 0
+        allowNull: false,
+        defaultValue: 0
       },
       eldery: {
         type: Sequelize.INTEGER,
-        allowNull: false
-        //defaultValue: 0
+        allowNull: false,
+        defaultValue: 0
       },
       occupation: {
         type: Sequelize.STRING
@@ -46,7 +49,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       governmentBenefitComment: {
-        type: Sequelize.INTEGER
+        type: Sequelize.TEXT
       },
       consent: {
         type: Sequelize.BOOLEAN
