@@ -1,15 +1,23 @@
 const db = require("./database")
 const User = require("./models/user")
-const Model2 = require("./models/model2")
+const Family = require("./models/family")
+const NgoPartner = require("./models/ngopartner")
+const GovernmentBenefit = require("./models/governmentbenefit")
 
 //associtiations
-// Model1.hasMany(Model2)
-// Model2.belongsTo(Model1)
+Family.belongsTo(NgoPartner, { as: "ngoPartner" })
+Family.belongsTo(NgoPartner, { as: "closestNgo" })
+NgoPartner.hasMany(Family, { as: "familyPartner" })
+NgoPartner.hasMany(Family, { as: "closestNgo" })
+Family.belongsTo(GovernmentBenefit, { as: "governmentBenefit" })
+GovernmentBenefit.hasMany(Family)
 
 module.exports = {
   db,
   User,
-  Model2
+  Family,
+  NgoPartner,
+  GovernmentBenefit
 }
 
 if (process.env.NODE_ENV === "test") {
