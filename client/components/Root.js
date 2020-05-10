@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useEffect, useState } from "react"
-import useAuth from "./useAuth"
+import useAuth from "./Hooks/useAuth"
 import AuthenticatedApp from "./AuthApps/AuthenticatedApp"
 import UnauthenticatedApp from "./AuthApps/UnauthenticatedApp"
 
