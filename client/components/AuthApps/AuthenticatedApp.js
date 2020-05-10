@@ -6,7 +6,9 @@ const AuthenticatedApp = () => {
   return (
     <React.Fragment>
       <Switch>
-        <Route path="/" component={Main} />
+        <Route path="/">
+          <Main />
+        </Route>
         <Redirect to="/" />
       </Switch>
     </React.Fragment>
