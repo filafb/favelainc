@@ -3,6 +3,7 @@ import { useReducer } from "react"
 import { useDispatch } from "react-redux"
 import { login } from "../../../reducers/user"
 import useFormControl from "../../Hooks/useFormControl"
+import { PrimaryButton } from "../../Partials/Buttons"
 
 const EMAIL = "EMAIL"
 const PASSWORD = "PASSWORD"
@@ -54,6 +55,8 @@ const LoginForm = () => {
     }
   }
 
+  const disabled = !email || !password || status === types.SUBMITTING
+
   return (
     <div className="w-full max-w-md">
       <form
@@ -96,13 +99,7 @@ const LoginForm = () => {
           </div>
         </div>
         <div className="flex justify-center w-full">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline disabled:cursor-not-allowed disabled:opacity-75 disabled:bg-gray-600"
-            type="submit"
-            disabled={!email || !password || status === types.SUBMITTING}
-          >
-            Login
-          </button>
+          <PrimaryButton disabled={disabled} text="Login" type="submit" />
         </div>
       </form>
     </div>
