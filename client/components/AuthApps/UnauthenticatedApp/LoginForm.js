@@ -57,6 +57,7 @@ const LoginForm = () => {
   }
 
   const disabled = !email || !password || status === types.SUBMITTING
+  const isError = status === types.ERROR
 
   return (
     <div className="w-full max-w-md">
@@ -96,6 +97,13 @@ const LoginForm = () => {
         <div className="flex justify-center w-full">
           <PrimaryButton disabled={disabled} text="Login" type="submit" />
         </div>
+        {isError && (
+          <div className="w-full flex justify-center">
+            <p className="text-sm italic text-red-700 absolute mt-2">
+              Usuário não autorizado
+            </p>
+          </div>
+        )}
       </form>
     </div>
   )
