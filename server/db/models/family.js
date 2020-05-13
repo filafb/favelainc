@@ -22,7 +22,6 @@ const Family = db.define(
       allowNull: false,
       defaultValue: 0
     },
-    occupation: Sequelize.STRING,
     familyIncome: Sequelize.INTEGER,
     familyIncomeCovid: Sequelize.INTEGER,
     governmentBenefitComment: Sequelize.TEXT,
