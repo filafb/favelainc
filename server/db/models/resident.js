@@ -20,13 +20,13 @@ const Resident = db.define(
     phoneComment: {
       type: Sequelize.TEXT
     },
+    occupation: {
+      type: Sequelize.STRING
+    },
     cpf: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.TEXT,
       allowNull: false,
       unique: true,
-      set(value) {
-        this.setDataValue("cpf", Number(value))
-      },
       validate: {
         isCpf(value) {
           const checkCpf = /^(?![0]{11})([0-9]{11})$/

@@ -39,9 +39,6 @@ module.exports = {
         allowNull: false,
         defaultValue: 0
       },
-      occupation: {
-        type: Sequelize.STRING
-      },
       familyIncome: {
         type: Sequelize.INTEGER
       },
