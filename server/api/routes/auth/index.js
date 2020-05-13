@@ -8,8 +8,7 @@ function verifyAdmin(req, res, next) {
   if (req.user && req.user.admin) {
     next()
   } else {
-    next()
-    //res.status(401).json({ error: "Não autorizado" })
+    res.status(401).json({ error: "Não autorizado" })
   }
 }
 
