@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux"
 import { login } from "../../../reducers/user"
 import useFormControl from "../../Hooks/useFormControl"
 import { PrimaryButton } from "../../Partials/Buttons"
+import { InputField } from "../../Partials/FormField"
 
 const EMAIL = "EMAIL"
 const PASSWORD = "PASSWORD"
@@ -70,32 +71,26 @@ const LoginForm = () => {
         </div>
         <div className="my-8">
           <div className="my-5">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              E-mail
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            <InputField
+              label="E-mail"
               type="email"
               value={email}
               name={EMAIL}
               placeholder="Entre com o seu E-mail"
               onChange={handleChange}
               required
-            ></input>
+            />
           </div>
           <div className="my-5">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              Senha
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            <InputField
+              label="Senha"
               type="password"
               value={password}
               name={PASSWORD}
               placeholder="Entre com a sua senha"
               onChange={handleChange}
               required
-            ></input>
+            />
           </div>
         </div>
         <div className="flex justify-center w-full">
