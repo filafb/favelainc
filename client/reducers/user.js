@@ -25,10 +25,11 @@ export const fetchUser = () => async dispatch => {
   }
 }
 
-export const logout = () => async dispatch => {
+export const logout = history => async dispatch => {
   try {
     await axios.delete("/api/auth/logout")
     dispatch(cleanUser())
+    history.push("/")
   } catch (e) {
     console.log(e)
   }

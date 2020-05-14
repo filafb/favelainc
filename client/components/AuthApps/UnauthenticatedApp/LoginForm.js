@@ -51,6 +51,7 @@ const LoginForm = () => {
     handleStatus({ type: types.SUBMITTING })
     dispatchForm({ type: RESET })
     const status = await dispatch(login({ email, password }))
+    handleStatus({ type: types.SUCCESS })
     if (status.error) {
       handleStatus({ type: types.ERROR })
     }
@@ -71,28 +72,24 @@ const LoginForm = () => {
           </p>
         </div>
         <div className="my-8">
-          <div className="my-5">
-            <InputField
-              label="E-mail"
-              type="email"
-              value={email}
-              name={EMAIL}
-              placeholder="Entre com o seu E-mail"
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="my-5">
-            <InputField
-              label="Senha"
-              type="password"
-              value={password}
-              name={PASSWORD}
-              placeholder="Entre com a sua senha"
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <InputField
+            label="E-mail"
+            type="email"
+            value={email}
+            name={EMAIL}
+            placeholder="Entre com o seu E-mail"
+            onChange={handleChange}
+            required
+          />
+          <InputField
+            label="Senha"
+            type="password"
+            value={password}
+            name={PASSWORD}
+            placeholder="Entre com a sua senha"
+            onChange={handleChange}
+            required
+          />
         </div>
         <div className="flex justify-center w-full">
           <PrimaryButton disabled={disabled} text="Login" type="submit" />
