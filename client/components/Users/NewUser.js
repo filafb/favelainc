@@ -80,7 +80,13 @@ const NewUser = () => {
       handleStatus({ type: types.ERROR })
     }
   }
-
+  const disabled =
+    !firstName ||
+    !lastName ||
+    !email ||
+    !password ||
+    status === types.SUBMITTING ||
+    password !== confirmPassword
   const isError = status === types.ERROR
 
   return (
@@ -139,7 +145,7 @@ const NewUser = () => {
           name={ISADMIN}
           onChange={handleChange}
         />
-        <PrimaryButton text="Criar Novo" type="submit" />
+        <PrimaryButton disabled={disabled} text="Criar Novo" type="submit" />
         {isError && (
           <div className="w-full flex justify-center">
             <p className="text-sm italic text-red-700 absolute mt-2">
