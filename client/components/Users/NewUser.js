@@ -2,6 +2,9 @@ import * as React from "react"
 import { InputField, ToggleSwitch } from "../Partials/FormField"
 import { PrimaryButton } from "../Partials/Buttons"
 import useFormControl from "../Hooks/useFormControl"
+import { useDispatch } from "react-redux"
+import { create } from "../../reducers/user"
+import { useHistory } from "react-router-dom"
 
 const FIRSTNAME = "FIRSTNAME"
 const LASTNAME = "LASTNAME"
@@ -46,6 +49,8 @@ const NewUser = () => {
     dispatchForm
   ] = React.useReducer(newUserReducer, newUserState)
   const [status, handleStatus, types] = useFormControl()
+  const dispatch = useDispatch()
+  const history = useHistory()
 
   const handleChange = e => {
     if (status === types.SUBMITTING) {
@@ -69,8 +74,11 @@ const NewUser = () => {
     handleStatus({ type: types.SUBMITTING })
     dispatchForm({ type: RESET })
     const newUser = { firstName, lastName, email, password, admin }
-    console.log(newUser)
+    const status = await dispatch(create(newUser, history))
     handleStatus({ type: types.SUCCESS })
+    if (status.error) {
+      handleStatus({ type: types.ERROR })
+    }
   }
 
   return (
