@@ -6,7 +6,7 @@ import Header from "../Partials/Header"
 
 const AuthenticatedApp = () => {
   return (
-    <React.Fragment>
+    <div className="font-sans">
       <Header />
       <Switch>
         <Route exact path="/usuarios/:id">
@@ -17,7 +17,7 @@ const AuthenticatedApp = () => {
         </Route>
         <Redirect to="/" />
       </Switch>
-    </React.Fragment>
+    </div>
   )
 }
 
