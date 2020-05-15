@@ -46,6 +46,18 @@ export const login = ({ email, password }) => async dispatch => {
   }
 }
 
+export const create = (userInfo, history) => async dispatch => {
+  try {
+    const { data } = await axios.post("/api/auth/create", userInfo)
+    console.log(data)
+    history.push(`/usuarios/${data.id}`)
+    return { success: true }
+  } catch (error) {
+    console.error(error)
+    return { error: true }
+  }
+}
+
 const userReducer = (state = defaultUser, { type, ...payload }) => {
   switch (type) {
     case GET_USER:
