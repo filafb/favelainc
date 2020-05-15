@@ -81,6 +81,8 @@ const NewUser = () => {
     }
   }
 
+  const isError = status === types.ERROR
+
   return (
     <div className="max-w-xs flex justify-center mx-auto mt-8 flex-col">
       <h2 className="my-2">Preencha as informações do novo usuário</h2>
@@ -138,6 +140,13 @@ const NewUser = () => {
           onChange={handleChange}
         />
         <PrimaryButton text="Criar Novo" type="submit" />
+        {isError && (
+          <div className="w-full flex justify-center">
+            <p className="text-sm italic text-red-700 absolute mt-2">
+              Erro ao criar usuário.
+            </p>
+          </div>
+        )}
       </form>
     </div>
   )
