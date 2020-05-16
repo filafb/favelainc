@@ -51,7 +51,6 @@ const LoginForm = () => {
     handleStatus({ type: types.SUBMITTING })
     dispatchForm({ type: RESET })
     const status = await dispatch(login({ email, password }))
-    handleStatus({ type: types.SUCCESS })
     if (status.error) {
       handleStatus({ type: types.ERROR })
     }

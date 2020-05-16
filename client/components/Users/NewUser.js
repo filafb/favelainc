@@ -75,7 +75,6 @@ const NewUser = () => {
     dispatchForm({ type: RESET })
     const newUser = { firstName, lastName, email, password, admin }
     const status = await dispatch(create(newUser, history))
-    handleStatus({ type: types.SUCCESS })
     if (status.error) {
       handleStatus({ type: types.ERROR })
     }

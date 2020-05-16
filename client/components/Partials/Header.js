@@ -4,11 +4,13 @@ import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../../reducers/user"
 import { Link } from "react-router-dom"
 import { useHistory } from "react-router-dom"
+import useAuth from "../Hooks/useAuth"
 
 const Header = () => {
   const dispatch = useDispatch()
   const [closed, toggleMenu] = useState(true)
-  const { firstName, lastName, id } = useSelector(({ user }) => user)
+  const [{ firstName, lastName }] = useAuth()
+
   let history = useHistory()
 
   const handleSubmit = e => {
