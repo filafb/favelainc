@@ -14,7 +14,6 @@ const SingleUser = () => {
       history.push("/usuarios")
     }
   })
-
   return userToView ? (
     <>
       <div>firstName {userToView.firstName}</div>

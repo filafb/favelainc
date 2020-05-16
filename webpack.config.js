@@ -15,8 +15,9 @@ module.exports = (env, args) => {
     mode: args.mode || "development",
     entry: ["@babel/polyfill", "./client/app"],
     output: {
-      path: path.resolve(__dirname, "./public/"),
-      filename: "./dist/js/bundle.js"
+      path: path.join(__dirname, "public/"),
+      filename: "dist/bundle.js",
+      publicPath: "/"
     },
     optimization: {
       minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
@@ -75,8 +76,8 @@ module.exports = (env, args) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "/dist/style/[name].css",
-        chunkFilename: "/dist/style/[id].css"
+        filename: "dist/[name].css",
+        chunkFilename: "dist/[id].css"
       }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "public/template/index.html"),
