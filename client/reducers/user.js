@@ -2,8 +2,12 @@ import axios from "axios"
 
 const GET_USER = "GET_USER"
 const LOGOUT = "LOGOUT"
+const CREATE_USER = "CREATE_USER"
 
-const defaultUser = {}
+const userState = {
+  loggedUser: {},
+  users: []
+}
 
 //action
 const getUser = user => {
@@ -13,13 +17,18 @@ const getUser = user => {
   }
 }
 
+const createUser = user => ({
+  type: CREATE_USER,
+  user
+})
+
 const cleanUser = () => ({ type: LOGOUT })
 
 //thunk
 export const fetchUser = () => async dispatch => {
   try {
     const { data } = await axios.get("/api/auth/me")
-    dispatch(getUser(data || defaultUser))
+    dispatch(getUser(data || userState.loggedUser))
   } catch (e) {
     console.error(e)
   }
@@ -49,7 +58,7 @@ export const login = ({ email, password }) => async dispatch => {
 export const create = (userInfo, history) => async dispatch => {
   try {
     const { data } = await axios.post("/api/auth/create", userInfo)
-    console.log(data)
+    dispatch(createUser(data))
     history.push(`/usuarios/${data.id}`)
     return { success: true }
   } catch (error) {
@@ -58,12 +67,18 @@ export const create = (userInfo, history) => async dispatch => {
   }
 }
 
-const userReducer = (state = defaultUser, { type, ...payload }) => {
+const userReducer = (state = userState, { type, ...payload }) => {
   switch (type) {
     case GET_USER:
-      return payload.user
+      return {
+        ...state,
+        loggedUser: payload.user,
+        users: [...state.users, payload.user]
+      }
+    case CREATE_USER:
+      return { ...state, users: [...state.users, payload.user] }
     case LOGOUT:
-      return defaultUser
+      return userState
     default:
       return state
   }

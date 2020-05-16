@@ -4,10 +4,12 @@ import { fetchUser } from "../../reducers/user"
 
 const useAuth = () => {
   const dispatch = useDispatch()
-  const user = useSelector(({ user }) => user)
+  const user = useSelector(({ usersState: { loggedUser } }) => loggedUser)
 
   useEffect(() => {
-    dispatch(fetchUser())
+    if (!user.id) {
+      dispatch(fetchUser())
+    }
   }, [])
 
   return [user]
