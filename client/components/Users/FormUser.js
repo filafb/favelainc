@@ -86,10 +86,17 @@ const FormUser = ({
     }
     handleStatus({ type: types.SUBMITTING })
     dispatchForm({ type: RESET })
-    const userInfo = { firstName, lastName, email, password, admin }
+    let userInfo = { firstName, lastName, email, admin }
+    const passwordPresent = password ? password : false
+    userInfo = passwordPresent
+      ? { ...userInfo, password: passwordPresent }
+      : userInfo
     const status = await dispatch(actionToDispatch(userInfo, history))
     if (status.error) {
       handleStatus({ type: types.ERROR })
+      if (populateFields) {
+        dispatchForm({ type: POPULATE, payload: populateFields })
+      }
     }
   }
   const disabled =

@@ -32,8 +32,8 @@ async function checkAllowToUpdate(req, res, next) {
 
 router.put("/update", checkAllowToUpdate, async (req, res, next) => {
   try {
-    await res.locals.foundUser.update(req.body)
-    res.sendStatus(204)
+    const user = await res.locals.foundUser.update(req.body)
+    res.json(user)
   } catch (e) {
     next(e)
   }

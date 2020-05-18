@@ -20,6 +20,9 @@ const User = db.define("user", {
     type: Sequelize.STRING,
     get() {
       return () => this.getDataValue("password")
+    },
+    validate: {
+      notEmpty: true
     }
   },
   salt: {
