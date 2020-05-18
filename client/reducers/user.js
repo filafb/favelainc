@@ -3,6 +3,7 @@ import axios from "axios"
 const GET_USER = "GET_USER"
 const LOGOUT = "LOGOUT"
 const CREATE_USER = "CREATE_USER"
+const UPDATE_USER = "UPDATE_USER"
 
 const userState = {
   loggedUser: {},
@@ -19,6 +20,11 @@ const getUser = user => {
 
 const createUser = user => ({
   type: CREATE_USER,
+  user
+})
+
+const updateUser = user => ({
+  type: UPDATE_USER,
   user
 })
 
@@ -67,6 +73,18 @@ export const create = (userInfo, history) => async dispatch => {
   }
 }
 
+export const updateUserInfo = (userInfo, history) => async dispatch => {
+  try {
+    const { data } = await axios.put("/api/users/update", userInfo)
+    dispatch(updateUser(data))
+    history.push(`/usuarios/${data.id}`)
+    return { success: true }
+  } catch (error) {
+    console.error(error)
+    return { error: true }
+  }
+}
+
 const userReducer = (state = userState, { type, ...payload }) => {
   switch (type) {
     case GET_USER:
@@ -77,6 +95,21 @@ const userReducer = (state = userState, { type, ...payload }) => {
       }
     case CREATE_USER:
       return { ...state, users: [...state.users, payload.user] }
+    case UPDATE_USER:
+      // eslint-disable-next-line no-case-declarations
+      const userListUpdate = state.users.map(user => {
+        if (user.id === payload.user.id) {
+          return payload.user
+        } else {
+          return user
+        }
+      })
+      // eslint-disable-next-line no-case-declarations
+      const updateLoggedUser =
+        state.loggedUser.id === payload.user.id
+          ? payload.user
+          : state.loggedUser
+      return { ...state, users: userListUpdate, loggedUser: updateLoggedUser }
     case LOGOUT:
       return userState
     default:

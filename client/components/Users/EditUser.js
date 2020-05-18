@@ -3,6 +3,7 @@ import FormUser from "./FormUser"
 import { useParams, useHistory } from "react-router-dom"
 import { useSelector } from "react-redux"
 import useAuth from "../Hooks/useAuth"
+import { updateUserInfo } from "../../reducers/user"
 
 const EditUser = () => {
   const { id } = useParams()
@@ -32,7 +33,7 @@ const EditUser = () => {
       <h2 className="my-2">Editar perfil</h2>
       <FormUser
         errorMessage="Erro ao editar perfil."
-        actionToDispatch={() => {}}
+        actionToDispatch={updateUserInfo}
         buttonText="Editar Perfil"
         populateFields={userInfo}
       />
