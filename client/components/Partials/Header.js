@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { logout } from "../../reducers/user"
 import { Link } from "react-router-dom"
 import { useHistory } from "react-router-dom"
@@ -9,7 +9,7 @@ import useAuth from "../Hooks/useAuth"
 const Header = () => {
   const dispatch = useDispatch()
   const [closed, toggleMenu] = useState(true)
-  const [{ firstName, lastName, admin }] = useAuth()
+  const [{ firstName, lastName, admin, id }] = useAuth()
 
   let history = useHistory()
 
@@ -36,6 +36,14 @@ const Header = () => {
         </nav>
         {closed ? null : (
           <ul className="flex flex-col items-end bg-white shadow-md rounded px-8 py-6 m-4 fixed right-0 -mt-3">
+            <li>
+              <Link
+                className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                to={`/usuarios/${id}/editar`}
+              >
+                Editar perfil
+              </Link>
+            </li>
             {admin && (
               <li>
                 <Link
