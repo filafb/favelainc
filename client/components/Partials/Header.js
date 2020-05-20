@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <div className="sticky w-full font-sans">
+      <div className="sticky top-0 w-full font-sans">
         <nav className="flex justify-end border-b border-blue-800">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold text-xl m-4 w-12 h-12 rounded-full text-center"
