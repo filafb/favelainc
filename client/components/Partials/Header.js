@@ -36,7 +36,7 @@ const Header = () => {
         </nav>
         {closed ? null : (
           <ul className="flex flex-col items-end bg-white shadow-md rounded px-8 py-6 m-4 fixed right-0 -mt-3">
-            <li>
+            <li className="py-2">
               <Link
                 className="font-bold text-lg text-gray-600 hover:text-gray-800"
                 to={`/usuarios/${id}/editar`}
@@ -45,7 +45,7 @@ const Header = () => {
               </Link>
             </li>
             {admin && (
-              <li>
+              <li className="py-2">
                 <Link
                   className="font-bold text-lg text-gray-600 hover:text-gray-800"
                   to={`/usuarios/novo`}
@@ -54,7 +54,7 @@ const Header = () => {
                 </Link>
               </li>
             )}
-            <li>
+            <li className="py-2">
               <button
                 className="font-bold text-lg text-gray-600 hover:text-gray-800"
                 type="submit"
