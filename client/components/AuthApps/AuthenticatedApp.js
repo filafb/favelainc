@@ -7,7 +7,7 @@ import Navigation from "../Partials/Navigation"
 
 const AuthenticatedApp = () => {
   return (
-    <div className="font-sans h-screen overflow-hidden flex flex-col justify-between">
+    <div className="font-sans h-full overflow-hidden flex flex-col justify-between">
       <Header />
       <div className="overflow-auto flex-grow my-6">
         <Switch>

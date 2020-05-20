@@ -6,7 +6,7 @@ import CampaignSvg from "../Svg/CampaignSvg"
 
 const Navigation = () => {
   return (
-    <div className="w-full pb-2 z-30">
+    <div className="w-full py-3 z-30">
       <nav className="flex text-center text-xs">
         <div className="w-1/3">
           <Link className="inline-block" to="/moradores">
