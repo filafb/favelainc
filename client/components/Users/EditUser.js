@@ -29,7 +29,7 @@ const EditUser = () => {
   }, [])
 
   return (
-    <div className="max-w-xs flex justify-center mx-auto mt-8 flex-col">
+    <div className="max-w-xs flex justify-center mx-auto flex-col">
       <h2 className="my-2">Editar perfil</h2>
       <FormUser
         errorMessage="Erro ao editar perfil."

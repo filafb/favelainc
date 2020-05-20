@@ -9,25 +9,23 @@ const UsersRoot = () => {
   const { path } = useRouteMatch()
   const [{ admin }] = useAuth()
   return (
-    <div>
-      <Switch>
-        <Route exact path={path}>
-          <p>List of all users</p>
+    <Switch>
+      <Route exact path={path}>
+        <p>List of all users</p>
+      </Route>
+      {admin && (
+        <Route exact path={`${path}/novo`}>
+          <NewUser />
         </Route>
-        {admin && (
-          <Route exact path={`${path}/novo`}>
-            <NewUser />
-          </Route>
-        )}
-        <Route exact path={`${path}/:id/editar`}>
-          <EditUser />
-        </Route>
-        <Route exact path={`${path}/:id`}>
-          <SingleUser />
-        </Route>
-        <Redirect to={path} />
-      </Switch>
-    </div>
+      )}
+      <Route exact path={`${path}/:id/editar`}>
+        <EditUser />
+      </Route>
+      <Route exact path={`${path}/:id`}>
+        <SingleUser />
+      </Route>
+      <Redirect to={path} />
+    </Switch>
   )
 }
 
