@@ -4,7 +4,11 @@ const TerserJSPlugin = require("terser-webpack-plugin")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./client/**/*.js", "./client/**/*.jsx"],
+  content: [
+    "./client/**/*.js",
+    "./client/**/*.jsx",
+    "./public/template/index.html"
+  ],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 })
 
