@@ -26,7 +26,7 @@ const EditUser = () => {
     } else {
       setUser(findUser)
     }
-  }, [])
+  }, [id])
 
   return (
     <div className="max-w-xs flex justify-center mx-auto flex-col">
