@@ -4,15 +4,18 @@ import NewUser from "./NewUser"
 import SingleUser from "./SingleUser"
 import useAuth from "../Hooks/useAuth"
 import EditUser from "./EditUser"
+import AllUsers from "./AllUsers"
 
 const UsersRoot = () => {
   const { path } = useRouteMatch()
-  const [{ admin }] = useAuth()
+  const [{ id, admin }] = useAuth()
   return (
     <Switch>
-      <Route exact path={path}>
-        <p>List of all users</p>
-      </Route>
+      {admin && (
+        <Route exact path={path}>
+          <AllUsers />
+        </Route>
+      )}
       {admin && (
         <Route exact path={`${path}/novo`}>
           <NewUser />
@@ -24,7 +27,7 @@ const UsersRoot = () => {
       <Route exact path={`${path}/:id`}>
         <SingleUser />
       </Route>
-      <Redirect to={path} />
+      <Redirect to={`${path}/${id}`} />
     </Switch>
   )
 }

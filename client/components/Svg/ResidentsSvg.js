@@ -3,8 +3,7 @@ import React from "react"
 const ResidentsSvg = () => {
   return (
     <svg
-      className="bi bi-people w-full"
-      height="1.5rem"
+      className="bi bi-people w-full h-6"
       viewBox="0 0 16 16"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

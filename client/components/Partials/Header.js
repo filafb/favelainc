@@ -48,6 +48,16 @@ const Header = () => {
               <li className="py-2">
                 <Link
                   className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                  to={`/usuarios`}
+                >
+                  Usuários
+                </Link>
+              </li>
+            )}
+            {admin && (
+              <li className="py-2">
+                <Link
+                  className="font-bold text-lg text-gray-600 hover:text-gray-800"
                   to={`/usuarios/novo`}
                 >
                   Criar Usuário

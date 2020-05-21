@@ -4,6 +4,14 @@ const { User } = require("../../../db")
 
 module.exports = router
 
+function isAdmin(req, res, next) {
+  if (req.user) {
+    next()
+  } else {
+    res.status(401).json({ error: "Não autorizado" })
+  }
+}
+
 async function checkAllowToUpdate(req, res, next) {
   try {
     // check for user updating theirselves
@@ -29,6 +37,15 @@ async function checkAllowToUpdate(req, res, next) {
     next(e)
   }
 }
+
+router.get("/", isAdmin, async (req, res, next) => {
+  try {
+    const users = await User.findAll()
+    res.json(users)
+  } catch (error) {
+    next(error)
+  }
+})
 
 router.put("/update", checkAllowToUpdate, async (req, res, next) => {
   try {
