@@ -18,15 +18,31 @@ const Header = () => {
     dispatch(logout(history))
   }
 
-  const handleToggle = () => {
+  const handleToggle = e => {
+    console.log(e.target)
     toggleMenu(!closed)
   }
+
+  const closeMenu = e => {
+    console.log(e.target)
+    if (e.target.name !== "user-menu") {
+      toggleMenu(true)
+    }
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("click", closeMenu)
+    return () => {
+      window.removeEventListener("click", closeMenu)
+    }
+  }, [])
 
   return (
     <React.Fragment>
       <div className="w-full font-sans">
         <nav className="flex justify-end border-b border-blue-800">
           <button
+            name="user-menu"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold text-xl m-4 w-12 h-12 rounded-full text-center"
             onClick={handleToggle}
             type="button"
