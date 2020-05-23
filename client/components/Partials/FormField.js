@@ -48,3 +48,18 @@ export const ToggleSwitch = ({ type, onChange, value, name }) => (
     </div>
   </div>
 )
+
+export const FileInput = ({ onChange, label }) => {
+  return (
+    <div className="relative inline-block">
+      <label className="absolute w-full h-full">{label}</label>
+      <input
+        className="opacity-0"
+        type="file"
+        name="file"
+        accept=".csv"
+        onChange={onChange}
+      />
+    </div>
+  )
+}

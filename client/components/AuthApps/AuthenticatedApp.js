@@ -4,6 +4,7 @@ import Main from "../Main"
 import Header from "../Partials/Header"
 import UsersRoot from "../Users/UsersRoot"
 import Navigation from "../Partials/Navigation"
+import RootUpload from "../Upload/RootUpload"
 
 const AuthenticatedApp = () => {
   return (
@@ -22,6 +23,9 @@ const AuthenticatedApp = () => {
           </Route>
           <Route path="/campanhas">
             <div>Campanhas</div>
+          </Route>
+          <Route path="/upload">
+            <RootUpload />
           </Route>
           <Route path="/">
             <Main />
