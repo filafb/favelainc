@@ -1,16 +1,9 @@
 const express = require("express")
 const router = express.Router()
 const { User } = require("../../../db")
+const { verifyAdmin } = require("../helpers")
 
 module.exports = router
-
-function verifyAdmin(req, res, next) {
-  if (req.user && req.user.admin) {
-    next()
-  } else {
-    res.status(401).json({ error: "Não autorizado" })
-  }
-}
 
 router.put("/login", async (req, res, next) => {
   const { email = "", password = "" } = req.body

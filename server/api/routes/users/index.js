@@ -1,16 +1,11 @@
 const express = require("express")
 const router = express.Router()
 const { User } = require("../../../db")
+const { fork } = require("child_process")
+const path = require("path")
+const { verifyAdmin } = require("../helpers")
 
 module.exports = router
-
-function isAdmin(req, res, next) {
-  if (req.user) {
-    next()
-  } else {
-    res.status(401).json({ error: "Não autorizado" })
-  }
-}
 
 async function checkAllowToUpdate(req, res, next) {
   try {
@@ -38,7 +33,7 @@ async function checkAllowToUpdate(req, res, next) {
   }
 }
 
-router.get("/", isAdmin, async (req, res, next) => {
+router.get("/", verifyAdmin, async (req, res, next) => {
   try {
     const users = await User.findAll()
     res.json(users)

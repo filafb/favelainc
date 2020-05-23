@@ -18,13 +18,11 @@ const Header = () => {
     dispatch(logout(history))
   }
 
-  const handleToggle = e => {
-    console.log(e.target)
+  const handleToggle = () => {
     toggleMenu(!closed)
   }
 
   const closeMenu = e => {
-    console.log(e.target)
     if (e.target.name !== "user-menu") {
       toggleMenu(true)
     }
