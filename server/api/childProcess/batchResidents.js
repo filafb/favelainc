@@ -46,27 +46,3 @@ process.on("message", async ({ file }) => {
 //   validatorName: null,
 //   validatorArgs: []
 // }
-
-async function exe() {
-  try {
-    const newResident = await Resident.bulkCreate(
-      [{ cpf: "34715672839" }, { cpf: "33715672839" }, { cpf: "34715622839" }],
-      { validate: true }
-    )
-    console.log(newResident.length)
-  } catch (e) {
-    //keep this error style. Will validate -> on error, will create and object. Might need to run the upload twice
-    if (!e.errors && e.length > 0) {
-      const createErrors = []
-      for (let i = 0; i < e.length; i++) {
-        createErrors.push(e[i].errors.errors[0])
-      }
-      e.errors = createErrors
-    }
-    console.log(e.errors)
-  }
-}
-
-// exe()
-
-//console.log(checkFields)
