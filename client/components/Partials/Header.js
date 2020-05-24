@@ -78,6 +78,16 @@ const Header = () => {
                 </Link>
               </li>
             )}
+            {admin && (
+              <li className="py-2">
+                <Link
+                  className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                  to={`/uploads`}
+                >
+                  Batch Upload
+                </Link>
+              </li>
+            )}
             <li className="py-2">
               <button
                 className="font-bold text-lg text-gray-600 hover:text-gray-800"

@@ -24,7 +24,7 @@ const AuthenticatedApp = () => {
           <Route path="/campanhas">
             <div>Campanhas</div>
           </Route>
-          <Route path="/upload">
+          <Route path="/uploads">
             <RootUpload />
           </Route>
           <Route path="/">
