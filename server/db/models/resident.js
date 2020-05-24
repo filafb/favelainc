@@ -43,4 +43,15 @@ const Resident = db.define(
   {}
 )
 
+const validateDate = residents => {
+  residents.forEach(resident => {
+    const date = new Date(resident.birthDate).toString()
+    if (date === "Invalid Date") {
+      resident.birthDate = null
+    }
+  })
+}
+
+Resident.beforeBulkCreate(validateDate)
+
 module.exports = Resident

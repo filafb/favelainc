@@ -3,7 +3,7 @@ const Papa = require("papaparse")
 const parseCsvToJson = csvFile => {
   return Papa.parse(csvFile, {
     header: true,
-    transform: value => value.trim()
+    transform: value => (value ? value.trim() : null)
   })
 }
 

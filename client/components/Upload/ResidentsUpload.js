@@ -31,7 +31,6 @@ const ResidentsUpload = () => {
     } catch (error) {
       setError(error.response.data)
       handleStatus({ type: types.ERROR })
-      console.dir(error.response.data)
     }
   }
 
