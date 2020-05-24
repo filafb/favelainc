@@ -4,7 +4,8 @@ module.exports = {
       sans: ["Open Sans", "Sans-serif"]
     },
     zIndex: {
-      "-1": "-1"
+      "-1": "-1",
+      "50": "50"
     }
   },
   variants: {

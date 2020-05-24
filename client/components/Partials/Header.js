@@ -49,7 +49,7 @@ const Header = () => {
           </button>
         </nav>
         {closed ? null : (
-          <ul className="flex flex-col items-end bg-white shadow-md rounded px-8 py-6 m-4 fixed right-0 -mt-3">
+          <ul className="flex flex-col items-end bg-white shadow-md rounded px-8 py-6 m-4 fixed right-0 -mt-3 z-50">
             <li className="py-2">
               <Link
                 className="font-bold text-lg text-gray-600 hover:text-gray-800"
