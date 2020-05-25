@@ -14,6 +14,8 @@ Family.belongsTo(GovernmentBenefit, { as: "governmentBenefit" })
 GovernmentBenefit.hasMany(Family)
 Resident.belongsTo(Family)
 Family.hasMany(Resident)
+User.belongsTo(NgoPartner)
+NgoPartner.hasMany(User)
 
 module.exports = {
   db,
