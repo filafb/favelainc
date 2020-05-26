@@ -1,9 +1,14 @@
 const request = require("supertest")
 const app = require("../../../../index")
 const server = request.agent(app)
-const { User, db } = require("../../../../db")
+const { User, db, NgoPartner } = require("../../../../db")
 
 describe("/api/auth handles authentication", () => {
+  const ngoPartner = {
+    name: "Dunder Mifflin",
+    master: true
+  }
+
   const user = {
     firstName: "Dwight",
     lastName: "Schrute",
@@ -20,9 +25,13 @@ describe("/api/auth handles authentication", () => {
     admin: false
   }
 
+  let partnerId
+
   beforeEach(async () => {
-    await User.create(user)
-    await User.create(nonAdmin)
+    const { id } = await NgoPartner.create(ngoPartner)
+    partnerId = id
+    await User.create({ ...user, ngoPartnerId: id })
+    await User.create({ ...nonAdmin, ngoPartnerId: id })
   })
 
   afterEach(async () => {
@@ -57,13 +66,17 @@ describe("/api/auth handles authentication", () => {
   })
 
   describe("a POST to /create", () => {
-    const newUser = {
-      firstName: "Pamela",
-      lastName: "Beesly",
-      email: "Beesly@dundermifflin.com",
-      password: "JHS2",
-      admin: false
-    }
+    let newUser
+    beforeEach(() => {
+      newUser = {
+        firstName: "Pamela",
+        lastName: "Beesly",
+        email: "Beesly@dundermifflin.com",
+        password: "JHS2",
+        admin: false,
+        ngoPartnerId: partnerId
+      }
+    })
 
     test("returns an error if request is made by a non logged user", async () => {
       const { status, body } = await server
@@ -102,7 +115,7 @@ describe("/api/auth handles authentication", () => {
         .send({ email: user.email, password: user.password })
       const { status, body } = await server
         .post("/api/users/create")
-        .send(nonAdmin)
+        .send({ ...nonAdmin, ngoPartnerId: partnerId })
       expect(status).toBe(401)
       expect(body.error).toBe("Email já utilizado")
     })

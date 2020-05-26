@@ -1,4 +1,4 @@
-const { User } = require("../../index")
+const { User, NgoPartner } = require("../../index")
 
 describe("User model", () => {
   const user = {
@@ -9,10 +9,16 @@ describe("User model", () => {
     admin: true
   }
 
+  const ngoPartner = {
+    name: "Dunder Mifflin",
+    master: true
+  }
+
   let newUser
 
   beforeEach(async () => {
-    newUser = await User.create(user)
+    const { id } = await NgoPartner.create(ngoPartner)
+    newUser = await User.create({ ...user, ngoPartnerId: id })
   })
 
   afterEach(async () => {
