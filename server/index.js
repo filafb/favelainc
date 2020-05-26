@@ -4,7 +4,7 @@ const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const app = express()
 const session = require("express-session")
-const { db } = require("./db")
+const { db, NgoPartner } = require("./db")
 const passport = require("passport")
 const compression = require("compression")
 const PORT = process.env.PORT || 4321
@@ -17,7 +17,9 @@ passport.serializeUser((user, done) => done(null, user.id))
 
 passport.deserializeUser(async (id, done) => {
   try {
-    const user = await db.models.user.findByPk(id)
+    const user = await db.models.user.findByPk(id, {
+      include: NgoPartner
+    })
     done(null, user)
   } catch (err) {
     done(err)

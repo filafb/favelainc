@@ -1,8 +1,6 @@
 const express = require("express")
 const router = express.Router()
 const { User } = require("../../../db")
-const { fork } = require("child_process")
-const path = require("path")
 const { verifyAdmin } = require("../helpers")
 
 module.exports = router

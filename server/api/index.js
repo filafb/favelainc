@@ -5,6 +5,7 @@ const router = express.Router()
 router.use("/auth", require("./routes/auth"))
 router.use("/users", require("./routes/users"))
 router.use("/residents", require("./routes/residents"))
+router.use("/ngo-partners", require("./routes/ngoPartners"))
 
 //handleling 404
 router.use((req, res, next) => {
