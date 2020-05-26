@@ -16,9 +16,9 @@ Resident.belongsTo(Family)
 Family.hasMany(Resident)
 User.belongsTo(NgoPartner)
 NgoPartner.hasMany(User, {
-  // foreignKey: {
-  //   allowNull: false
-  // }
+  foreignKey: {
+    allowNull: false
+  }
 })
 
 module.exports = {
