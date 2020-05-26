@@ -9,7 +9,15 @@ import useAuth from "../Hooks/useAuth"
 const Header = () => {
   const dispatch = useDispatch()
   const [closed, toggleMenu] = useState(true)
-  const [{ firstName, lastName, admin, id }] = useAuth()
+  const [
+    {
+      firstName,
+      lastName,
+      admin,
+      id,
+      ngoPartner: { master }
+    }
+  ] = useAuth()
 
   let history = useHistory()
 
@@ -78,7 +86,17 @@ const Header = () => {
                 </Link>
               </li>
             )}
-            {admin && (
+            {master && admin && (
+              <li className="py-2">
+                <Link
+                  className="font-bold text-lg text-gray-600 hover:text-gray-800"
+                  to={`/parceiros`}
+                >
+                  Parceiros
+                </Link>
+              </li>
+            )}
+            {master && admin && (
               <li className="py-2">
                 <Link
                   className="font-bold text-lg text-gray-600 hover:text-gray-800"

@@ -69,7 +69,7 @@ export const login = ({ email, password }) => async dispatch => {
 
 export const create = (userInfo, history) => async dispatch => {
   try {
-    const { data } = await axios.post("/api/auth/create", userInfo)
+    const { data } = await axios.post("/api/users/create", userInfo)
     dispatch(createUser(data))
     history.push(`/usuarios/${data.id}`)
     return { success: true }

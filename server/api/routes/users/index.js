@@ -40,6 +40,19 @@ router.get("/", verifyAdmin, async (req, res, next) => {
   }
 })
 
+router.post("/create", verifyAdmin, async (req, res, next) => {
+  try {
+    const user = await User.create(req.body)
+    res.status(201).json(user)
+  } catch (e) {
+    if (e.name === "SequelizeUniqueConstraintError") {
+      res.status(401).json({ error: "Email já utilizado" })
+    } else {
+      next(e)
+    }
+  }
+})
+
 router.put("/update", checkAllowToUpdate, async (req, res, next) => {
   try {
     const user = await res.locals.foundUser.update(req.body)

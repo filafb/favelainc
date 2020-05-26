@@ -1,7 +1,6 @@
 const express = require("express")
 const router = express.Router()
 const { User, NgoPartner } = require("../../../db")
-const { verifyAdmin } = require("../helpers")
 
 module.exports = router
 
@@ -18,26 +17,6 @@ router.put("/login", async (req, res, next) => {
     }
   } catch (e) {
     next(e)
-  }
-})
-
-router.post("/create", verifyAdmin, async (req, res, next) => {
-  const { firstName, lastName, email, password, admin } = req.body
-  try {
-    const user = await User.create({
-      firstName,
-      lastName,
-      email,
-      password,
-      admin
-    })
-    res.status(201).json(user)
-  } catch (e) {
-    if (e.name === "SequelizeUniqueConstraintError") {
-      res.status(401).json({ error: "Email já utilizado" })
-    } else {
-      next(e)
-    }
   }
 })
 

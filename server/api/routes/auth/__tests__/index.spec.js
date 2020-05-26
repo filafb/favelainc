@@ -67,7 +67,7 @@ describe("/api/auth handles authentication", () => {
 
     test("returns an error if request is made by a non logged user", async () => {
       const { status, body } = await server
-        .post("/api/auth/create")
+        .post("/api/users/create")
         .send(newUser)
       expect(status).toBe(401)
       expect(body.error).toBe("Não autorizado")
@@ -79,7 +79,7 @@ describe("/api/auth handles authentication", () => {
         .send({ email: user.email, password: user.password })
 
       const { status, body } = await server
-        .post("/api/auth/create")
+        .post("/api/users/create")
         .send(newUser)
       expect(status).toBe(201)
       expect(body.email).toBe(newUser.email)
@@ -90,7 +90,7 @@ describe("/api/auth handles authentication", () => {
         .put("/api/auth/login")
         .send({ email: nonAdmin.email, password: nonAdmin.password })
       const { status, body } = await server
-        .post("/api/auth/create")
+        .post("/api/users/create")
         .send(newUser)
       expect(status).toBe(401)
       expect(body.error).toBe("Não autorizado")
@@ -101,7 +101,7 @@ describe("/api/auth handles authentication", () => {
         .put("/api/auth/login")
         .send({ email: user.email, password: user.password })
       const { status, body } = await server
-        .post("/api/auth/create")
+        .post("/api/users/create")
         .send(nonAdmin)
       expect(status).toBe(401)
       expect(body.error).toBe("Email já utilizado")

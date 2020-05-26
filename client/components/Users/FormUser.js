@@ -13,13 +13,15 @@ const CONFIRMPASSWORD = "CONFIRMPASSWORD"
 const ISADMIN = "ISADMIN"
 const RESET = "REST"
 const POPULATE = "POPULATE"
+const NGOPARTNER = "NGOPARTNER"
 const userFormState = {
   firstName: "",
   lastName: "",
   email: "",
   password: "",
   confirmPassword: "",
-  admin: false
+  admin: false,
+  ngoPartnerId: ""
 }
 
 const userFormReducer = (state = userFormState, { type, payload }) => {
@@ -36,6 +38,8 @@ const userFormReducer = (state = userFormState, { type, payload }) => {
       return { ...state, confirmPassword: payload }
     case ISADMIN:
       return { ...state, admin: payload }
+    case NGOPARTNER:
+      return { ...state, ngoPartnerId: payload }
     case RESET:
       return userFormState
     case POPULATE:
@@ -52,7 +56,15 @@ const FormUser = ({
   populateFields
 }) => {
   const [
-    { firstName, lastName, email, password, confirmPassword, admin },
+    {
+      firstName,
+      lastName,
+      email,
+      password,
+      confirmPassword,
+      admin,
+      ngoPartnerId
+    },
     dispatchForm
   ] = React.useReducer(userFormReducer, userFormState)
   const [status, handleStatus, types] = useFormControl()
@@ -86,7 +98,13 @@ const FormUser = ({
     }
     handleStatus({ type: types.SUBMITTING })
     dispatchForm({ type: RESET })
-    let userInfo = { firstName, lastName, email, admin }
+    let userInfo = {
+      firstName,
+      lastName,
+      email,
+      admin,
+      ngoPartnerId: Number(ngoPartnerId)
+    }
     const passwordPresent = password ? password : false
     userInfo = passwordPresent
       ? { ...userInfo, password: passwordPresent }
@@ -160,6 +178,18 @@ const FormUser = ({
         type="password"
         required={populateFields ? false : true}
       />
+      <select
+        required
+        name={NGOPARTNER}
+        value={ngoPartnerId}
+        onChange={handleChange}
+      >
+        <option value="" disabled>
+          Selecione uma organização
+        </option>
+        <option value={1}>hello</option>
+        <option value={2}>Bye</option>
+      </select>
       <ToggleSwitch
         type="checkbox"
         value={admin}
