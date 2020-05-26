@@ -11,7 +11,7 @@ const SingleUser = () => {
   const history = useHistory()
   const [{ id: userLoggedId, admin }] = useAuth()
   const [
-    { id: userId, firstName, lastName, email, admin: userAdmin },
+    { id: userId, firstName, lastName, email, admin: userAdmin, ngoPartner },
     setUserToRender
   ] = React.useState({})
 
@@ -36,6 +36,7 @@ const SingleUser = () => {
             {userAdmin && <AdminSvg />}
           </div>
           <p>{email}</p>
+          <p>{ngoPartner.name}</p>
         </div>
         {(!userAdmin || userId === userLoggedId) && (
           <div>

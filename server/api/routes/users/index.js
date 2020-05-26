@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const { User } = require("../../../db")
+const { User, NgoPartner } = require("../../../db")
 const { verifyAdmin } = require("../helpers")
 
 module.exports = router
@@ -33,7 +33,7 @@ async function checkAllowToUpdate(req, res, next) {
 
 router.get("/", verifyAdmin, async (req, res, next) => {
   try {
-    const users = await User.findAll()
+    const users = await User.findAll({ include: NgoPartner })
     res.json(users)
   } catch (error) {
     next(error)
