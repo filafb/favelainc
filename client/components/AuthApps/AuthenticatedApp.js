@@ -5,8 +5,16 @@ import Header from "../Partials/Header"
 import UsersRoot from "../Users/UsersRoot"
 import Navigation from "../Partials/Navigation"
 import RootUpload from "../Upload/RootUpload"
+import { useDispatch } from "react-redux"
+import { fetchNgoList } from "../../reducers/ngoPartners"
 
 const AuthenticatedApp = () => {
+  const dispatch = useDispatch()
+
+  React.useEffect(() => {
+    dispatch(fetchNgoList())
+  }, [])
+
   return (
     <div className="font-sans h-full overflow-hidden flex flex-col justify-between">
       <Header />

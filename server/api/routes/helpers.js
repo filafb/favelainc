@@ -14,7 +14,16 @@ function belongsToMaster(req, res, next) {
   }
 }
 
+function isLoggedIn(req, res, next) {
+  if (req.user) {
+    next()
+  } else {
+    res.status(401).json({ error: "Não autorizado" })
+  }
+}
+
 module.exports = {
   verifyAdmin,
-  belongsToMaster
+  belongsToMaster,
+  isLoggedIn
 }
