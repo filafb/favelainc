@@ -11,7 +11,7 @@ Docs: [Sequelize Migrations](https://sequelize.org/master/manual/migrations.html
 
 ## Creating migrations files to change existing models
 
-   `npx sequelize-cli migration: generate --name <file_name>`
+   `npx sequelize-cli migration:generate --name <file_name>`
 
 ## Undo migrations:
    `npx sequelize-cli db:migrate:undo`
