@@ -7,10 +7,9 @@ module.exports = router
 
 router.get("/", async (req, res, next) => {
   try {
-    //req.user.getNgoPartner()
-    //console.dir() null or {master: true || false}
-    //const isMaster = !userOrg ?
-    const ngoList = await NgoPartner.findAll()
+    const userOrg = await req.user.getNgoPartner()
+    const queryParams = userOrg.master ? {} : { id: userOrg.id }
+    const ngoList = await NgoPartner.findAll({ where: queryParams })
     res.json(ngoList)
   } catch (error) {
     next(error)

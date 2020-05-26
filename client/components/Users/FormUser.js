@@ -2,7 +2,7 @@ import * as React from "react"
 import { InputField, ToggleSwitch } from "../Partials/FormField"
 import { PrimaryButton } from "../Partials/Buttons"
 import useFormControl from "../Hooks/useFormControl"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from "react-router-dom"
 
 const FIRSTNAME = "FIRSTNAME"
@@ -70,6 +70,9 @@ const FormUser = ({
   const [status, handleStatus, types] = useFormControl()
   const dispatch = useDispatch()
   const history = useHistory()
+  const ngoPartners = useSelector(
+    ({ ngoPartnersState: { ngoList } }) => ngoList
+  )
 
   React.useEffect(() => {
     if (populateFields) {
@@ -178,18 +181,28 @@ const FormUser = ({
         type="password"
         required={populateFields ? false : true}
       />
-      <select
-        required
-        name={NGOPARTNER}
-        value={ngoPartnerId}
-        onChange={handleChange}
-      >
-        <option value="" disabled>
-          Selecione uma organização
-        </option>
-        <option value={1}>hello</option>
-        <option value={2}>Bye</option>
-      </select>
+      <div className="my-5">
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          Organização
+        </label>
+        <select
+          required
+          name={NGOPARTNER}
+          value={ngoPartnerId}
+          onChange={handleChange}
+        >
+          <option value="" disabled>
+            Selecione uma organização
+          </option>
+          {ngoPartners.map(({ id, name }) => {
+            return (
+              <option key={id} value={id}>
+                {name}
+              </option>
+            )
+          })}
+        </select>
+      </div>
       <ToggleSwitch
         type="checkbox"
         value={admin}

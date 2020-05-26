@@ -25,7 +25,7 @@ export const fetchNgoList = () => async dispatch => {
 const ngoPartnersReducer = (state = ngoPartnersState, { type, ...payload }) => {
   switch (type) {
     case GOT_NGO_LIST:
-      return payload.ngoList
+      return { ...state, ngoList: payload.ngoList }
     default:
       return state
   }
