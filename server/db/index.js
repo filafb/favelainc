@@ -15,7 +15,11 @@ GovernmentBenefit.hasMany(Family)
 Resident.belongsTo(Family)
 Family.hasMany(Resident)
 User.belongsTo(NgoPartner)
-NgoPartner.hasMany(User)
+NgoPartner.hasMany(User, {
+  // foreignKey: {
+  //   allowNull: false
+  // }
+})
 
 module.exports = {
   db,
