@@ -33,7 +33,12 @@ async function checkAllowToUpdate(req, res, next) {
 
 router.get("/", verifyAdmin, async (req, res, next) => {
   try {
-    const users = await User.findAll({ include: NgoPartner })
+    const userOrg = await req.user.getNgoPartner()
+    const queryParams = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
+    const users = await User.findAll({
+      include: NgoPartner,
+      where: queryParams
+    })
     res.json(users)
   } catch (error) {
     next(error)
