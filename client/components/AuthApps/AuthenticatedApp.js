@@ -7,6 +7,7 @@ import Navigation from "../Partials/Navigation"
 import RootUpload from "../Upload/RootUpload"
 import { useDispatch } from "react-redux"
 import { fetchNgoList } from "../../reducers/ngoPartners"
+import PartnersRoot from "../Partners/PartnersRoot"
 
 const AuthenticatedApp = () => {
   const dispatch = useDispatch()
@@ -34,6 +35,9 @@ const AuthenticatedApp = () => {
           </Route>
           <Route path="/uploads">
             <RootUpload />
+          </Route>
+          <Route path="/parceiros">
+            <PartnersRoot />
           </Route>
           <Route path="/">
             <Main />
