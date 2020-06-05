@@ -4,8 +4,6 @@ import { useSelector } from "react-redux"
 const AllPartners = () => {
   const partners = useSelector(({ ngoPartnersState: { ngoList } }) => ngoList)
 
-  console.log(partners)
-
   return (
     <main className="max-w-sm mx-auto">
       <ul className="mx-8">
