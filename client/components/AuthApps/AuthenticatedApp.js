@@ -8,6 +8,7 @@ import RootUpload from "../Upload/RootUpload"
 import { useDispatch } from "react-redux"
 import { fetchNgoList } from "../../reducers/ngoPartners"
 import PartnersRoot from "../Partners/PartnersRoot"
+import ResidentsRoot from "../Residents/ResidentsRoot"
 
 const AuthenticatedApp = () => {
   const dispatch = useDispatch()
@@ -25,7 +26,7 @@ const AuthenticatedApp = () => {
             <UsersRoot />
           </Route>
           <Route path="/moradores">
-            <div>Moradores</div>
+            <ResidentsRoot />
           </Route>
           <Route path="/familias">
             <div>Familias</div>
