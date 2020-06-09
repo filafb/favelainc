@@ -9,6 +9,7 @@ import {
 } from "react-router-dom"
 import { SecondaryButton } from "../Partials/Buttons"
 import { InputField } from "../Partials/FormField"
+import NewResident from "./NewResident"
 
 const ResidentsRoot = () => {
   const { path } = useRouteMatch()
@@ -61,10 +62,10 @@ const ResidentsRoot = () => {
         </div>
         <Switch>
           <Route exact path={`${path}/novo`}>
-            <div>Novo</div>
+            <NewResident />
           </Route>
           <Route exact path={`${path}`}>
-            <div>All</div>
+            <div>See All</div>
           </Route>
           <Route exact path={`${path}/1`}>
             <div>See one</div>
