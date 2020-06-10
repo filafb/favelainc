@@ -9,7 +9,8 @@ export const InputField = ({
   onChange,
   required = false,
   autocomplete = false,
-  editable = true
+  editable = true,
+  pattern
 }) => (
   <div className="my-5">
     <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -24,6 +25,7 @@ export const InputField = ({
         placeholder={placeholder}
         onChange={onChange}
         required={required}
+        pattern={pattern}
         autoComplete={autocomplete ? autocomplete : "on"}
       ></input>
     ) : (
