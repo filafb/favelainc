@@ -63,3 +63,33 @@ export const FileInput = ({ onChange, label }) => {
     </div>
   )
 }
+
+export const SelectPartnerField = ({
+  label,
+  name,
+  value,
+  onChange,
+  ngoPartners = []
+}) => {
+  return (
+    <div className="my-5">
+      {label && (
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          {label}
+        </label>
+      )}
+      <select required name={name} value={value} onChange={onChange}>
+        <option value="" disabled>
+          Selecione uma organização
+        </option>
+        {ngoPartners.map(({ id, name }) => {
+          return (
+            <option key={id} value={id}>
+              {name}
+            </option>
+          )
+        })}
+      </select>
+    </div>
+  )
+}

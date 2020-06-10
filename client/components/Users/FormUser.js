@@ -1,5 +1,9 @@
 import * as React from "react"
-import { InputField, ToggleSwitch } from "../Partials/FormField"
+import {
+  InputField,
+  ToggleSwitch,
+  SelectPartnerField
+} from "../Partials/FormField"
 import { PrimaryButton } from "../Partials/Buttons"
 import useFormControl from "../Hooks/useFormControl"
 import { useDispatch, useSelector } from "react-redux"
@@ -181,28 +185,13 @@ const FormUser = ({
         type="password"
         required={populateFields ? false : true}
       />
-      <div className="my-5">
-        <label className="block text-gray-700 text-sm font-bold mb-2">
-          Organização
-        </label>
-        <select
-          required
-          name={NGOPARTNER}
-          value={ngoPartnerId}
-          onChange={handleChange}
-        >
-          <option value="" disabled>
-            Selecione uma organização
-          </option>
-          {ngoPartners.map(({ id, name }) => {
-            return (
-              <option key={id} value={id}>
-                {name}
-              </option>
-            )
-          })}
-        </select>
-      </div>
+      <SelectPartnerField
+        label="Organização"
+        name={NGOPARTNER}
+        value={ngoPartnerId}
+        onChange={handleChange}
+        ngoPartners={ngoPartners}
+      />
       <ToggleSwitch
         type="checkbox"
         value={admin}

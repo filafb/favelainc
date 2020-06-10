@@ -33,7 +33,7 @@ const ResidentsRoot = () => {
 
   return (
     <main className="max-w-sm mx-auto">
-      <div className="mx-8">
+      <div className="mx-8 relative">
         <div>
           <div className="flex justify-around">
             <Link to={`${path}/novo`}>
