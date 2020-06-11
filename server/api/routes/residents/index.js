@@ -5,10 +5,43 @@ const path = require("path")
 const multer = require("multer")
 const upload = multer()
 const { verifyAdmin } = require("../helpers")
+const { Family, Resident } = require("../../../db")
 
 module.exports = router
 
 router.use(upload.single("file"))
+
+router.post("/", verifyAdmin, async (req, res, next) => {
+  const {
+    familyDetails: { newFamily, ngoPartnerId, familyId },
+    ...resident
+  } = req.body
+
+  // if user is not under master, and try to create a resident using another partner Id, it should fail
+  if (!req.user.ngoPartner.master && req.user.ngoPartner.id !== ngoPartnerId) {
+    res
+      .status(401)
+      .json({
+        error:
+          "Usuário não autorizado a criar família para organização informada"
+      })
+    return
+  }
+  try {
+    let family
+    if (newFamily) {
+      family = await Family.create({ ngoPartnerId })
+    } else {
+      family = await Family.findByPk(familyId)
+    }
+    const newResident = await Resident.create(resident)
+    console.log(newFamily.__proto__)
+    await newResident.setFamily(family)
+    res.send(newResident)
+  } catch (error) {
+    next(error)
+  }
+})
 
 router.post("/upload/batch", verifyAdmin, (req, res, next) => {
   const { file } = req

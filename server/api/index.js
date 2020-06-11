@@ -8,6 +8,7 @@ router.use(isLoggedIn)
 router.use("/users", require("./routes/users"))
 router.use("/residents", require("./routes/residents"))
 router.use("/ngo-partners", require("./routes/ngoPartners"))
+router.use("/residents", require("./routes/residents"))
 
 //handleling 404
 router.use((req, res, next) => {
