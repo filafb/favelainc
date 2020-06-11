@@ -52,10 +52,16 @@ const FormResident = () => {
     dispatchForm
   ] = React.useReducer(residentFormReducer, residentFormState)
   const [familyView, setFamilyView] = React.useState("")
-  const ngoPartners = useSelector(
-    ({ ngoPartnersState: { ngoList } }) => ngoList
-  )
+  const {
+    ngoPartners,
+    residentsList
+  } = useSelector(({ ngoPartnersState: { ngoList }, residentsList }) => ({
+    ngoPartners: ngoList,
+    residentsList
+  }))
   const [status, handleStatus, types] = useFormControl()
+  const [searchCpf, setSearchCpf] = React.useState("")
+  const [familyMember, setFamilyMember] = React.useState({})
 
   const openFamilyAssociation = e => {
     setFamilyView(e.target.name)
@@ -89,6 +95,19 @@ const FormResident = () => {
         newFamily: familyView === "new" ? true : false
       }
     })
+  }
+
+  const handleSearch = e => {
+    const searchValue = e.target.value
+    const onlyDigits = /^[0-9]*$/g
+    if (onlyDigits.test(searchValue)) {
+      setSearchCpf(e.target.value)
+    }
+  }
+
+  const handleSearchClick = () => {
+    console.log(residentsList)
+    console.log(searchCpf)
   }
 
   const checkCpf = /^(?![0]{11})([0-9]{11})$/
@@ -161,24 +180,26 @@ const FormResident = () => {
             <div className="relative">
               <InputField
                 type="text"
-                value=""
+                value={searchCpf}
                 name="search"
                 placeholder="CPF do membro da família"
-                onChange={() => {}}
+                onChange={handleSearch}
               />
               <button
                 type="button"
                 className="absolute right-0 top-0 h-full mr-3"
-                onClick={() => {}}
+                onClick={handleSearchClick}
               >
                 Buscar
               </button>
             </div>
-            <div>
-              <p>Nome:</p>
-              <p>ID família</p>
-              <p>Ong Responsável</p>
-            </div>
+            {familyMember.id && (
+              <div>
+                <p>Nome: </p>
+                <p>ID família</p>
+                <p>Ong Responsável</p>
+              </div>
+            )}
           </>
         )}
         {familyView === "new" && (
