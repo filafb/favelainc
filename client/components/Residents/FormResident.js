@@ -1,8 +1,10 @@
 import * as React from "react"
 import { InputField, SelectPartnerField } from "../Partials/FormField"
 import { PrimaryButton } from "../Partials/Buttons"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import useFormControl from "../Hooks/useFormControl"
+import { createResident } from "../../reducers/residents"
+import { useHistory } from "react-router-dom"
 
 const CPF = "CPF"
 const FIRSTNAME = "FIRSTNAME"
@@ -52,16 +54,18 @@ const FormResident = () => {
     dispatchForm
   ] = React.useReducer(residentFormReducer, residentFormState)
   const [familyView, setFamilyView] = React.useState("")
-  const {
-    ngoPartners,
-    residentsList
-  } = useSelector(({ ngoPartnersState: { ngoList }, residentsList }) => ({
-    ngoPartners: ngoList,
-    residentsList
-  }))
+  const { ngoPartners, residentsList } = useSelector(
+    ({ ngoPartnersState: { ngoList }, residentsList }) => ({
+      ngoPartners: ngoList,
+      residentsList
+    })
+  )
   const [status, handleStatus, types] = useFormControl()
   const [searchCpf, setSearchCpf] = React.useState("")
   const [familyMember, setFamilyMember] = React.useState({})
+  const dispatch = useDispatch()
+  const [error, setError] = React.useState("")
+  const history = useHistory()
 
   const openFamilyAssociation = e => {
     setFamilyView(e.target.name)
@@ -110,6 +114,28 @@ const FormResident = () => {
     console.log(searchCpf)
   }
 
+  const handelSubmit = async e => {
+    e.preventDefault()
+    if (status === types.SUBMITTING) {
+      return
+    }
+    const residentInfo = {
+      cpf,
+      firstName,
+      lastName,
+      familyDetails: {
+        newFamily,
+        ngoPartnerId,
+        familyId: familyMember.familyId
+      }
+    }
+    const response = await dispatch(createResident(residentInfo, history))
+    if (response.error) {
+      setError(response.error)
+      handleStatus({ type: types.ERROR })
+    }
+  }
+
   const checkCpf = /^(?![0]{11})([0-9]{11})$/
 
   const disabled =
@@ -117,7 +143,7 @@ const FormResident = () => {
 
   return (
     <>
-      <form onSubmit={() => {}}>
+      <form onSubmit={handelSubmit}>
         <InputField
           label="CPF - Apenas números"
           type="text"
@@ -204,8 +230,8 @@ const FormResident = () => {
         )}
         {familyView === "new" && (
           <div>
-            <p>Nova família</p>
             <SelectPartnerField
+              label="Criando nova família - Selecione ONG responsável"
               name={NGOPARTNER}
               value={ngoPartnerId}
               onChange={handleFamilyDetails}
@@ -218,6 +244,7 @@ const FormResident = () => {
           text="Criar Novo Morador"
           type="submit"
         />
+        {status === types.ERROR && <p>{error}</p>}
       </form>
     </>
   )

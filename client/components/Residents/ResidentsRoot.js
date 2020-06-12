@@ -67,7 +67,7 @@ const ResidentsRoot = () => {
           <Route exact path={`${path}`}>
             <div>See All</div>
           </Route>
-          <Route exact path={`${path}/1`}>
+          <Route exact path={`${path}/:id`}>
             <div>See one</div>
           </Route>
           <Redirect to={path} />
