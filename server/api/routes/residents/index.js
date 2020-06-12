@@ -11,6 +11,22 @@ module.exports = router
 
 router.use(upload.single("file"))
 
+router.get("/", async (req, res, next) => {
+  try {
+    const userOrg = await req.user.getNgoPartner()
+    const queryParams = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
+    const residents = await Resident.findAll({
+      include: {
+        model: Family,
+        where: queryParams
+      }
+    })
+    res.json(residents)
+  } catch (error) {
+    next(error)
+  }
+})
+
 router.post("/", async (req, res, next) => {
   const {
     familyDetails: { newFamily, ngoPartnerId, familyId },
