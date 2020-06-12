@@ -12,12 +12,14 @@ module.exports = router
 router.use(upload.single("file"))
 
 router.get("/", async (req, res, next) => {
-  console.log("oi", req.query)
   if (req.query.cpf) {
     try {
       const resident = await Resident.findOne({
         where: {
           cpf: req.query.cpf
+        },
+        include: {
+          model: Family
         }
       })
       if (resident) {

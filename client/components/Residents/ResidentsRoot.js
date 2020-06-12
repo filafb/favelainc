@@ -43,7 +43,7 @@ const ResidentsRoot = () => {
               <SecondaryButton text="Ver Todos" type="button" />
             </div>
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <InputField
               type="text"
               value={search}
@@ -58,7 +58,7 @@ const ResidentsRoot = () => {
             >
               Buscar
             </button>
-          </div>
+          </div> */}
         </div>
         <Switch>
           <Route exact path={`${path}/novo`}>

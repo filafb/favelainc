@@ -1,10 +1,10 @@
 import axios from "axios"
 
-const CREATE_RESIDENT = "CREATE_RESIDENT"
+const UPDATE_RESIDENTS = "UPDATE_RESIDENTS"
 
 const updateResidents = residentInfo => {
   return {
-    type: CREATE_RESIDENT,
+    type: UPDATE_RESIDENTS,
     residentInfo
   }
 }
@@ -20,9 +20,21 @@ export const createResident = (residentInfo, history) => async dispatch => {
   }
 }
 
+export const searchResidentByCPF = cpf => async dispatch => {
+  try {
+    const { data } = await axios.get(`/api/residents/?cpf=${cpf}`)
+    if (!data.message) {
+      dispatch(updateResidents(data))
+    }
+    return data
+  } catch (error) {
+    return { error: true }
+  }
+}
+
 const residentsReducer = (state = [], { type, ...payload }) => {
   switch (type) {
-    case CREATE_RESIDENT:
+    case UPDATE_RESIDENTS:
       return [...state, payload.residentInfo]
     default:
       return state

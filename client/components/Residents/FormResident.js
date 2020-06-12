@@ -3,7 +3,7 @@ import { InputField, SelectPartnerField } from "../Partials/FormField"
 import { PrimaryButton } from "../Partials/Buttons"
 import { useSelector, useDispatch } from "react-redux"
 import useFormControl from "../Hooks/useFormControl"
-import { createResident } from "../../reducers/residents"
+import { createResident, searchResidentByCPF } from "../../reducers/residents"
 import { useHistory } from "react-router-dom"
 
 const CPF = "CPF"
@@ -66,9 +66,12 @@ const FormResident = () => {
   const dispatch = useDispatch()
   const [error, setError] = React.useState("")
   const history = useHistory()
+  const checkCpf = /^(?![0]{11})([0-9]{11})$/
 
   const openFamilyAssociation = e => {
     setFamilyView(e.target.name)
+    setFamilyMember({})
+    setSearchCpf("")
     dispatchForm({
       type: NGOPARTNER,
       payload: {
@@ -105,13 +108,48 @@ const FormResident = () => {
     const searchValue = e.target.value
     const onlyDigits = /^[0-9]*$/g
     if (onlyDigits.test(searchValue)) {
+      setFamilyMember({})
       setSearchCpf(e.target.value)
     }
   }
 
-  const handleSearchClick = () => {
-    console.log(residentsList)
-    console.log(searchCpf)
+  const handleSearchClick = async () => {
+    if (!checkCpf.test(searchCpf)) {
+      // handle this error = invalid input
+      console.log("cpf invalido")
+      return
+    }
+
+    let residentInfo
+
+    const findOnState = residentsList.find(
+      resident => resident.cpf === searchCpf
+    )
+
+    if (findOnState) {
+      residentInfo = findOnState
+    } else {
+      const response = await dispatch(searchResidentByCPF(searchCpf))
+      if (response.message) {
+        // handle this error = CPF não encontrado
+        console.log(response.message)
+        return
+      } else if (response.error) {
+        // handle this error = any other error
+        console.log(response.error)
+        return
+      } else {
+        residentInfo = response
+      }
+      setFamilyMember(residentInfo)
+      dispatchForm({
+        type: NGOPARTNER,
+        payload: {
+          ngoPartnerId: residentInfo.family.ngoPartnerId,
+          newFamily: familyView === "new" ? true : false
+        }
+      })
+    }
   }
 
   const handelSubmit = async e => {
@@ -136,10 +174,15 @@ const FormResident = () => {
     }
   }
 
-  const checkCpf = /^(?![0]{11})([0-9]{11})$/
-
   const disabled =
     !firstName || !lastName || !checkCpf.test(cpf) || !ngoPartnerId
+
+  let ngoName
+  if (familyMember.family) {
+    ngoName = ngoPartners.find(
+      partner => partner.id === familyMember.family.ngoPartnerId
+    ).name
+  }
 
   return (
     <>
@@ -221,9 +264,9 @@ const FormResident = () => {
             </div>
             {familyMember.id && (
               <div>
-                <p>Nome: </p>
-                <p>ID família</p>
-                <p>Ong Responsável</p>
+                <p>{`Nome: ${familyMember.firstName} ${familyMember.lastName}`}</p>
+                <p>{`ID família: ${familyMember.familyId}`}</p>
+                <p>{`Ong Responsável: ${ngoName}`}</p>
               </div>
             )}
           </>
