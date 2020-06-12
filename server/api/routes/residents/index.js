@@ -12,18 +12,36 @@ module.exports = router
 router.use(upload.single("file"))
 
 router.get("/", async (req, res, next) => {
-  try {
-    const userOrg = await req.user.getNgoPartner()
-    const queryParams = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
-    const residents = await Resident.findAll({
-      include: {
-        model: Family,
-        where: queryParams
+  console.log("oi", req.query)
+  if (req.query.cpf) {
+    try {
+      const resident = await Resident.findOne({
+        where: {
+          cpf: req.query.cpf
+        }
+      })
+      if (resident) {
+        res.json(resident)
+      } else {
+        res.json({ message: "CPF não encontrado" })
       }
-    })
-    res.json(residents)
-  } catch (error) {
-    next(error)
+    } catch (error) {
+      next(error)
+    }
+  } else {
+    try {
+      const userOrg = await req.user.getNgoPartner()
+      const queryParams = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
+      const residents = await Resident.findAll({
+        include: {
+          model: Family,
+          where: queryParams
+        }
+      })
+      res.json(residents)
+    } catch (error) {
+      next(error)
+    }
   }
 })
 
