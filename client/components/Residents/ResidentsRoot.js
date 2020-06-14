@@ -10,17 +10,22 @@ import {
 import { SecondaryButton } from "../Partials/Buttons"
 import { InputField } from "../Partials/FormField"
 import NewResident from "./NewResident"
+import AllResidents from "./AllResidents"
+import { useDispatch } from "react-redux"
+import { fetchResidents } from "../../reducers/residents"
 
 const ResidentsRoot = () => {
   const { path } = useRouteMatch()
   const [search, setSearch] = React.useState("")
   const history = useHistory()
+  const dispatch = useDispatch()
 
   const handleSeeAll = () => {
     if (history.location.pathname !== "/moradores") {
       history.push("/moradores")
     }
     setSearch("")
+    dispatch(fetchResidents())
   }
 
   const searchResident = () => {}
@@ -65,7 +70,7 @@ const ResidentsRoot = () => {
             <NewResident />
           </Route>
           <Route exact path={`${path}`}>
-            <div>See All</div>
+            <AllResidents />
           </Route>
           <Route exact path={`${path}/:id`}>
             <div>See one</div>

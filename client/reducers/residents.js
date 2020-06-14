@@ -1,11 +1,28 @@
 import axios from "axios"
 
 const UPDATE_RESIDENTS = "UPDATE_RESIDENTS"
+const GOT_ALL_RESIDENTS = "GOT_ALL_RESIDENTS"
 
 const updateResidents = residentInfo => {
   return {
     type: UPDATE_RESIDENTS,
     residentInfo
+  }
+}
+
+const gotAll = residents => {
+  return {
+    type: GOT_ALL_RESIDENTS,
+    residents
+  }
+}
+
+export const fetchResidents = () => async dispatch => {
+  try {
+    const { data } = await axios.get("/api/residents")
+    dispatch(gotAll(data))
+  } catch {
+    return { error: "Erro ao visualizar moradores" }
   }
 }
 
@@ -34,6 +51,8 @@ export const searchResidentByCPF = cpf => async dispatch => {
 
 const residentsReducer = (state = [], { type, ...payload }) => {
   switch (type) {
+    case GOT_ALL_RESIDENTS:
+      return payload.residents
     case UPDATE_RESIDENTS:
       return [...state, payload.residentInfo]
     default:
