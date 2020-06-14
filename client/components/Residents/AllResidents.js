@@ -7,7 +7,7 @@ const AllResidents = () => {
   const residents = useSelector(({ residentsList }) => residentsList)
   const { path } = useRouteMatch()
   return residents.length ? (
-    <div className="mt-4">
+    <div>
       <h2 className="text-2xl">Moradores</h2>
       <ul>
         {residents.map(({ firstName, lastName, id, cpf }) => (

@@ -13,6 +13,7 @@ import NewResident from "./NewResident"
 import AllResidents from "./AllResidents"
 import { useDispatch } from "react-redux"
 import { fetchResidents } from "../../reducers/residents"
+import SingleResident from "./SingleResident"
 
 const ResidentsRoot = () => {
   const { path } = useRouteMatch()
@@ -65,18 +66,20 @@ const ResidentsRoot = () => {
             </button>
           </div> */}
         </div>
-        <Switch>
-          <Route exact path={`${path}/novo`}>
-            <NewResident />
-          </Route>
-          <Route exact path={`${path}`}>
-            <AllResidents />
-          </Route>
-          <Route exact path={`${path}/:id`}>
-            <div>See one</div>
-          </Route>
-          <Redirect to={path} />
-        </Switch>
+        <div className="mt-4">
+          <Switch>
+            <Route exact path={`${path}/novo`}>
+              <NewResident />
+            </Route>
+            <Route exact path={`${path}`}>
+              <AllResidents />
+            </Route>
+            <Route exact path={`${path}/:id`}>
+              <SingleResident />
+            </Route>
+            <Redirect to={path} />
+          </Switch>
+        </div>
       </div>
     </main>
   )

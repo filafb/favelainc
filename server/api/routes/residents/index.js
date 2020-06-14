@@ -47,6 +47,16 @@ router.get("/", async (req, res, next) => {
   }
 })
 
+router.get("/:id", async (req, res, next) => {
+  const { id } = req.params
+  try {
+    const resident = await Resident.findByPk(id)
+    res.json(resident)
+  } catch (error) {
+    next(error)
+  }
+})
+
 router.post("/", async (req, res, next) => {
   const {
     familyDetails: { newFamily, ngoPartnerId, familyId },

@@ -37,6 +37,16 @@ export const createResident = (residentInfo, history) => async dispatch => {
   }
 }
 
+export const fetchSingleResident = id => async dispatch => {
+  try {
+    const { data } = await axios.get(`/api/residents/${id}`)
+    dispatch(updateResidents(data))
+    return { success: true }
+  } catch (error) {
+    return { error: "Erro ao buscar usuário" }
+  }
+}
+
 export const searchResidentByCPF = cpf => async dispatch => {
   try {
     const { data } = await axios.get(`/api/residents/?cpf=${cpf}`)
