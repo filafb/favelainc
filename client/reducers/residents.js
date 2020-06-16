@@ -2,10 +2,18 @@ import axios from "axios"
 
 const UPDATE_RESIDENTS = "UPDATE_RESIDENTS"
 const GOT_ALL_RESIDENTS = "GOT_ALL_RESIDENTS"
+const UPDATE_SINGLE_RESIDENT = "UPDATE_SINGLE_RESIDENT"
 
 const updateResidents = residentInfo => {
   return {
     type: UPDATE_RESIDENTS,
+    residentInfo
+  }
+}
+
+const updateSingleResident = residentInfo => {
+  return {
+    type: UPDATE_SINGLE_RESIDENT,
     residentInfo
   }
 }
@@ -29,7 +37,7 @@ export const fetchResidents = () => async dispatch => {
 export const createResident = (residentInfo, history) => async dispatch => {
   try {
     const { data } = await axios.post("/api/residents", residentInfo)
-    dispatch(updateResidents(data))
+    dispatch(updateSingleResident(data))
     history.push(`/moradores/${data.id}`)
     return { success: true }
   } catch (error) {
@@ -37,9 +45,9 @@ export const createResident = (residentInfo, history) => async dispatch => {
   }
 }
 
-export const fetchSingleResident = id => async dispatch => {
+export const fetchSingleResidentAndRelatives = id => async dispatch => {
   try {
-    const { data } = await axios.get(`/api/residents/${id}`)
+    const { data } = await axios.get(`/api/residents/${id}/relatives`)
     dispatch(updateResidents(data))
     return { success: true }
   } catch (error) {
@@ -63,8 +71,10 @@ const residentsReducer = (state = [], { type, ...payload }) => {
   switch (type) {
     case GOT_ALL_RESIDENTS:
       return payload.residents
-    case UPDATE_RESIDENTS:
+    case UPDATE_SINGLE_RESIDENT:
       return [...state, payload.residentInfo]
+    case UPDATE_RESIDENTS:
+      return [...state, ...payload.residentInfo]
     default:
       return state
   }

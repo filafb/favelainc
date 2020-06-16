@@ -141,15 +141,15 @@ const FormResident = () => {
       } else {
         residentInfo = response
       }
-      setFamilyMember(residentInfo)
-      dispatchForm({
-        type: NGOPARTNER,
-        payload: {
-          ngoPartnerId: residentInfo.family.ngoPartnerId,
-          newFamily: familyView === "new" ? true : false
-        }
-      })
     }
+    setFamilyMember(residentInfo)
+    dispatchForm({
+      type: NGOPARTNER,
+      payload: {
+        ngoPartnerId: residentInfo.family.ngoPartnerId,
+        newFamily: familyView === "new" ? true : false
+      }
+    })
   }
 
   const handelSubmit = async e => {

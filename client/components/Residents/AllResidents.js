@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useSelector } from "react-redux"
-import { useRouteMatch, Link } from "react-router-dom"
-import { PrimaryButton } from "../Partials/Buttons"
+import { useRouteMatch } from "react-router-dom"
+import ResidentCard from "./ResidentCard"
 
 const AllResidents = () => {
   const residents = useSelector(({ residentsList }) => residentsList)
@@ -11,17 +11,14 @@ const AllResidents = () => {
       <h2 className="text-2xl">Moradores</h2>
       <ul>
         {residents.map(({ firstName, lastName, id, cpf }) => (
-          <li key={id} className="flex py-4 items-center justify-between">
-            <div>
-              <p>{`${firstName} ${lastName}`}</p>
-              <p>{`CPF: ${cpf}`}</p>
-            </div>
-            <Link to={`${path}/${id}`}>
-              <div>
-                <PrimaryButton type="button" text="Ver" />
-              </div>
-            </Link>
-          </li>
+          <ResidentCard
+            key={id}
+            firstName={firstName}
+            lastName={lastName}
+            cpf={cpf}
+            path={path}
+            id={id}
+          />
         ))}
       </ul>
     </div>

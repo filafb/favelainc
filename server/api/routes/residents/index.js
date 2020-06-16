@@ -47,11 +47,19 @@ router.get("/", async (req, res, next) => {
   }
 })
 
-router.get("/:id", async (req, res, next) => {
+router.get("/:id/relatives", async (req, res, next) => {
   const { id } = req.params
   try {
-    const resident = await Resident.findByPk(id)
-    res.json(resident)
+    const userOrg = await req.user.getNgoPartner()
+    const queryParams = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
+    const resident = await Resident.findByPk(id, {
+      include: {
+        model: Family,
+        where: queryParams
+      }
+    })
+    const relatives = await resident.getRelatives()
+    res.json([resident, ...relatives])
   } catch (error) {
     next(error)
   }

@@ -1,6 +1,7 @@
 "use strict"
 const Sequelize = require("sequelize")
 const db = require("../database")
+const Op = Sequelize.Op
 
 const Resident = db.define(
   "resident",
@@ -48,6 +49,17 @@ const validateDate = residents => {
     const date = new Date(resident.birthDate).toString()
     if (date === "Invalid Date") {
       resident.birthDate = null
+    }
+  })
+}
+
+Resident.prototype.getRelatives = function() {
+  return Resident.findAll({
+    where: {
+      familyId: this.familyId,
+      id: {
+        [Op.ne]: this.id
+      }
     }
   })
 }
