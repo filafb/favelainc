@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux"
 import { fetchNgoList } from "../../reducers/ngoPartners"
 import PartnersRoot from "../Partners/PartnersRoot"
 import ResidentsRoot from "../Residents/ResidentsRoot"
+import FamiliesRoot from "../Families/FamiliesRoot"
 
 const AuthenticatedApp = () => {
   const dispatch = useDispatch()
@@ -29,7 +30,7 @@ const AuthenticatedApp = () => {
             <ResidentsRoot />
           </Route>
           <Route path="/familias">
-            <div>Familias</div>
+            <FamiliesRoot />
           </Route>
           <Route path="/campanhas">
             <div>Campanhas</div>
