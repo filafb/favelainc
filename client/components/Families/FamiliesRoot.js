@@ -12,7 +12,7 @@ const FamiliesRoot = () => {
 
   const handleSeeAll = () => {
     if (history.location.pathname !== "/familias") {
-      history.push("/moradores")
+      history.push("/familias")
     }
     dispatch(fetchFamilies())
   }

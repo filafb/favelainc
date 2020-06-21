@@ -14,7 +14,7 @@ router.get("/", async (req, res, next) => {
           ngoPartnerId: userOrg.id
         }
     const families = await Family.findAll({
-      where: { orgFilter },
+      where: orgFilter,
       attributes: {
         include: [
           [
