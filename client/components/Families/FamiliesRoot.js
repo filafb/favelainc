@@ -1,11 +1,21 @@
 import * as React from "react"
 import { SecondaryButton } from "../Partials/Buttons"
-import { Switch, Route, useRouteMatch } from "react-router-dom"
+import { Switch, Route, useRouteMatch, useHistory } from "react-router-dom"
+import AllFamilies from "./AllFamilies"
+import { useDispatch } from "react-redux"
+import { fetchResidents } from "../../reducers/residents"
 
 const FamiliesRoot = () => {
   const { path } = useRouteMatch()
+  const history = useHistory()
+  const dispatch = useDispatch()
 
-  const handleSeeAll = () => {}
+  const handleSeeAll = () => {
+    if (history.location.pathname !== "/familias") {
+      history.push("/moradores")
+    }
+    dispatch(fetchResidents())
+  }
 
   return (
     <main className="max-w-sm mx-auto">
@@ -13,16 +23,16 @@ const FamiliesRoot = () => {
         <div onClick={handleSeeAll}>
           <SecondaryButton text="Ver todas" type="button" />
         </div>
-      </div>
-      <div className="mt-4">
-        <Switch>
-          <Route exact path={`${path}`}>
-            <div>All families</div>
-          </Route>
-          <Route exact path={`${path}/:id`}>
-            <div>Single Family</div>
-          </Route>
-        </Switch>
+        <div className="mt-4">
+          <Switch>
+            <Route exact path={`${path}`}>
+              <AllFamilies />
+            </Route>
+            <Route exact path={`${path}/:id`}>
+              <div>Single Family</div>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </main>
   )
