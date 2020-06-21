@@ -3,7 +3,7 @@ import { SecondaryButton } from "../Partials/Buttons"
 import { Switch, Route, useRouteMatch, useHistory } from "react-router-dom"
 import AllFamilies from "./AllFamilies"
 import { useDispatch } from "react-redux"
-import { fetchResidents } from "../../reducers/residents"
+import { fetchFamilies } from "../../reducers/families"
 
 const FamiliesRoot = () => {
   const { path } = useRouteMatch()
@@ -14,7 +14,7 @@ const FamiliesRoot = () => {
     if (history.location.pathname !== "/familias") {
       history.push("/moradores")
     }
-    dispatch(fetchResidents())
+    dispatch(fetchFamilies())
   }
 
   return (

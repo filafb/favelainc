@@ -9,6 +9,7 @@ router.use("/users", require("./routes/users"))
 router.use("/residents", require("./routes/residents"))
 router.use("/ngo-partners", require("./routes/ngoPartners"))
 router.use("/residents", require("./routes/residents"))
+router.use("/families", require("./routes/families"))
 
 //handleling 404
 router.use((req, res, next) => {

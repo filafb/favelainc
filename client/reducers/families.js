@@ -11,7 +11,7 @@ const gotAllFamilies = families => {
 
 export const fetchFamilies = () => async dispatch => {
   try {
-    const { data } = await axios.get("/api/residents")
+    const { data } = await axios.get("/api/families")
     dispatch(gotAllFamilies(data))
     return { success: "Todas famílias recebidas" }
   } catch {
