@@ -51,9 +51,12 @@ router.get("/:id", async (req, res, next) => {
         ]
       },
       include: {
-        model: Resident
+        model: Resident,
+        include: {
+          model: Family
+        }
       },
-      group: ['"family.id"', '"residents.id"']
+      group: ['"family.id"', '"residents.id"', '"residents.family.id"']
     })
     if (!family) {
       const error = new Error(

@@ -22,7 +22,7 @@ const SingleResident = () => {
     if (!residentsList.length) {
       getOneUser(id)
     }
-  }, [residentsList])
+  }, [residentsList, id])
 
   const resident = residentsList.length
     ? residentsList.find(resident => resident.id === Number(id))

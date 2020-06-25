@@ -4,6 +4,7 @@ import { Switch, Route, useRouteMatch, useHistory } from "react-router-dom"
 import AllFamilies from "./AllFamilies"
 import { useDispatch } from "react-redux"
 import { fetchFamilies } from "../../reducers/families"
+import SingleFamily from "./SingleFamily"
 
 const FamiliesRoot = () => {
   const { path } = useRouteMatch()
@@ -29,7 +30,7 @@ const FamiliesRoot = () => {
               <AllFamilies />
             </Route>
             <Route exact path={`${path}/:id`}>
-              <div>Single Family</div>
+              <SingleFamily />
             </Route>
           </Switch>
         </div>

@@ -4,7 +4,7 @@ const UPDATE_RESIDENTS = "UPDATE_RESIDENTS"
 const GOT_ALL_RESIDENTS = "GOT_ALL_RESIDENTS"
 const UPDATE_SINGLE_RESIDENT = "UPDATE_SINGLE_RESIDENT"
 
-const updateResidents = residentInfo => {
+export const updateResidents = residentInfo => {
   return {
     type: UPDATE_RESIDENTS,
     residentInfo
