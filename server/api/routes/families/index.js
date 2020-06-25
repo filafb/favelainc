@@ -34,3 +34,36 @@ router.get("/", async (req, res, next) => {
     next(error)
   }
 })
+
+router.get("/:id", async (req, res, next) => {
+  try {
+    const { id } = req.params
+    const userOrg = await req.user.getNgoPartner()
+    const orgFilter = userOrg.master ? {} : { ngoPartnerId: id }
+    const family = await Family.findOne({
+      where: { id: id, ...orgFilter },
+      attributes: {
+        include: [
+          [
+            Sequelize.fn("COUNT", Sequelize.col("residents.id")),
+            "familyMembers"
+          ]
+        ]
+      },
+      include: {
+        model: Resident
+      },
+      group: ['"family.id"', '"residents.id"']
+    })
+    if (!family) {
+      const error = new Error(
+        "Família não encontrada ou não cadastrada pela Ong"
+      )
+      error.status = 404
+      throw error
+    }
+    res.json([family, family.residents])
+  } catch (error) {
+    next(error)
+  }
+})
