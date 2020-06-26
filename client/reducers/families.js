@@ -29,17 +29,10 @@ export const fetchFamilies = () => async dispatch => {
   }
 }
 
-export const fetchSingleFamily = id => async (dispatch, getState) => {
+export const fetchSingleFamily = id => async dispatch => {
   try {
     const { data } = await axios.get(`/api/families/${id}`)
-    const { residentsList } = getState()
-    const hasMembers = residentsList.some(resident => resident.familyId === id)
-    batch(() => {
-      if (!hasMembers) {
-        dispatch(updateResidents(data[1]))
-      }
-      dispatch(updateFamily(data[0]))
-    })
+    dispatch(updateFamily(data))
     return { success: true }
   } catch (error) {
     return { error: "Erro ao receber família" }

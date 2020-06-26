@@ -52,11 +52,9 @@ router.get("/:id", async (req, res, next) => {
       },
       include: {
         model: Resident,
-        include: {
-          model: Family
-        }
+        attributes: []
       },
-      group: ['"family.id"', '"residents.id"', '"residents.family.id"']
+      group: ['"family.id"']
     })
     if (!family) {
       const error = new Error(
@@ -65,7 +63,27 @@ router.get("/:id", async (req, res, next) => {
       error.status = 404
       throw error
     }
-    res.json([family, family.residents])
+    res.json(family)
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.get("/:id/residents", async (req, res, next) => {
+  const { id } = req.params
+  try {
+    const userOrg = await req.user.getNgoPartner()
+    const orgFilter = userOrg.master ? {} : { ngoPartnerId: userOrg.id }
+    const residents = await Resident.findAll({
+      where: {
+        familyId: id
+      },
+      include: {
+        model: Family,
+        where: orgFilter
+      }
+    })
+    res.json(residents)
   } catch (error) {
     next(error)
   }

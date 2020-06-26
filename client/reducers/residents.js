@@ -67,6 +67,15 @@ export const searchResidentByCPF = cpf => async dispatch => {
   }
 }
 
+export const findFamilyMembersByFamily = id => async dispatch => {
+  try {
+    const { data } = await axios.get(`/api/families/${id}/residents`)
+    dispatch(updateResidents(data))
+  } catch (error) {
+    return { error: true }
+  }
+}
+
 const residentsReducer = (state = [], { type, ...payload }) => {
   switch (type) {
     case GOT_ALL_RESIDENTS:
