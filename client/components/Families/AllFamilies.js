@@ -7,8 +7,6 @@ const AllFamilies = () => {
   const { path } = useRouteMatch()
   const families = useSelector(({ familiesList }) => familiesList)
 
-  console.log(families)
-
   return (
     <div>
       <h2 className="text-2xl">Famílias</h2>
