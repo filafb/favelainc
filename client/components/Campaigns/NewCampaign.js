@@ -2,13 +2,14 @@ import * as React from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchFamilies } from "../../reducers/families"
 import FamilyCard from "../Families/FamilyCard"
+import { SelectPartnerField } from "../Partials/FormField"
 
 const NGO_PARTNER = "NGO_PARTNER"
 const UPDATE_FAMILIES = "UPDATE_FAMILIES"
 const LOAD_FAMILIES = "LOAD_FAMILIES"
 
 const newCampaignState = {
-  ngoPartnerId: null,
+  ngoPartnerId: "",
   families: []
 }
 
@@ -39,12 +40,16 @@ const NewCampaign = () => {
   const dispatch = useDispatch()
   const [
     familiesState,
-    loggedUser
-  ] = useSelector(({ familiesList, usersState: { loggedUser } }) => [
-    familiesList,
-    loggedUser
-  ])
-  const [{ ngoPartner, families }, dispatchForm] = React.useReducer(
+    loggedUser,
+    ngoPartners
+  ] = useSelector(
+    ({
+      familiesList,
+      usersState: { loggedUser },
+      ngoPartnersState: { ngoList }
+    }) => [familiesList, loggedUser, ngoList]
+  )
+  const [{ ngoPartnerId, families }, dispatchForm] = React.useReducer(
     newCampaignReducer,
     newCampaignState
   )
@@ -67,6 +72,13 @@ const NewCampaign = () => {
   return (
     <>
       <div className="sticky top-0 bg-white">
+        <SelectPartnerField
+          label="Selecione ONG"
+          name={NGO_PARTNER}
+          value={ngoPartnerId}
+          onChange={() => {}}
+          ngoPartners={ngoPartners}
+        />
         <p>{`Famílias selecionadas ${totalSelected.length}/${families.length}`}</p>
       </div>
       <ul>
