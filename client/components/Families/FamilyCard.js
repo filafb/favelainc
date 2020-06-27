@@ -11,9 +11,11 @@ const FamilyCard = ({ id, path, familyMembers }) => {
         <p>Última cesta</p>
         <p>próxima cesta</p>
       </div>
-      <Link to={`${path}/${id}`}>
-        <PrimaryButton type="button" text="Ver" />
-      </Link>
+      {path && (
+        <Link to={`${path}/${id}`}>
+          <PrimaryButton type="button" text="Ver" />
+        </Link>
+      )}
     </li>
   )
 }
