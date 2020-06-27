@@ -10,6 +10,7 @@ import { fetchNgoList } from "../../reducers/ngoPartners"
 import PartnersRoot from "../Partners/PartnersRoot"
 import ResidentsRoot from "../Residents/ResidentsRoot"
 import FamiliesRoot from "../Families/FamiliesRoot"
+import CampaignsRoot from "../Campaigns/CampaignsRoot"
 
 const AuthenticatedApp = () => {
   const dispatch = useDispatch()
@@ -33,7 +34,7 @@ const AuthenticatedApp = () => {
             <FamiliesRoot />
           </Route>
           <Route path="/campanhas">
-            <div>Campanhas</div>
+            <CampaignsRoot />
           </Route>
           <Route path="/uploads">
             <RootUpload />
