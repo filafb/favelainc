@@ -16,6 +16,7 @@ const newCampaignState = {
 const newCampaignReducer = (state = newCampaignState, { type, payload }) => {
   switch (type) {
     case NGO_PARTNER:
+      console.log("oi", payload.partnerId)
       return { ...state, ngoPartnerId: payload.partnerId }
     case LOAD_FAMILIES:
       return { ...state, families: payload.families }
@@ -23,7 +24,6 @@ const newCampaignReducer = (state = newCampaignState, { type, payload }) => {
       const updatedFamilies = state.families.map(family => {
         if (family.id === Number(payload.familyId)) {
           const updateFamily = { ...family, selected: !family.selected }
-          console.log(updateFamily)
           return updateFamily
         } else {
           return family
@@ -71,9 +71,16 @@ const NewCampaign = () => {
   const handleChange = e => {
     dispatchForm({
       type: NGO_PARTNER,
-      payload: { ngoPartnerId: e.target.value }
+      payload: { partnerId: e.target.value }
     })
   }
+
+  const partner = ngoPartners.find(
+    partner => partner.id === Number(ngoPartnerId)
+  )
+  const date = JSON.stringify(new Date()).slice(1, 11)
+
+  const campaignName = ngoPartnerId ? `${partner.name}-${date}` : ""
 
   return (
     <>
@@ -85,6 +92,7 @@ const NewCampaign = () => {
           onChange={handleChange}
           ngoPartners={ngoPartners}
         />
+        <p>{`Campanha: ${campaignName}`}</p>
         <p>{`Famílias selecionadas ${totalSelected.length}/${families.length}`}</p>
       </div>
       <ul>

@@ -7,7 +7,7 @@ const FamilyCard = ({ id, path, familyMembers }) => {
     <li className="flex py-4 items-center justify-between">
       <div>
         <p>{`ID família: ${id}`}</p>
-        <p>{`Membros: ${Number(familyMembers)}`}</p>
+        <p>{`Familiares Cadastrados: ${Number(familyMembers)}`}</p>
         <p>Última cesta</p>
         <p>próxima cesta</p>
       </div>
