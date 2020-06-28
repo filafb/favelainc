@@ -63,11 +63,17 @@ const NewCampaign = () => {
   }, [familiesState])
 
   const toggleSelected = familyId => {
-    console.log(familyId)
     dispatchForm({ type: UPDATE_FAMILIES, payload: { familyId } })
   }
 
   const totalSelected = families.filter(family => family.selected)
+
+  const handleChange = e => {
+    dispatchForm({
+      type: NGO_PARTNER,
+      payload: { ngoPartnerId: e.target.value }
+    })
+  }
 
   return (
     <>
@@ -76,7 +82,7 @@ const NewCampaign = () => {
           label="Selecione ONG"
           name={NGO_PARTNER}
           value={ngoPartnerId}
-          onChange={() => {}}
+          onChange={handleChange}
           ngoPartners={ngoPartners}
         />
         <p>{`Famílias selecionadas ${totalSelected.length}/${families.length}`}</p>
