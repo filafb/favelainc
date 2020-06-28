@@ -6,8 +6,7 @@ const db = require("../database")
 const Campaign = db.define(
   "campaign",
   {
-    name: Sequelize.STRING,
-    pickupDate: Sequelize.DATE
+    name: Sequelize.STRING
   },
   {}
 )

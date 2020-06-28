@@ -11,16 +11,6 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      pickupDate: {
-        type: Sequelize.DATE
-      },
-      familyId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "families",
-          key: "id"
-        }
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

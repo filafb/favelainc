@@ -5,6 +5,7 @@ const NgoPartner = require("./models/ngopartner")
 const GovernmentBenefit = require("./models/governmentbenefit")
 const Resident = require("./models/resident")
 const Campaign = require("./models/campaign")
+const CampaignControl = require("./models/campaign_control")
 
 //associtiations
 Family.belongsTo(NgoPartner, { as: "ngoPartner" })
@@ -22,8 +23,8 @@ NgoPartner.hasMany(User, {
   }
 })
 
-Family.hasMany(Campaign)
-Campaign.belongsTo(Family)
+Family.belongsToMany(Campaign, { through: CampaignControl })
+Campaign.belongsToMany(Family, { through: CampaignControl })
 
 module.exports = {
   db,
