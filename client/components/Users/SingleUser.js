@@ -36,7 +36,7 @@ const SingleUser = () => {
             {userAdmin && <AdminSvg />}
           </div>
           <p>{email}</p>
-          <p>{ngoPartner.name}</p>
+          {ngoPartner && <p>{ngoPartner.name}</p>}
         </div>
         {(!userAdmin || userId === userLoggedId) && (
           <div>

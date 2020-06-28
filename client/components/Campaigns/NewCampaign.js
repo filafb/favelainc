@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchFamilies } from "../../reducers/families"
 import FamilyCard from "../Families/FamilyCard"
 import { SelectPartnerField } from "../Partials/FormField"
+import useFormControl from "../Hooks/useFormControl"
+import { PrimaryButton } from "../Partials/Buttons"
 
 const NGO_PARTNER = "NGO_PARTNER"
 const UPDATE_FAMILIES = "UPDATE_FAMILIES"
@@ -16,7 +18,6 @@ const newCampaignState = {
 const newCampaignReducer = (state = newCampaignState, { type, payload }) => {
   switch (type) {
     case NGO_PARTNER:
-      console.log("oi", payload.partnerId)
       return { ...state, ngoPartnerId: payload.partnerId }
     case LOAD_FAMILIES:
       return { ...state, families: payload.families }
@@ -53,50 +54,95 @@ const NewCampaign = () => {
     newCampaignReducer,
     newCampaignState
   )
+  const [campaignName, setCampaignName] = React.useState("")
+  const [status, handleStatus, types] = useFormControl()
 
   React.useEffect(() => {
     dispatch(fetchFamilies())
+    if (!loggedUser.ngoPartner.master) {
+      dispatchForm({
+        type: NGO_PARTNER,
+        payload: { partnerId: loggedUser.ngoPartnerId }
+      })
+    }
   }, [])
 
   React.useEffect(() => {
     dispatchForm({ type: LOAD_FAMILIES, payload: { families: familiesState } })
   }, [familiesState])
 
+  React.useEffect(() => {
+    const partner = ngoPartners.find(
+      partner => partner.id === Number(ngoPartnerId)
+    )
+    const date = JSON.stringify(new Date()).slice(1, 11)
+
+    const campaignName =
+      ngoPartners.length && ngoPartnerId ? `${partner.name}-${date}` : ""
+    setCampaignName(campaignName)
+  }, [ngoPartners, ngoPartnerId])
+
   const toggleSelected = familyId => {
+    if (status === types.SUBMITTING) {
+      return
+    }
+    handleStatus({ type: types.IDLE })
     dispatchForm({ type: UPDATE_FAMILIES, payload: { familyId } })
   }
 
-  const totalSelected = families.filter(family => family.selected)
-
   const handleChange = e => {
+    if (status === types.SUBMITTING) {
+      return
+    }
+    handleStatus({ type: types.IDLE })
     dispatchForm({
       type: NGO_PARTNER,
       payload: { partnerId: e.target.value }
     })
   }
 
-  const partner = ngoPartners.find(
-    partner => partner.id === Number(ngoPartnerId)
-  )
-  const date = JSON.stringify(new Date()).slice(1, 11)
+  const handleSubmit = async e => {
+    e.preventDefault()
+    if (status === types.SUBMITTING) {
+      return
+    }
+    handleStatus({ type: types.SUBMITTING })
+    const selectedFamiliesId = families
+      .filter(family => family.selected)
+      .map(family => family.id)
+    console.log({ selectedFamiliesId, ngoPartnerId, campaignName })
+  }
 
-  const campaignName = ngoPartnerId ? `${partner.name}-${date}` : ""
+  const totalSelected = families.filter(family => family.selected)
+
+  const filteredFamilies = families.filter(
+    family => family.ngoPartnerId === Number(ngoPartnerId)
+  )
+
+  const disabled = !totalSelected.length || !ngoPartnerId || !campaignName
 
   return (
-    <>
+    <form onSubmit={handleSubmit}>
       <div className="sticky top-0 bg-white">
-        <SelectPartnerField
-          label="Selecione ONG"
-          name={NGO_PARTNER}
-          value={ngoPartnerId}
-          onChange={handleChange}
-          ngoPartners={ngoPartners}
-        />
+        {loggedUser.ngoPartner.master && (
+          <SelectPartnerField
+            label="Selecione ONG"
+            name={NGO_PARTNER}
+            value={ngoPartnerId}
+            onChange={handleChange}
+            ngoPartners={ngoPartners}
+          />
+        )}
         <p>{`Campanha: ${campaignName}`}</p>
-        <p>{`Famílias selecionadas ${totalSelected.length}/${families.length}`}</p>
+        <p>{`Famílias selecionadas ${totalSelected.length}/${filteredFamilies.length}`}</p>
+        <PrimaryButton
+          type="submit"
+          text="Criar Camapanha"
+          disabled={disabled}
+        />
       </div>
-      <ul>
-        {families.map(family => {
+      <ul className="mt-4">
+        {filteredFamilies.map(family => {
           return (
             <div
               onClick={() => toggleSelected(family.id)}
@@ -108,7 +154,7 @@ const NewCampaign = () => {
           )
         })}
       </ul>
-    </>
+    </form>
   )
 }
 
