@@ -33,7 +33,8 @@ module.exports = {
   NgoPartner,
   GovernmentBenefit,
   Resident,
-  Campaign
+  Campaign,
+  CampaignControl
 }
 
 if (process.env.NODE_ENV === "test") {
