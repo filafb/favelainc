@@ -6,7 +6,7 @@ const db = require("../database")
 const CampaignControl = db.define(
   "campaign_control",
   {
-    pickupDate: Sequelize.DATE
+    dateDelivered: Sequelize.DATE
   },
   {}
 )
