@@ -24,10 +24,10 @@ Campaign.createCampaign = async function({ name, familyIds = [] }) {
     }
   })
   await campaign.setFamilies(families)
-
   return Campaign.findByPk(campaign.id, {
     include: {
-      model: CampaignControl
+      model: Family,
+      attributes: ["id"]
     }
   })
 }

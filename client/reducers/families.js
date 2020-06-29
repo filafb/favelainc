@@ -1,6 +1,4 @@
 import axios from "axios"
-import { batch } from "react-redux"
-import { updateResidents } from "./residents"
 
 const GOT_ALL_FAMILIES = "GOT_ALL_FAMILIES"
 const GOT_SINGLE_FAMILY = "GOT_SINGLE_FAMILY"

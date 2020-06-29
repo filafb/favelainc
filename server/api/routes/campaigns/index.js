@@ -6,10 +6,11 @@ const Campaign = require("../../../db/models/campaign")
 module.exports = router
 
 router.post("/", verifyAdmin, async (req, res, next) => {
+  const { name, familyIds } = req.body
   try {
     const campaign = await Campaign.createCampaign({
-      name: "test",
-      familyIds: [6, 7, 10]
+      name,
+      familyIds
     })
     res.json(campaign)
   } catch (error) {

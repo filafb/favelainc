@@ -5,6 +5,8 @@ import FamilyCard from "../Families/FamilyCard"
 import { SelectPartnerField } from "../Partials/FormField"
 import useFormControl from "../Hooks/useFormControl"
 import { PrimaryButton } from "../Partials/Buttons"
+import { createCampaign } from "../../reducers/campaigns"
+import { useHistory } from "react-router-dom"
 
 const NGO_PARTNER = "NGO_PARTNER"
 const UPDATE_FAMILIES = "UPDATE_FAMILIES"
@@ -39,6 +41,7 @@ const newCampaignReducer = (state = newCampaignState, { type, payload }) => {
 
 const NewCampaign = () => {
   const dispatch = useDispatch()
+  const history = useHistory()
   const [
     familiesState,
     loggedUser,
@@ -110,7 +113,16 @@ const NewCampaign = () => {
     const selectedFamiliesId = families
       .filter(family => family.selected)
       .map(family => family.id)
-    console.log({ selectedFamiliesId, ngoPartnerId, campaignName })
+    const response = await dispatch(
+      createCampaign(
+        { name: campaignName, familyIds: selectedFamiliesId },
+        history
+      )
+    )
+    if (response.error) {
+      handleStatus({ type: types.ERROR })
+      console.log(response.error)
+    }
   }
 
   const totalSelected = families.filter(family => family.selected)
