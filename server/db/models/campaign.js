@@ -3,7 +3,6 @@
 const Sequelize = require("sequelize")
 const db = require("../database")
 const Family = require("./family")
-const CampaignControl = require("./campaign_control")
 const { Op } = Sequelize
 
 const Campaign = db.define(
