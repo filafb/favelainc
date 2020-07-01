@@ -4,7 +4,9 @@ import { useDispatch, useSelector } from "react-redux"
 import { fetchSingleFamily } from "../../reducers/families"
 import { findFamilyMembersByFamily } from "../../reducers/residents"
 import ResidentCard from "../Residents/ResidentCard"
-import { SecondaryButton } from "../Partials/Buttons"
+import { SecondaryButton, PrimaryButton } from "../Partials/Buttons"
+import axios from "axios"
+import { updateCampaign } from "../../reducers/campaigns"
 
 const SingleFamily = () => {
   const {
@@ -14,10 +16,12 @@ const SingleFamily = () => {
   const history = useHistory()
   const [
     families,
-    residents
-  ] = useSelector(({ familiesList, residentsList }) => [
+    residents,
+    campaigns
+  ] = useSelector(({ familiesList, residentsList, campaignsList }) => [
     familiesList,
-    residentsList
+    residentsList,
+    campaignsList
   ])
   const [familyMembers, setFamilyMember] = React.useState([])
 
@@ -42,8 +46,21 @@ const SingleFamily = () => {
     }
   }, [id, family, residents])
 
+  const [campaignsFamily, setCampaignsFamily] = React.useState([])
+
+  React.useEffect(() => {
+    const filteredCampaigns = campaigns.filter(campaign => {
+      return campaign.families.some(family => family.id === Number(id))
+    })
+    setCampaignsFamily(filteredCampaigns)
+  }, [campaigns, id])
+
   const handleSeeFamilyMembers = () => {
     dispatch(findFamilyMembersByFamily(Number(id)))
+  }
+
+  const handleReceiveBasket = campaignId => {
+    dispatch(updateCampaign({ familyId: id, campaignId }))
   }
 
   return (
@@ -74,6 +91,30 @@ const SingleFamily = () => {
             <SecondaryButton text="Moradores cadastrados" type="button" />
           </div>
         )}
+        <div className="mt-4">
+          {!!campaignsFamily.length && (
+            <>
+              <h2 className="text-2xl">Cestas</h2>
+              {campaignsFamily.map(campaign => {
+                const {
+                  campaign_control: { dateDelivered }
+                } = campaign.families.find(family => family.id === Number(id))
+                return (
+                  <div key={campaign.id} className="mt-4">
+                    <p>{`Campanha: ${campaign.name}`}</p>
+                    {dateDelivered ? (
+                      <p>{`Data Recebimento: ${dateDelivered}`}</p>
+                    ) : (
+                      <div onClick={() => handleReceiveBasket(campaign.id)}>
+                        <PrimaryButton text="Receber cesta" type="button" />
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </>
+          )}
+        </div>
       </div>
     </>
   )

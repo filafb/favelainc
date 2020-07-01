@@ -1,7 +1,8 @@
 const express = require("express")
 const router = express.Router()
-const { Family, Resident } = require("../../../db")
+const { Family, Resident, CampaignControl } = require("../../../db")
 const { Sequelize } = require("sequelize")
+const Campaign = require("../../../db/models/campaign")
 
 module.exports = router
 
@@ -23,11 +24,28 @@ router.get("/", async (req, res, next) => {
           ]
         ]
       },
-      include: {
-        model: Resident,
-        attributes: []
-      },
-      group: ['"family.id"']
+      include: [
+        {
+          model: Resident,
+          attributes: []
+        },
+        {
+          model: Campaign,
+          attributes: ["id"],
+          through: {
+            attributes: []
+          }
+        }
+      ],
+      group: [
+        "family.id",
+        "campaigns.id",
+        "campaigns.campaign_control.dateDelivered",
+        "campaigns.campaign_control.createdAt",
+        "campaigns.campaign_control.updatedAt",
+        "campaigns.campaign_control.familyId",
+        "campaigns.campaign_control.campaignId"
+      ]
     })
     res.json(families)
   } catch (error) {
@@ -50,11 +68,28 @@ router.get("/:id", async (req, res, next) => {
           ]
         ]
       },
-      include: {
-        model: Resident,
-        attributes: []
-      },
-      group: ['"family.id"']
+      include: [
+        {
+          model: Resident,
+          attributes: []
+        },
+        {
+          model: Campaign,
+          attributes: ["id"],
+          through: {
+            attributes: []
+          }
+        }
+      ],
+      group: [
+        "family.id",
+        "campaigns.id",
+        "campaigns.campaign_control.dateDelivered",
+        "campaigns.campaign_control.createdAt",
+        "campaigns.campaign_control.updatedAt",
+        "campaigns.campaign_control.familyId",
+        "campaigns.campaign_control.campaignId"
+      ]
     })
     if (!family) {
       const error = new Error(

@@ -11,12 +11,14 @@ import PartnersRoot from "../Partners/PartnersRoot"
 import ResidentsRoot from "../Residents/ResidentsRoot"
 import FamiliesRoot from "../Families/FamiliesRoot"
 import CampaignsRoot from "../Campaigns/CampaignsRoot"
+import { fetchCampaigns } from "../../reducers/campaigns"
 
 const AuthenticatedApp = () => {
   const dispatch = useDispatch()
 
   React.useEffect(() => {
     dispatch(fetchNgoList())
+    dispatch(fetchCampaigns())
   }, [])
 
   return (
