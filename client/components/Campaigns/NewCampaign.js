@@ -146,7 +146,7 @@ const NewCampaign = () => {
           />
         )}
         <p>{`Campanha: ${campaignName}`}</p>
-        <p>{`Famílias selecionadas ${totalSelected.length}/${filteredFamilies.length}`}</p>
+        <p>{`Famílias selecionadas: ${totalSelected.length}`}</p>
         <PrimaryButton
           type="submit"
           text="Criar Camapanha"
@@ -161,7 +161,11 @@ const NewCampaign = () => {
               key={family.id}
               className={family.selected ? "bg-blue-400" : ""}
             >
-              <FamilyCard id={family.id} familyMembers={family.familyMembers} />
+              <FamilyCard
+                id={family.id}
+                familyMembers={family.familyMembers}
+                createCampaign
+              />
             </div>
           )
         })}
