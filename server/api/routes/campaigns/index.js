@@ -42,11 +42,11 @@ router.get("/", async (req, res, next) => {
 })
 
 router.put("/", async (req, res, next) => {
-  const { familyId, campaignId } = req.body
+  const { familyId, campaignId, date } = req.body
   try {
     await CampaignControl.update(
       {
-        dateDelivered: new Date()
+        dateDelivered: date
       },
       {
         where: {

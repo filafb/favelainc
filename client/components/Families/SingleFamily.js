@@ -5,7 +5,6 @@ import { fetchSingleFamily } from "../../reducers/families"
 import { findFamilyMembersByFamily } from "../../reducers/residents"
 import ResidentCard from "../Residents/ResidentCard"
 import { SecondaryButton, PrimaryButton } from "../Partials/Buttons"
-import axios from "axios"
 import { updateCampaign } from "../../reducers/campaigns"
 
 const SingleFamily = () => {
@@ -60,7 +59,7 @@ const SingleFamily = () => {
   }
 
   const handleReceiveBasket = campaignId => {
-    dispatch(updateCampaign({ familyId: id, campaignId }))
+    dispatch(updateCampaign({ familyId: id, campaignId, date: new Date() }))
   }
 
   return (
@@ -103,7 +102,7 @@ const SingleFamily = () => {
                   <div key={campaign.id} className="mt-4">
                     <p>{`Campanha: ${campaign.name}`}</p>
                     {dateDelivered ? (
-                      <p>{`Data Recebimento: ${dateDelivered}`}</p>
+                      <p>{`Data Recebimento: ${new Date(dateDelivered)}`}</p>
                     ) : (
                       <div onClick={() => handleReceiveBasket(campaign.id)}>
                         <PrimaryButton text="Receber cesta" type="button" />

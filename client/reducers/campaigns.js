@@ -45,9 +45,17 @@ export const fetchCampaigns = () => async dispatch => {
   }
 }
 
-export const updateCampaign = ({ familyId, campaignId }) => async dispatch => {
+export const updateCampaign = ({
+  familyId,
+  campaignId,
+  date
+}) => async dispatch => {
   try {
-    const { data } = await axios.put("/api/campaigns", { familyId, campaignId })
+    const { data } = await axios.put("/api/campaigns", {
+      familyId,
+      campaignId,
+      date
+    })
     dispatch(updatedCampaign(data))
   } catch (error) {
     console.log("error updating campaign", error)
