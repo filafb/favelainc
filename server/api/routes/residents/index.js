@@ -4,7 +4,7 @@ const { fork } = require("child_process")
 const path = require("path")
 const multer = require("multer")
 const upload = multer()
-const { verifyAdmin } = require("../helpers")
+const { verifyAdmin, belongsToMaster } = require("../helpers")
 const { Family, Resident } = require("../../../db")
 
 module.exports = router
@@ -114,6 +114,20 @@ router.post("/upload/batch", verifyAdmin, (req, res, next) => {
     }
   } catch (error) {
     error.status = 400
+    next(error)
+  }
+})
+
+router.delete("/:id", belongsToMaster, verifyAdmin, async (req, res, next) => {
+  const { id } = req.params
+  try {
+    await Resident.destroy({
+      where: {
+        id
+      }
+    })
+    res.json({ success: "User deleted" })
+  } catch (error) {
     next(error)
   }
 })

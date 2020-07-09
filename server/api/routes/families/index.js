@@ -1,8 +1,9 @@
 const express = require("express")
 const router = express.Router()
-const { Family, Resident, CampaignControl } = require("../../../db")
+const { Family, Resident } = require("../../../db")
 const { Sequelize } = require("sequelize")
 const Campaign = require("../../../db/models/campaign")
+const { belongsToMaster, verifyAdmin } = require("../helpers")
 
 module.exports = router
 
@@ -119,6 +120,26 @@ router.get("/:id/residents", async (req, res, next) => {
       }
     })
     res.json(residents)
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.delete("/:id", belongsToMaster, verifyAdmin, async (req, res, next) => {
+  const { id } = req.params
+  try {
+    await Resident.destroy({
+      where: {
+        familyId: id
+      }
+    })
+
+    await Family.destroy({
+      where: {
+        id
+      }
+    })
+    res.json({ success: "Family and all residents deleted" })
   } catch (error) {
     next(error)
   }
