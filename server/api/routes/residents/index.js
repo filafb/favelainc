@@ -79,13 +79,13 @@ router.post("/", async (req, res, next) => {
     return
   }
   try {
+    const newResident = await Resident.create(resident)
     let family
     if (newFamily) {
       family = await Family.create({ ngoPartnerId })
     } else {
       family = await Family.findByPk(familyId)
     }
-    const newResident = await Resident.create(resident)
     await newResident.setFamily(family)
     res.send(newResident)
   } catch (error) {
