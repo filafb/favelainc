@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Route, Switch, Redirect } from "react-router-dom"
-import Main from "../Main"
 import Header from "../Partials/Header"
 import UsersRoot from "../Users/UsersRoot"
 import Navigation from "../Partials/Navigation"
@@ -44,10 +43,7 @@ const AuthenticatedApp = () => {
           <Route path="/parceiros">
             <PartnersRoot />
           </Route>
-          <Route path="/">
-            <Main />
-          </Route>
-          <Redirect to="/" />
+          <Redirect to="/moradores" />
         </Switch>
       </div>
       <Navigation />

@@ -9,7 +9,6 @@ const AllFamilies = () => {
 
   return (
     <div>
-      <h2 className="text-2xl">Famílias</h2>
       <ul>
         {families.map(({ id, familyMembers }) => (
           <FamilyCard

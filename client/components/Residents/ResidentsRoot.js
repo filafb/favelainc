@@ -40,6 +40,7 @@ const ResidentsRoot = () => {
   return (
     <main className="max-w-sm mx-auto">
       <div className="mx-8 relative">
+        <h2 className="text-2xl mb-4">Moradores</h2>
         <div>
           <div className="flex justify-around">
             <Link to={`${path}/novo`}>

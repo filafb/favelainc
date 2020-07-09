@@ -21,6 +21,7 @@ const FamiliesRoot = () => {
   return (
     <main className="max-w-sm mx-auto">
       <div className="mx-8 relative">
+        <h2 className="text-2xl mb-4">Famílias</h2>
         <div onClick={handleSeeAll}>
           <SecondaryButton text="Ver todas" type="button" />
         </div>

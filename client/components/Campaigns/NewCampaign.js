@@ -149,7 +149,7 @@ const NewCampaign = () => {
         <p>{`Famílias selecionadas: ${totalSelected.length}`}</p>
         <PrimaryButton
           type="submit"
-          text="Criar Camapanha"
+          text="Criar Campanha"
           disabled={disabled}
         />
       </div>
