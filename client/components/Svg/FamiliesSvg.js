@@ -1,11 +1,11 @@
 import React from "react"
 
-const FamiliesSvg = () => {
+const FamiliesSvg = ({ active }) => {
   return (
     <svg
       className="bi bi-house w-full h-6"
       viewBox="0 0 16 16"
-      fill="currentColor"
+      fill={`${active ? "currentColor" : "#a0aec0"}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
