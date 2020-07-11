@@ -65,11 +65,13 @@ const FormResident = () => {
   const [familyMember, setFamilyMember] = React.useState({})
   const dispatch = useDispatch()
   const [error, setError] = React.useState("")
+  const [errorSearching, setErrorSearching] = React.useState("")
   const history = useHistory()
   const checkCpf = /^(?![0]{11})([0-9]{11})$/
 
   const openFamilyAssociation = e => {
     setFamilyView(e.target.name)
+    setErrorSearching("")
     setFamilyMember({})
     setSearchCpf("")
     dispatchForm({
@@ -105,6 +107,7 @@ const FormResident = () => {
   }
 
   const handleSearch = e => {
+    setErrorSearching("")
     const searchValue = e.target.value
     const onlyDigits = /^[0-9]*$/g
     if (onlyDigits.test(searchValue)) {
@@ -115,8 +118,7 @@ const FormResident = () => {
 
   const handleSearchClick = async () => {
     if (!checkCpf.test(searchCpf)) {
-      // handle this error = invalid input
-      console.log("cpf invalido")
+      setErrorSearching("CPF inválido")
       return
     }
 
@@ -132,11 +134,12 @@ const FormResident = () => {
       const response = await dispatch(searchResidentByCPF(searchCpf))
       if (response.message) {
         // handle this error = CPF não encontrado
-        console.log(response.message)
+        setErrorSearching(response.message)
         return
       } else if (response.error) {
         // handle this error = any other error
         console.log(response.error)
+        setErrorSearching("Erro ao buscar")
         return
       } else {
         residentInfo = response
@@ -196,7 +199,8 @@ const FormResident = () => {
           placeholder="CPF (Apenas números)"
           required
           autocomplete="off"
-          pattern="^(?![0]{11})([0-9]{11})$"
+          validation={checkCpf}
+          validationText="CPF precisa conter 11 dígitos"
         />
         <InputField
           label="Primeiro Nome"
@@ -253,13 +257,15 @@ const FormResident = () => {
                 name="search"
                 placeholder="CPF do membro da família"
                 onChange={handleSearch}
+                autocomplete="off"
               />
               <button
                 type="button"
-                className="absolute right-0 top-0 h-full mr-3"
+                className={`${errorSearching &&
+                  "text-red-600"} absolute right-0 top-0 h-full mr-3`}
                 onClick={handleSearchClick}
               >
-                Buscar
+                {errorSearching || "Buscar"}
               </button>
             </div>
             {familyMember.id && (

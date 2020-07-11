@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 export const InputField = ({
   label,
@@ -10,29 +10,55 @@ export const InputField = ({
   required = false,
   autocomplete = false,
   editable = true,
-  pattern
-}) => (
-  <div className="my-5">
-    <label className="block text-gray-700 text-sm font-bold mb-2">
-      {label}
-    </label>
-    {editable ? (
-      <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        type={type}
-        value={value}
-        name={name}
-        placeholder={placeholder}
-        onChange={onChange}
-        required={required}
-        pattern={pattern}
-        autoComplete={autocomplete ? autocomplete : "on"}
-      ></input>
-    ) : (
-      <p>{value}</p>
-    )}
-  </div>
-)
+  validation,
+  validationText
+}) => {
+  const [validated, setValidated] = useState(true)
+
+  const handleValidation = () => {
+    if (validation && value && !validation.test(value)) {
+      setValidated(false)
+    } else if (required && !value) {
+      setValidated(false)
+    } else {
+      setValidated(true)
+    }
+  }
+
+  const handleFocus = () => {
+    setValidated(true)
+  }
+
+  return (
+    <div className="my-5">
+      <label className="block text-gray-700 text-sm font-bold mb-2">
+        {label}
+      </label>
+      {editable ? (
+        <input
+          className={`${!validated &&
+            "border-red-600"} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+          type={type}
+          value={value}
+          name={name}
+          placeholder={placeholder}
+          onChange={onChange}
+          required={required}
+          onBlur={handleValidation}
+          onFocus={handleFocus}
+          autoComplete={autocomplete ? autocomplete : "on"}
+        ></input>
+      ) : (
+        <p>{value}</p>
+      )}
+      {!validated && (
+        <p className="absolute text-red-600 text-xs">
+          {validationText || "Campo necessário"}
+        </p>
+      )}
+    </div>
+  )
+}
 
 export const ToggleSwitch = ({ type, onChange, value, name }) => (
   <div className="my-5 flex justify-around items-center">
