@@ -87,7 +87,12 @@ router.post("/", async (req, res, next) => {
       family = await Family.findByPk(familyId)
     }
     await newResident.setFamily(family)
-    res.send(newResident)
+    const updateResident = await Resident.findByPk(newResident.id, {
+      include: {
+        model: Family
+      }
+    })
+    res.send(updateResident)
   } catch (error) {
     next(error)
   }

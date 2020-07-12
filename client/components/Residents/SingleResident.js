@@ -3,6 +3,7 @@ import { useRouteMatch, useHistory, Link } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
 import { fetchSingleResidentAndRelatives } from "../../reducers/residents"
 import ResidentCard from "./ResidentCard"
+import { PrimaryButton } from "../Partials/Buttons"
 
 const SingleResident = () => {
   const {
@@ -43,10 +44,18 @@ const SingleResident = () => {
           <p>{`ID Família: ${resident.familyId}`}</p>
         </Link>
       </div>
-      {relatives.length ? (
-        <div className="mt-4">
-          <h2 className="text-2xl">Familiares</h2>
-          {relatives.map(({ firstName, lastName, id, cpf }) => (
+      <div className="mt-4">
+        <h2 className="text-2xl">Familiares</h2>
+        <Link
+          to={{
+            pathname: "/moradores/novo",
+            state: { relative: resident }
+          }}
+        >
+          <PrimaryButton text="Adicionar familiar" type="button" />
+        </Link>
+        {relatives.length ? (
+          relatives.map(({ firstName, lastName, id, cpf }) => (
             <ResidentCard
               key={id}
               firstName={firstName}
@@ -55,9 +64,11 @@ const SingleResident = () => {
               path="/moradores"
               id={id}
             />
-          ))}
-        </div>
-      ) : null}
+          ))
+        ) : (
+          <p className="mt-4">Nenhum familiar associado</p>
+        )}
+      </div>
     </>
   ) : null
 }

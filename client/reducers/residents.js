@@ -41,6 +41,7 @@ export const createResident = (residentInfo, history) => async dispatch => {
     history.push(`/moradores/${data.id}`)
     return { success: true }
   } catch (error) {
+    console.log(error.response.data.error)
     return { error: true, message: error.response.data.error }
   }
 }
@@ -59,7 +60,7 @@ export const searchResidentByCPF = cpf => async dispatch => {
   try {
     const { data } = await axios.get(`/api/residents/?cpf=${cpf}`)
     if (!data.message) {
-      dispatch(updateResidents(data))
+      dispatch(updateSingleResident(data))
     }
     return data
   } catch (error) {

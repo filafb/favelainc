@@ -4,7 +4,7 @@ import { PrimaryButton } from "../Partials/Buttons"
 import { useSelector, useDispatch } from "react-redux"
 import useFormControl from "../Hooks/useFormControl"
 import { createResident, searchResidentByCPF } from "../../reducers/residents"
-import { useHistory } from "react-router-dom"
+import { useHistory, useLocation } from "react-router-dom"
 
 const CPF = "CPF"
 const FIRSTNAME = "FIRSTNAME"
@@ -66,8 +66,17 @@ const FormResident = () => {
   const dispatch = useDispatch()
   const [error, setError] = React.useState("")
   const [errorSearching, setErrorSearching] = React.useState("")
+  const [submitError, setSubmitError] = React.useState("")
   const history = useHistory()
+  const { state = {} } = useLocation()
   const checkCpf = /^(?![0]{11})([0-9]{11})$/
+
+  React.useEffect(() => {
+    if (state.relative) {
+      setFamilyView("find")
+      setFamilyMember(state.relative)
+    }
+  }, [state])
 
   const openFamilyAssociation = e => {
     setFamilyView(e.target.name)
@@ -157,6 +166,11 @@ const FormResident = () => {
 
   const handelSubmit = async e => {
     e.preventDefault()
+    const hasError = validateSubmission()
+    if (hasError) {
+      setSubmitError(hasError)
+      return
+    }
     if (status === types.SUBMITTING) {
       return
     }
@@ -172,19 +186,75 @@ const FormResident = () => {
     }
     const response = await dispatch(createResident(residentInfo, history))
     if (response.error) {
-      setError(response.error)
+      setError(
+        response.message === "Validation error"
+          ? "CPF já cadastrado"
+          : response.message
+      )
       handleStatus({ type: types.ERROR })
     }
   }
 
-  const disabled =
-    !firstName || !lastName || !checkCpf.test(cpf) || !ngoPartnerId
+  const validateSubmission = () => {
+    let errorMessage
+    if (!cpf) {
+      errorMessage = "Entre CPF do morador"
+    } else if (!checkCpf.test(cpf)) {
+      errorMessage = "CPF precisa ter 11 dígitos"
+    } else if (!firstName) {
+      errorMessage = "Entre Nome do morador"
+    } else if (!lastName) {
+      errorMessage = "Entre sobrenome do morador"
+    } else if (!ngoPartnerId) {
+      errorMessage =
+        "Busque morador existente para associar ou crie nova família"
+    }
+    return errorMessage
+  }
+  const [readyToSubmit, setReadyToSubmit] = React.useState(false)
+  React.useEffect(() => {
+    let validateForm = validateSubmission()
+    if (!validateForm) {
+      setReadyToSubmit(true)
+    }
+  }, [firstName, lastName, cpf, ngoPartnerId])
+
+  React.useEffect(() => {
+    if (familyMember.family) {
+      const findPartner = ngoPartners.find(
+        partner => partner.id === familyMember.family.ngoPartnerId
+      )
+      if (findPartner) {
+        dispatchForm({
+          type: NGOPARTNER,
+          payload: {
+            ngoPartnerId: findPartner.id,
+            newFamily: familyView === "new" ? true : false
+          }
+        })
+      }
+    }
+  }, [familyMember, ngoPartners])
+
+  const [showErrorBanner, setBanner] = React.useState(false)
+
+  React.useEffect(() => {
+    if (submitError || status === types.ERROR) {
+      setBanner(true)
+    }
+    setTimeout(() => {
+      setBanner(false)
+      setSubmitError("")
+      handleStatus({ type: types.IDLE })
+    }, 3000)
+  }, [submitError, status])
 
   let ngoName
   if (familyMember.family) {
-    ngoName = ngoPartners.find(
+    const findPartner = ngoPartners.find(
       partner => partner.id === familyMember.family.ngoPartnerId
-    ).name
+    )
+    ngoName = findPartner ? findPartner.name : ""
   }
 
   return (
@@ -288,12 +358,19 @@ const FormResident = () => {
             />
           </div>
         )}
-        <PrimaryButton
-          disabled={disabled}
-          text="Criar Novo Morador"
-          type="submit"
-        />
-        {status === types.ERROR && <p>{error}</p>}
+        <div className="relative">
+          <PrimaryButton
+            readyToSubmit={readyToSubmit}
+            text="Criar Novo Morador"
+            type="submit"
+          />
+          {showErrorBanner && (
+            <div className="absolute flex justify-center items-center bg-red-600 top-0 h-full w-full">
+              {submitError && <p>{submitError}</p>}
+              {status === types.ERROR && <p>{error}</p>}
+            </div>
+          )}
+        </div>
       </form>
     </>
   )
