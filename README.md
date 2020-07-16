@@ -4,18 +4,6 @@
 
 > A platform that helps NGOs in Vidigal, a slum in Rio de Janeiro - Brazil, distribute food baskets to families suffering economic burden during the COVID-19 crisis
 
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
 
 [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/filafb/favelainc/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/filafb/favelainc/pulls) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/filafb/favelainc/blob/master/LICENSE)
 
