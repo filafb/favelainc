@@ -303,7 +303,7 @@ const FormResident = () => {
                 : "underline text-blue-500"
             }`}
           >
-            Associar membro família
+            Associar membro a uma família
           </button>
           <button
             name="new"
@@ -361,7 +361,7 @@ const FormResident = () => {
         <div className="relative">
           <PrimaryButton
             readyToSubmit={readyToSubmit}
-            text="Criar Novo Morador"
+            text="Adicionar morador à família"
             type="submit"
           />
           {showErrorBanner && (
