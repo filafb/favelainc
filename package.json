@@ -51,7 +51,7 @@
     "jest": "^25.3.0",
     "lint-staged": "^10.0.2",
     "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.4",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss": "^7.0.27",
